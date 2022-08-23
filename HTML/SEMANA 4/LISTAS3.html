@@ -6,17 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FORMULARIO</title>
 </head>
-<body>
+<body bgcolor="royalblue">
+    
     <h1>FORMULARIO DE CONTACTO</h1>
-<form method="post" action="datosenvia.php"></form>
+<form method="post" action="datosenvia.php">
+
 <label>Nombre Completo: </label><br>
-<input type="text" size="30" title="Ingrese su nombre completo: " name="nombre" autofocus required><br>
+<input type="text" size="30" title="Ingrese su nombre completo: " name="nombre" autofocus required/><br><br>
 
 <label>Correo Electrónico: </label>
-<input type="email" size="40" placeholder="ingrese mail:usuario@dominio.com" name="mail" title="Escriba su mail" required><br>
+<input type="email" size="40" placeholder="ingrese mail:usuario@dominio.com" name="mail" title="Escriba su mail" required/><br><br>
 
 <label>Fecha de nacimiento: </label>
+<input type="date" name="fecha nacer" size="40" title="Ingrese fecha nacimiento"/><br><br>
 
+<!-- grado satisfaccion servicio -->
+<label>Deslice la barra y coloque grado satisfaccion del servicio</label><br><br>
+<input type="range" min="1" max="10" size="" title="Deslice barra de grado de satisfacción" name="barra"/><br><br>
+
+<label>Seleccione el color preferido: </label>
+<input type="color" value="#FFFF00" title="Seleccione su color preferido" name="color"><br><br>
+
+<label>Coloque su Edad: </label>
+<input type="number" min="1" max="120" title="Ingrese su edad" name="edad"><br><br>
+
+<label>Seleccione Archivo: </label><br><br><br>
+<input type="submit" value="enviar" name="archivo adjunto"/>
+</form>
 
 </body>
 </html>
