@@ -19,7 +19,24 @@
     <li type="square" style=color:darkgray >SERVICIOS</li><br>
     <li type="square" style=color:darkgray >CONTACTO</li><br>
  </ul>
-
 </NAV>
+
+<section>
+    <!-- action: enlaza la web a una base de datos. 
+    method: el metodo como carga datos. post: cargar sin que se vea en la url -->
+<form action="datos.php" method="post"></form>
+   
+<!-- name: es el atributo que permitira a la php importar lo que se ingresa en web a la base datos -->
+<label>Nombre completo</label><br>
+<input type="text" name="nombre" placeholder="Ingrese nombre" required><br><br>
+
+<label>Correo electronico</label><br>
+<input type="text" name="mail" placeholder="Ingrese mail" required><br><br>
+
+<label>Constraseña</label><br>
+<input type="text" name="contraseña" placeholder="Ingrese contraseña" required><br><br>
+
+
+</section>
 </body>
 </html>
