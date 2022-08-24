@@ -28,10 +28,10 @@
    
 <!-- name: es el atributo que permitira a la php importar lo que se ingresa en web a la base datos -->
 <label>Nombre completo</label><br>
-<input type="checkbox" name="nombre" placeholder="Ingrese nombre" required><br><br>
+<input type="text" name="nombre" placeholder="Ingrese nombre" required><br><br>
 
 <label>Correo electronico</label><br>
-<input type="checkbox" name="mail" placeholder="Ingrese mail" required><br><br>
+<input type="text" name="mail" placeholder="Ingrese mail" required><br><br>
 
 <label>Constraseña</label><br>
 <input type="password" name="contraseña" placeholder="Ingrese contraseña" required><br><br>
@@ -43,6 +43,20 @@
 <input type="checkbox" name="lectura">Lectura <br>
 <input type="checkbox" name="deporte">Deporte <br>
 <!-- ctr+shif+L : seleccionar varias coincidencias -->
+<hr>
+<!-- ESTADO CIVIL -->
+<input type="radio" name="estado civil" > <font color="white">Soltero</font>  <br>
+<input type="radio" name="estado civil"> <font color="white">Casado</font><br>
+<input type="radio" name="estado civil"> <font color="white">Separado</font><br>
+
+<label>Programas Técnicos</label>
+
+<select name="Seleccionar" id="">
+<option value="">Seleccione programa ..</option>
+<option value="">Sistemas</option>
+<option value="">Diseño grafico</option>
+<option value="">Contabilidad</option>
+</select>
 
 </section>
 </body>
