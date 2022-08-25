@@ -8,4 +8,16 @@ body{
     background-size: cover;
 }
 /* estilos css para cabecera ....*/
-
+header {
+    background-color: darkgoldenrod;
+    border:2px solid blue;
+    border-radius: 20px 20px 10px 10px;
+    display: flex;
+    flex-direction: row;/*direccion horizontal*/
+    justify-content:center;
+    align-items: center;
+}
+header img{
+    padding: 15px; ;
+}
+    
