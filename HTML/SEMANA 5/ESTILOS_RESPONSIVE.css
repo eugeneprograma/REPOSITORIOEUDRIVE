@@ -20,4 +20,15 @@ header {
 header img{
     padding: 15px; ;
 }
-    
+/* estilos css barra menu */
+nav{
+    background-color: blue;
+    border: 2px solid green;
+    border-radius: 22px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    margin: 5px; ;
+}
