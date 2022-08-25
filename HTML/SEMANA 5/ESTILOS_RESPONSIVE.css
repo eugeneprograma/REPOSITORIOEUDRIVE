@@ -1,0 +1,10 @@
+/* estilos css para pagina web */
+body{
+    background:white ;
+    background-image: url(../IMAGENES/imagen\ natacion.jpeg) ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+/* estilos css para cabecera */
