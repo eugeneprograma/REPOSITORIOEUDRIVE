@@ -5,12 +5,12 @@ body{
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
-    background-size: cover;
+    background-size:cover;/*contain: enmarcado. cover: cubre toda pagina*/
 }
 /* estilos css para cabecera ....*/
 header {
-    background-color: darkgoldenrod;
-    border:2px solid blue;
+    background-color:cornflowerblue ;
+    border:10px solid blue;
     border-radius: 20px 20px 10px 10px;
     display: flex;
     flex-direction: row;/*direccion horizontal*/
@@ -18,62 +18,62 @@ header {
     align-items: center;
 }
 header img{
-    padding:2px; ;
+    padding:5px; ;
 }
 /* estilos css barra menu */
 nav{
-    background-color: blue;
-    border: 2px solid green;
+    background-color:darkolivegreen;
+    border: 10px solid green;
     border-radius: 22px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 5px;
+    padding: 34px;
     margin: 5px; ;
 }
 /*css barra navegar */
 nav ul{
-    padding:0 0 ;
-    margin:0 1px;
+    padding: 1px; 0 ;
+    margin:0 2px;
 }
 /*css barra navegar listas*/
 nav ul li{
-    display: inline ;
-    list-style: none;
+    display:block;
+    list-style:georgian;
     margin:0 5px ;
-    font:bold 12px verdana ;
+    font:bold 20px verdana ;
 }
 /*ESTILOS CSS SECCION PRINCIPAL*/
 section{
-    width: 40%;
-    border: 1px salmon;
-    padding:10px 10px ;
+    width: 50%;
+    border: 1px red;
+    padding:20px 20px ;
     border-radius: 20px;
     margin: 10px auto;
     background: linear-gradient(navy, blue);   
 }
 form{
-    background: silver;
-    width:70% ;
+    background:sandybrown;
+    width:80% ;
     border-radius:20px ;
     margin:10px auto ;
     box-shadow: inset 0 0 10px purple;
-
+    padding: 20px 20px 20px 20px;
 }
 fieldset{
     border-style: 18px;
 }
 label{
-    font-size: 18px;
+    font-size: 23px;
 }
 textarea{
     resize: both;
-    max-width: 100px;
+    max-width: 500px;
 }
 input:focus, textarea:focus{
     border-color: rgb(red, green, blue);
-    cursor: pointer;
+    cursor:pointer;
     box-shadow: inset 0 0 8px rgb(red, green, blue);
     outline:0 none;
 
