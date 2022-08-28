@@ -78,11 +78,12 @@ input:focus, textarea:focus{
     outline:0 none;
 
 }
-form button:hover{ /*hover:el usuario interactua con un elementos del dispositivo. el mouse se ubica sobre el elemento*/
-    background: lightblue;
+form button:hover { /*hover:el usuario interactua con un elementos del dispositivo. el mouse se ubica sobre el elemento*/
+    background:lightseagreen;
     text-decoration: underline;
     color: black;
     cursor: pointer;
+    size: 10px;
 }
 
 form input{
@@ -95,7 +96,7 @@ form input{
 
 /* ESTILOS CCS PARA PIE DE PAGINA */
 footer{
-    font-size: 18px;
+    font-size: 30px;
     text-align: center;
     color:firebrick;
 
