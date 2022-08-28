@@ -32,3 +32,27 @@ nav{
     padding: 5px;
     margin: 5px; ;
 }
+/*css barra navegar */
+nav ul{
+    padding:0 0 ;
+    margin:0 1px;
+}
+/*css barra navegar listas*/
+nav ul li{
+    display: inline ;
+    list-style: none;
+    margin:0 5px ;
+    font:bold 12px verdana ;
+}
+/*ESTILOS CSS SECCION PRINCIPAL*/
+section{
+    width: 40%;
+    border: 1px salmon;
+    padding:10px 10px ;
+    border-radius: 20px;
+    margin: 10px auto;
+    background: linear-gradient(navy, blue);
+    
+}
+
+
