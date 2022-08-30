@@ -75,4 +75,251 @@ a{
     background-color: white;
     border:2px solid green;
     /* se define ancho y altura contenedor para ajustar a vista a dispositivo actual*/
+    max-width:100%;
+    height: auto;
+
 }
+figure, figcaption{ /*PREGUNTA: que es figcaption*/
+    display: inline;
+    margin: 45px;
+    padding: 5px 5px;   
+
+}
+.programa{ /*PREGUNTA: porque pone punto al inicio?*/
+    display: inline-block;
+    margin: 5px 5px;
+    padding: 5px 5px;
+    width: 45%;
+    height: 200px;
+    position: relative;
+    border: 1px solid black; 
+    border-radius: 15px 15px;
+
+}
+section article{
+    background-color: lightcyan;
+    width: 200px;
+    margin: 20px;
+    } 
+
+/* seccion barra lateral */    
+#sidebar{
+        grid-area: sidebar;/* se asigna nombre a contenedor */
+        display: flex;
+        flex-direction: column;/* se define dirección en forma columna*/
+        justify-content: center; 
+        align-items: center;
+}
+/* se define ancho y altura contenedor para ajustar a vista de dispositivo actual*/
+iframe{
+        max-width: 100%;
+        height: auto;
+  }
+
+/* seccion pie de pagina*/
+#footer{
+    grid-area: footer;/* se asigna nombre a contenedor */
+    background-color: teal;
+    border:2px solid green;
+    border-radius: 20px 20px 10px 10px;
+    clear:both;
+ }
+ /* seccion CSS GRID DISEÑO WEB RESPONSIVE*/
+/* Se define estilos al contenedor grid en general vista PC*/
+#grid-container > * {
+    text-align: center;
+    box-shadow: 1px 1px 7px 0px rgba(0,0,0,0.75);
+    }
+/* Se define estilos al contenedor grid en general vista PC a 3 COL.*/
+#grid-container{
+    display:grid;
+    grid-gap:10px; 
+    grid-template: 
+    "header header header" 150px
+    "nav nav nav" 50px
+    "main main sidebar" 300px
+    "main main sidebar" 300px
+    "main main sidebar" 250px
+    "footer footer footer" 150px /
+    1000px 150px 300px; 
+    }
+#redes a {
+        padding: 0;
+        margin: 0;
+    }
+#redes a i:hover{
+     transform: scaleX(1.5);  
+  }
+/* Estilos iconos fontawesome */
+.fa-home{
+    color:white;
+    font-size: 18px;
+ }  
+
+.fa-cart-arrow-down{
+    color:white;
+    font-size: 18px;
+ }
+ .fa-charging-station{
+    color:white;
+    font-size: 18px;
+     }
+ .fa-wpforms{
+        color:white;
+        font-size: 18px;
+ }
+ .fa-user{
+    color:white;
+    font-size: 18px;
+ }
+/* estilos al buscador search */
+.fa-search{
+    color:white;
+    font-size: 18px;
+}
+/*iconos fontawesome BAR SOCIAL*/
+.fab {
+    color:white;
+    border:1px solid transparent;
+    margin:0px;
+    }
+.fa-youtube-square{
+    font-size: 32px;
+    background-color: red;
+    
+ }
+.fa-facebook-square{
+    font-size: 32px;
+    background-color: darkblue;
+       }
+.fa-twitter-square{
+    font-size: 32px;
+    background-color: deepskyblue;
+      }
+.fa-whatsapp{
+    font-size: 32px;
+    background-color: lime;
+      }
+.fa-instagram{
+    font-size: 32px;
+     background-color: orangered;
+      }
+/* ultimos cambios hechos a icono hamburgueza */
+.fa-bars{
+font-size: 30px;
+color:black;
+}
+/* nuevo estilo menu hamburguesa */
+.openmenu {
+    display: none;
+    cursor: pointer;
+    font-size: 2 rem;
+ }
+/*-----SECCION VISTA DE TABLETS------*/
+@media (max-width:1024px){
+    #grid-container{
+        grid-template: 
+        "header header" 170px
+        "nav main" 800px
+        "nav main"  700px
+        "sidebar sidebar" 650px
+        "footer footer" 100px /
+         250px 450px; 
+         font-size: 75%;/*Cambia el tamaño de la letra*/
+    }
+    #menu{
+        background-color: blue;
+        border-radius: 22px;
+        display: block;
+        padding: 45px;
+        margin:40px;
+        height: auto;
+        text-align: center;
+    }
+    #main{
+    display: flex;
+    flex-direction: column;/* cambia la forma de direccion de fila a col*/
+    justify-content: space-between;
+    align-items:center;
+    flex-wrap: wrap;/*se define el auto ajuste de ancho dispostivo pasa a sgte. linea*/
+    max-width:100%;
+       
+    }
+    .programa{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:center;
+    flex-wrap: wrap;
+    max-width: 100%;
+    height: auto;
+    border: 1px solid black; 
+    
+}
+iframe{
+    max-width: 100%;
+    height: auto;
+}
+.buscarbox{
+    display:block;
+    padding: 5px;
+}
+}
+/*----- SECCION VISTA DE CELULAR ------*/
+    @media (max-width:640px){
+    #grid-container{
+    grid-template: 
+     "header" 150px
+     "nav" 50px
+     "main" 1400px
+     "sidebar" 800px
+     "footer" 100px /
+      500px; 
+      font-size: 60%;
+    }
+    /* Nota: la barra <nav> se programará con javascript_
+      por medio de funciones en boton hamburguesa*/
+    #menu{
+        display: none;/* se oculta contenedor nav opciones*/
+    } 
+    /* se define que aparezca el menu hamburguesa en la parte superior*/
+    .openmenu{
+        display: block;
+        position:absolute;
+        top:10px;
+        right:120px;
+        z-index:99;/* se define capa encima del texto de contenido HTML*/
+        cursor: pointer;
+        }
+    
+    #main{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items:center;
+        flex-wrap: wrap;
+        max-width: 100%;
+        height: auto;
+      }
+ .programa{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 100%;
+    height: auto;
+    border: 1px solid black; 
+    }
+ iframe{
+    max-width: 100%;
+    height: auto;
+}
+.buscarbox{
+    display:none;
+}
+}
+
+
+
+
+
