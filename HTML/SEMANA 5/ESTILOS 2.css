@@ -1,0 +1,36 @@
+/* seccion inicial */
+*{
+    box-sizing: border-box;
+    margin:0 ; /*inicializa margenes*/
+    padding: 0; /*inicializa padding*/
+}
+html{
+    max-width:100% ;/*se adapte a la altura de la pagina*/
+}
+body{
+    font-family: Tahoma;
+    font-size: 18px;
+}
+/* seccion de cabecera */
+/* PREGUNTA: porque coloca # si en otro header no estaba? */
+#header{
+    background-color: deepskyblue;
+    border: 2px salmon;
+    border-radius: 20px 20px 10px 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    grid-area:header; /*asigna nombre al contenedor*/
+}
+/* seccion del menu */
+ul{
+    padding: 0 0;
+    margin:0 1px; /*PREGUNTA:que significa el 1ro y 2do numero*/
+}
+li{
+    display: inline;
+    list-style:circle;
+    margin:0 5px ;
+    font: bold 12px Verdana;
+}
