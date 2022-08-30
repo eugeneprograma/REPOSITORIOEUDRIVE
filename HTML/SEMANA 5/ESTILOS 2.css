@@ -34,3 +34,45 @@ li{
     margin:0 5px ;
     font: bold 12px Verdana;
 }
+a{
+    color:darkgoldenrod;
+    text-decoration: solid;
+}
+#menu{
+    grid-area: nav; /*asigna nombre al contenedor*/
+    background-color: dimgrey;
+    border: 2px saddlebrown;
+    border-radius: 22px ;
+    display: flex;
+    flex-direction: row;
+    justify-content: baseline;
+    align-items: center;
+    padding:5px ;
+    margin:5px ;
+}
+/* nuevo estilo de buscador */
+.buscadorbox input{
+    height: 25px;
+    width: 0px;
+    padding:0px 0px;
+    border-radius:40px;
+    border:0px;
+    padding-right: 50px;
+    transition: 0.8s ease;/*PREGUNTA:que es ease?*/
+    
+}
+/* se aplica pseudo clase hover para expandir ancho buscador */
+/* PREGUNTA: que es hover */
+.buscadorbox input:hover{
+    width: 150px;
+    padding-left: 10px;
+    outline: none; /* quitar bordes*/
+
+}
+/* seccion contenido */
+#main{
+    grid-area: main;/* matricula nombre al contenedor section para grid*/
+    background-color: white;
+    border:2px solid green;
+    /* se define ancho y altura contenedor para ajustar a vista a dispositivo actual*/
+}
