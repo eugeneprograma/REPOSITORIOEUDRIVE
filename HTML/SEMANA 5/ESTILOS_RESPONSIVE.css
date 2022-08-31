@@ -5,26 +5,26 @@ body{
     background-repeat:repeat;
     background-position: center;
     background-attachment: fixed; /*fixed: imagen no se mueve*/
-    background-size:cover;/*contain: enmarcado. cover: cubre toda pagina*/
+    background-size:contain;/*contain: imagen enmarcada. cover: cubre toda pagina*/
 }
 /* estilos css para cabecera ....*/
 header {
     background-color:cornflowerblue ;
     border:10px solid blue;
     border-radius: 20px 20px 10px 10px;
-    display: flex;
+    display: flex; /*que el logo y titulo queden en misma linea*/
     flex-direction: row;/*direccion horizontal*/
     justify-content:center;
     align-items: center;
 }
 header img{
-    padding:5px; ;
+    padding:10px;
 }
 /* estilos css barra menu */
 nav{
     background-color:darkolivegreen;
     border: 10px solid green;
-    border-radius: 22px;
+    border-radius: 22px; /*borde redondeado*/
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -34,13 +34,13 @@ nav{
 }
 /*css barra navegar */
 nav ul{
-    padding: 1px; 0 ;
+    padding: 0 0 ;
     margin:0 2px;
 }
 /*css barra navegar listas*/
 nav ul li{
-    display:block;
-    list-style:armenian;
+    display:inline;
+    list-style:none;
     margin:0 5px ;
     font:bold 20px verdana ;
 }
@@ -50,15 +50,15 @@ section{
     border: 1px red;
     padding:20px 20px ;
     border-radius: 20px;
-    margin: 10px auto;
-    background: linear-gradient(navy, blue);   
+    margin: 10px auto;/*auto: centrado derecha e izquierda*/
+    background: linear-gradient(navy, rgb(0, 255, 145)); /*linear gradient: degradado*/  
 }
 form{
     background:sandybrown;
     width:80% ;
     border-radius:20px ;
     margin:10px auto ;
-    box-shadow: inset 0 0 10px purple;
+    box-shadow: inset 0 0 80px purple;/*iluminacion*/
     padding: 20px 20px 20px 20px;
 }
 fieldset{
