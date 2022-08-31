@@ -1,7 +1,7 @@
 /* estilos css para pagina web */
 body{
     background:white ;
-    background-image: url(../IMAGENES/imagen\ natacion.jpeg) ;
+    background-image: url(../IMAGENES/huevo.gif) ;
     background-repeat:repeat;
     background-position: center;
     background-attachment: fixed; /*fixed: imagen no se mueve*/
@@ -12,7 +12,7 @@ header {
     background-color:cornflowerblue ;
     border:10px solid blue;
     border-radius: 20px 20px 10px 10px;
-    display: flex; /*que el logo y titulo queden en misma linea*/
+    display: flex; /*flex:que el logo y titulo en la misma linea*/
     flex-direction: row;/*direccion horizontal*/
     justify-content:center;
     align-items: center;
