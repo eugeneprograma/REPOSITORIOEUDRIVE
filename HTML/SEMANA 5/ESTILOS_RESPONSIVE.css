@@ -2,9 +2,9 @@
 body{
     background:white ;
     background-image: url(../IMAGENES/imagen\ natacion.jpeg) ;
-    background-repeat: no-repeat;
+    background-repeat:repeat;
     background-position: center;
-    background-attachment: fixed;
+    background-attachment: fixed; /*fixed: imagen no se mueve*/
     background-size:cover;/*contain: enmarcado. cover: cubre toda pagina*/
 }
 /* estilos css para cabecera ....*/
@@ -40,7 +40,7 @@ nav ul{
 /*css barra navegar listas*/
 nav ul li{
     display:block;
-    list-style:georgian;
+    list-style:armenian;
     margin:0 5px ;
     font:bold 20px verdana ;
 }
