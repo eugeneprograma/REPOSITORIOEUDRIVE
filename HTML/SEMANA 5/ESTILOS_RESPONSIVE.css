@@ -38,7 +38,7 @@ nav ul{
     margin:0 2px;
 }
 /*css barra navegar listas*/
-nav ul li{
+nav ul li{ /*abuelo , padre, hijo*/
     display:inline;
     list-style:none;
     margin:0 5px ;
@@ -61,7 +61,7 @@ form{
     box-shadow: inset 0 0 80px purple;/*iluminacion*/
     padding: 20px 20px 20px 20px;
 }
-fieldset{
+fieldset{ /*fielset: borde formulario*/
     border-style: 18px;
 }
 label{
@@ -71,17 +71,17 @@ textarea{
     resize: both;
     max-width: 500px;
 }
-input:focus, textarea:focus{
+input:focus, textarea:focus{ /*estilos cuando evento. ej: mause encima*/
     border-color: rgb(red, green, blue);
-    cursor:pointer;
-    box-shadow: inset 0 0 8px rgb(red, green, blue);
+    cursor:pointer;/*pointer: mouse es mano*/
+    box-shadow: inset 0 0 20px rgba(0,29,255,0,6);
     outline:0 none;
 
 }
 form button:hover { /*hover:el usuario interactua con un elementos del dispositivo. el mouse se ubica sobre el elemento*/
-    background:lightseagreen;
+    background:red;
     text-decoration: underline;
-    color: black;
+    color:blue;
     cursor: pointer;
     size: 10px;
 }
@@ -89,7 +89,7 @@ form button:hover { /*hover:el usuario interactua con un elementos del dispositi
 form input{
     height: 20px;
     box-sizing: border-box;
-    color:black;
+    color:green;
     outline: none;
     border:1px solid black;
 }
@@ -99,5 +99,5 @@ footer{
     font-size: 30px;
     text-align: center;
     color:firebrick;
-    
+    text-transform: uppercase; /*se transforma el texto*/
 }
