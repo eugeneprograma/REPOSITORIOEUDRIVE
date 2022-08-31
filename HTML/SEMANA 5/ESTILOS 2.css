@@ -12,7 +12,7 @@ body{
     font-size: 18px;
 }
 /* seccion de cabecera */
-/* PREGUNTA: porque coloca # si en otro header no estaba? */
+/* PREGUNTA: porque coloca # si en otro header no estaba? PORQUE ES UNA CLASE */
 #header{
     background-color: deepskyblue;
     border: 2px salmon;
@@ -40,6 +40,7 @@ a{
 }
 #menu{
     grid-area: nav; /*asigna nombre al contenedor*/
+    /* RESPUESTA a porque pone simbolo antes de menu:  */
     background-color: dimgrey;
     border: 2px saddlebrown;
     border-radius: 22px ;
@@ -85,7 +86,8 @@ figure, figcaption{ /*PREGUNTA: que es figcaption*/
     padding: 5px 5px;   
 
 }
-.programa{ /*PREGUNTA: porque pone punto al inicio?*/
+.programa{ /*PREGUNTA: porque pone punto al inicio? 
+    Respuesta: porque en html es una clase class="programa"*/
     display: inline-block;
     margin: 5px 5px;
     padding: 5px 5px;
@@ -201,7 +203,7 @@ iframe{
     background-color: lime;
       }
 .fa-instagram{
-    font-size: 32px;
+    font-size: 50px;
      background-color: orangered;
       }
 /* ultimos cambios hechos a icono hamburgueza */
