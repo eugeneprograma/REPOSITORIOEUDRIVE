@@ -9,20 +9,23 @@ html{
     max-height: 100%; /* se adapte altura pag web cualq dispositivo*/
 }
 body{
-    font-family: Tahoma;
-    font-size: 18px;
+    font-family: Geneva;
+    font-size: 20px;
 }
 /* seccion cabecera PC*/
 #header{
-    background-color: lightsteelblue;
-    border:2px solid blue;
+    background-color: rgb(169, 51, 85);
+    border:10px red;
     border-radius: 20px 20px 10px 10px;
     display: flex;
     flex-direction: row;/*dirección horizontal o en fila*/
     justify-content: center;/*alinea horizontalmente*/
-    align-items: center;/*alinea verticalmente*/
+    align-items: left;/*alinea verticalmente*/
     grid-area: header;/*asigna nombre al contenedor*/
     /* GRID-AREA LE LLAMA "HEADER" */
+    font: bold 20px Arial;
+    flood-color: blueviolet;
+    
 }
 
 /* seccion menu */
@@ -33,8 +36,8 @@ ul{
 li{
     display: inline;
     list-style: none;/* quitar las viñetas*/
-    margin: 0 5px;
-    font: bold 12px Verdana;
+    margin: 1 5px;
+    font: bold 20px Verdana;
 }
 a{
     color: white;
@@ -42,19 +45,19 @@ a{
 }
 #menu{
     grid-area: nav;/* asigna nombre a contenedor. le dice que la barra de navegacion se llama "nav"*/
-    background-color: blue;
-    border:2px solid green;
+    background-color: rgb(194, 60, 91);
+    border:2px solid rgb(187, 28, 71);
     border-radius: 22px;
     display: flex;
     flex-direction:row;
     justify-content:space-between; 
     align-items: center; 
-    padding: 5px;
+    padding: 10px;
     margin:5px;
 }
 /* nuevo estilo para buscador */
 .buscarbox input{
- height: 25px;
+ height: 40px;
  width: 0px;
  padding:0px 0px;
  border-radius:40px;
@@ -73,8 +76,8 @@ a{
 /* seccion contenido */
 #main{
     grid-area: main;/* matricula nombre al contenedor section para grid*/
-    background-color: white;
-    border:2px solid green;
+    background-color: rgb(202, 24, 104);
+    border:20px solid rgb(236, 6, 40);
     /* se define ancho y altura contenedor para ajustar a vista a dispositivo actual*/
     max-width:100%; 
     /* 100% indica que se adapte al dispositivo */
@@ -97,7 +100,7 @@ figure, figcaption{
     }
 
 section article{
-    background-color: lightcyan;
+    background-color: rgb(82, 67, 152);
     width: 200px;
     margin: 20px;
     } 
@@ -119,8 +122,8 @@ iframe{
 /* seccion pie de pagina*/
 #footer{
     grid-area: footer;/* se asigna nombre a contenedor */
-    background-color: teal;
-    border:2px solid green;
+    background-color: rgb(188, 99, 115);
+    border:18px solid rgb(116, 20, 20);
     border-radius: 20px 20px 10px 10px;
     clear:both;
  }
@@ -140,9 +143,9 @@ iframe{
     "header header header" 150px /*la pagina web son tres columnas, por ello esta tres veces "header" y "nav"*/
     "nav nav nav" 50px
     /*main main slidebar , significa que las dos primeras columnas son "main" y la tercera columna es "sidebar", y asi se visualiza */
-    "main main sidebar" 300px
-    "main main sidebar" 300px
-    "main main sidebar" 250px
+    "main main sidebar " 300px
+    "main main sidebar " 300px
+    "main main sidebar " 250px
     "footer footer footer" 150px /
     1000px 150px 300px; 
     }
