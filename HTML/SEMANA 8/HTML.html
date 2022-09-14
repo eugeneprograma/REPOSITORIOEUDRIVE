@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap 2</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- PARA USAR BOOTSTRAPT "NECESARIAMENTE DEBE HABER EL LINK" -->
+    <style>
+      div[class^=col] {
+      padding-top:.75rem;
+      padding-bottom: .75rem;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      }
+      </style>
+  </head>
+
+<body>
+    <div class="container">
+        <!--Aplica Diseño Web Responsive a las columnas en dispositivos móviles, en PC tienen una ancho de 80% y 20% respectivamente. -->
+        <div class="row">
+          <div class="col-12 col-md-8 col-lg-6 border bg-success">ROW 1 BOOTSTRAP 5</div>
+         
+          <div class="col-12 col-md-4 col-lg-6 border bg-success">ROW 1 BOOTSTRAP 5</div>
+        </div>
+      
+        <!-- Las columnas comienzan con un 100% de ancho en dispositivos MOVILES y aumentan hasta un 33,3% de ancho en PC -->
+        <div class="row">
+          <div class="col-12 col-md-4 border col-lg-4 bg-warning">ROW 2 BOOTSTRAP 5</div>
+          <div class="col-12 col-md-4 border col-lg-4 bg-warning">ROW 2 BOOTSTRAP 5</div>
+          <div class="col-12 col-md-4 border col-lg-4 bg-dark">ROW 2 BOOTSTRAP 5</div>
+        </div>
+      <!-- OJO
+        bg-warning significa "bg:back ground" "warning:color amarillo"-->
+        <!-- COLORES
+        bg-warning:amarillo
+        bg-primary: azul
+        bg-danger: rojo
+        bg-dark: negro -->
+
+        <!-- Las columnas siempre tienen un 100% de ancho en dispositivos móviles, y un 50% en PC -->
+        <div class="row">
+          <div class="col-12 col-md-5 col-lg-6 border bg-danger">ROW 3 BOOTSTRAP 5</div>
+          <div class="col-12 col-md-7 col-lg-6 border bg-danger">ROW 3 BOOTSTRAP 5</div>
+        </div>
+      </div>
+</body>
+</html>

@@ -1,0 +1,302 @@
+/* seccion INICIAL */
+/* ASTERISCO ES QUE APLIQUE A TODO HTML  */
+*{
+    box-sizing: border-box;
+    margin: 0; /* Inicializa margenes*/
+    padding: 0;/* Inicializa padding*/
+}
+html{
+    max-height: 100%; /* se adapte altura pag web cualq dispositivo*/
+}
+body{
+    font-family: Geneva;
+    font-size: 20px;
+}
+/* seccion cabecera PC*/
+#header{
+    background-color: rgb(169, 51, 85);
+    border:10px red;
+    border-radius: 20px 20px 10px 10px;
+    display: flex;
+    flex-direction: row;/*dirección horizontal o en fila*/
+    justify-content: center;/*alinea horizontalmente*/
+    align-items: left;/*alinea verticalmente*/
+    grid-area: header;/*asigna nombre al contenedor*/
+    /* GRID-AREA LE LLAMA "HEADER" */
+    font: bold 20px Arial;
+    flood-color: blueviolet;
+    
+}
+
+/* seccion menu */
+ul{
+    padding: 0 0;
+    margin: 0 1px;
+}
+li{
+    display: inline;
+    list-style: none;/* quitar las viñetas*/
+    margin: 1 5px;
+    font: bold 20px Verdana;
+}
+a{
+    color: white;
+    text-decoration: none; /* quitar las lineas subrayadas*/
+}
+#menu{
+    grid-area: nav;/* asigna nombre a contenedor. le dice que la barra de navegacion se llama "nav"*/
+    background-color: rgb(194, 60, 91);
+    border:2px solid rgb(187, 28, 71);
+    border-radius: 22px;
+    display: flex;
+    flex-direction:row;
+    justify-content:space-between; 
+    align-items: center; 
+    padding: 10px;
+    margin:5px;
+}
+/* nuevo estilo para buscador */
+.buscarbox input{
+ height: 40px;
+ width: 0px;
+ padding:0px 0px;
+ border-radius:40px;
+ border:0px;
+ padding-right: 50px;
+ transition: 0.8s ease;
+     /* trasition: el efecto cuando se pasa el mouse */
+}
+/* Se aplica una pseudoclase hover para expandir ancho de buscador */
+.buscarbox input:hover{
+    width: 150px;
+    padding-left: 10px;
+    outline: none; /* quitar bordes del input*/
+    } 
+
+/* seccion contenido */
+#main{
+    grid-area: main;/* matricula nombre al contenedor section para grid*/
+    background-color: rgb(202, 24, 104);
+    border:20px solid rgb(236, 6, 40);
+    /* se define ancho y altura contenedor para ajustar a vista a dispositivo actual*/
+    max-width:100%; 
+    /* 100% indica que se adapte al dispositivo */
+    height: auto;
+}
+figure, figcaption{
+    display: inline;
+    margin: 45px;
+    padding: 5px 5px;   
+}
+.programa{
+    display: inline-block;
+    margin: 5px 5px;
+    padding: 5px 5px;
+    width: 45%;
+    height: 200px;
+    position: relative;
+    border: 1px solid rgb(116, 20, 20); 
+    border-radius: 15px 15px;
+    }
+
+section article{
+    background-color: rgb(82, 67, 152);
+    width: 200px;
+    margin: 20px;
+    } 
+
+/* seccion barra lateral */    
+#sidebar{
+        grid-area: sidebar;/* se asigna nombre a contenedor */
+        display: flex;
+        flex-direction: column;/* se define dirección en forma columna*/
+        justify-content: center; 
+        align-items: center;
+}
+/* se define ancho y altura contenedor para ajustar a vista de dispositivo actual*/
+iframe{
+        max-width: 120%;
+        height: auto;
+  }
+
+/* seccion pie de pagina*/
+#footer{
+    grid-area: footer;/* se asigna nombre a contenedor */
+    background-color: rgb(188, 99, 115);
+    border:18px solid rgb(116, 20, 20);
+    border-radius: 20px 20px 10px 10px;
+    clear:both;
+ }
+
+/* seccion CSS GRID DISEÑO WEB RESPONSIVE*/
+/* Se define estilos al contenedor grid en general vista PC*/
+#grid-container > * {
+    text-align: center;
+    box-shadow: 1px 1px 7px 0px rgba(0,0,0,0.75);
+    }
+/* Se define estilos al contenedor grid en general vista PC a 3 COL.*/
+/* GRIND CONTAINER ES EL QUE DICE A LA PAGINA WEB COMO SE DIVIDIRA AL WEB. La web se divide en tres columnas como se vera a continuación: */
+#grid-container{
+    display:grid;
+    grid-gap:10px; 
+    grid-template: 
+    "header header header" 150px /*la pagina web son tres columnas, por ello esta tres veces "header" y "nav"*/
+    "nav nav nav" 50px
+    /*main main slidebar , significa que las dos primeras columnas son "main" y la tercera columna es "sidebar", y asi se visualiza */
+    "main main sidebar " 300px
+    "main main sidebar " 300px
+    "main main sidebar " 250px
+    "footer footer footer" 150px /
+    1000px 150px 300px; 
+    }
+#redes a {
+        padding: 0;
+        margin: 0;
+    }
+#redes a i:hover{
+     transform: scaleX(1.5);  
+  }
+/* Estilos a todos los iconos fontawesome */
+/* i[class^="fa"].. buscar todas las clases que comienzan por fa y que le ponga el color y fuente */
+i[class^="fa"]{
+    color:white;
+    font-size: 18px;
+}
+/*iconos fontawesome BAR SOCIAL*/
+.fa-youtube-square{
+    font-size: 32px;
+    background-color: red;
+}
+.fa-facebook-square{
+    font-size: 32px;
+    background-color: darkblue;
+}
+.fa-twitter-square{
+    font-size: 32px;
+    background-color: deepskyblue;
+}
+.fa-whatsapp{
+    font-size: 32px;
+    background-color: lime;
+}
+.fa-instagram{
+    font-size: 32px;
+     background-color: orangered;
+}
+/* ultimos cambios hechos a icono hamburgueza */
+.fa-bars{
+font-size: 30px;
+color:black;
+}
+/* nuevo estilo menu hamburguesa */
+.openmenu {
+    display: none;
+    cursor: pointer;
+    font-size: 2 rem;
+ }
+/*-----SECCION VISTA DE TABLETS------*/
+/* PARA TABLETS HAY ES DOS COLUMNAS Y FUNCIONA LA MISMA DINAMICA QUE PARA WEB
+EN TABLET SE DISPONE DOS COLUMNAS */
+@media (max-width:1024px){
+    #grid-container{
+        grid-template: 
+        "header header" 170px
+        "nav main" 800px
+        "nav main"  700px
+        "sidebar sidebar" 650px
+        "footer footer" 100px /
+         250px 450px; 
+         font-size: 75%;/*Cambia el tamaño de la letra*/
+    }
+    #menu{
+        background-color: blue;
+        border-radius: 22px;
+        display: block;
+        padding: 45px;
+        margin:40px;
+        height: auto;
+        text-align: center;
+    }
+    #main{
+    display: flex;
+    flex-direction: column;/* cambia la forma de direccion de fila a col*/
+    justify-content: space-between;
+    align-items:center;
+    flex-wrap: wrap;/*se define el auto ajuste de ancho dispostivo pasa a sgte. linea*/
+    max-width:100%;
+       
+    }
+    .programa{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:center;
+    flex-wrap: wrap;
+    max-width: 100%;
+    height: auto;
+    border: 1px solid black; 
+    
+}
+iframe{
+    max-width: 100%;
+    height: auto;
+}
+.buscarbox{
+    display:block;
+    padding: 5px;
+}
+}
+/*----- SECCION VISTA DE CELULAR ------*/
+/* PARA CELULAR SOLO HAY UNA COLUMNA, (EN WEB HAY 3, EN TABLET 2) */
+    @media (max-width:640px){
+    #grid-container{
+    grid-template: 
+     "header" 150px
+     "nav" 50px
+     "main" 1400px
+     "sidebar" 800px
+     "footer" 100px /
+      500px; 
+      font-size: 60%;
+    }
+    /* Nota: la barra <nav> se programará con javascript_
+      por medio de funciones en boton hamburguesa*/
+    #menu{
+        display: none;/* se oculta contenedor nav opciones*/
+    } 
+    /* se define que aparezca el menu hamburguesa en la parte superior*/
+    .openmenu{
+        display: block;
+        position:absolute;
+        top:10px;
+        right:120px;
+        z-index:99;/* se define capa encima del texto de contenido HTML*/
+        cursor: pointer;
+        }
+    
+    #main{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items:center;
+        flex-wrap: wrap;
+        max-width: 100%;
+        height: auto;
+      }
+ .programa{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 100%;
+    height: auto;
+    border: 1px solid black; 
+    }
+ iframe{
+    max-width: 100%;
+    height: auto;
+}
+.buscarbox{
+    display:none;
+}
+}
