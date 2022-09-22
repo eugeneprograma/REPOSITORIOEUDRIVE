@@ -8,7 +8,7 @@
 </head>
 <!-- BODY. INICIO -->
 
-<body style="background-color:rgb(83, 226, 93) ;">
+<body style="background-color:rgb(96, 167, 100) ;">
 <header>
     <img src="../IMAGENES/imagen contabilidad.jpeg"  width="100" height="100" alt="">
     
@@ -42,9 +42,29 @@
         <fieldset> <!-- FIELDSET: ES MARCO DEL FORMULARIO -->
             <!-- ingreso del nombre -->
             <label for="">Nombre de Usted</label>
-            <input type="nombre" type="text" placeholder="Ingrese su nombre y apellido" required="" ><br><br>
-
+            <input type="text" name="nombre" placeholder="Ingrese su nombre y apellido" required="" ><br><br>
             
+            <!-- ingreso de mail -->
+            <label for="">Ingrese el mail</label>
+            <input type="email" name="mail" placeholder="Ingrese email" required><br><br>
+
+            <!-- ingreso contraseña -->
+            <label for="">Ingrese password</label>
+            <input type="password" name="clave" placeholder="ingrese su password" required>
+            
+            <!-- checkbox: selector de opciones multiples-->
+            <p>Cuales son sus hobbies</p>
+            <input type="checkbox" name="">Tenis<br>
+            <input type="checkbox" name="">Leer<br>
+            <input type="checkbox" name="">Cocinar<br>
+            <input type="checkbox" name="">Bailar<br>
+
+            <!-- radio: selector opciones unico -->
+            <label for="">Su estado civil es :</label><br>
+            <input type="radio" name="soltero">Soltero <br>
+            <input type="radio" name="divorciado">divorciado <br>
+            <input type="radio" name="casado">casado <br>
+
         </fieldset>
 
 
