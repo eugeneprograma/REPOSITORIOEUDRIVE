@@ -1,3 +1,4 @@
+<!--REPASO DE LISTAS  -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -65,15 +66,41 @@
             <input type="radio" name="divorciado">divorciado <br>
             <input type="radio" name="casado">casado <br>
 
+            <!-- COMBOBOX = "SELECT" EN HTML -->
+            <label for="">Que programa académico estudia</label>
+            <select name="estudio" id="">
+            <option value="">Seleccione programa ...</option>
+            <option value="">ing. industrial</option>
+            <option value="">ing. sistemas</option>
+            <option value="">medicina</option>
+            <option value="">derecho</option>
+            <option value="">patinaje</option>
+            <option value="">escritura</option>
+            </select>
+            <br><br>
+
+            <!-- area para escribir texto -->
+            <label for="">Escriba sus comentarios</label>
+            <br>
+            <textarea name="comentario" id="" cols="60" rows="10"></textarea>
+
+
         </fieldset>
-
-
-
+ <!-- seccion de botones -->
+ <!-- se debe colocar el tipo de boton pues tiene implicito su accion -->
+<button type="submit">Enviar</button>
+<button type="reset">Borrar</button>
 
         </form>
     </section>
 
+<br><br>
 
+<!-- pie de pagina -->
+<footer>
+    Derechos Reservados &copy;2023&#64;EUGENIO VERA GOMEZ
+ </footer>
+ 
 
 </body>
 </html>
