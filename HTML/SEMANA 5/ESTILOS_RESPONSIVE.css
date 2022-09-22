@@ -6,6 +6,7 @@ body{
     background-position: center;
     background-attachment: fixed; /*fixed: imagen no se mueve*/
     background-size:contain;/*contain: imagen enmarcada. cover: cubre toda pagina*/
+    /* COMO ES CCS(CASCADA) LA PROPIEDAD "SIZE" FUE ULTIMA EN TOMARSE. LA "REPEAT" NO SE TUVO EN CUENTA */
 }
 /* estilos css para cabecera ....*/
 header {
