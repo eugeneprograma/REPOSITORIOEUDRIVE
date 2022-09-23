@@ -26,4 +26,11 @@ nav{
     background-color: rgb(58, 179, 240);
     height: 80px;
     border: blue;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 34px;
+    margin: 5px;
+    display: flex;
+    border-radius: 22px;
 }
