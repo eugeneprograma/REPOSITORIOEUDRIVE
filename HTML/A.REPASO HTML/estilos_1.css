@@ -8,6 +8,22 @@ body{
 
 }
 header{
-    background-color: beige;
+    background-color: rgb(7, 81, 27);
     display: flex;
+    border: 40px brown ;
+    border-radius: 20px 30px 50px 20px;
+    flex-direction: row;
+    /* padding: 30px; */
+    justify-content: center;
+    align-items: center;
+}
+
+header img{
+    padding:20px ;
+}
+
+nav{
+    background-color: rgb(76, 227, 76);
+    height: 80px;
+    border: blue;
 }
