@@ -55,16 +55,62 @@ nav ul li{
 section{
     width: 60%;
     border: 12px rgb(2, 47, 12);
-    padding: 40px 40px;
+    padding: 40px 40px; 
     border-radius: 30px;
     margin: 40px auto;
     background:rgb(44, 126, 68) ;
 }
-/*section{
-    width: 50%;
-    border: 1px red;
-    padding:20px 20px ;
-    border-radius: 20px;
-    margin: 10px auto;/*auto: centrado derecha e izquierda*/
-    /*background: linear-gradient(navy, rgb(0, 255, 145)); linear gradient: degradado*/
 
+form input{ /*input: al ingresar datos a los input del formulario*/
+    height: 20px;
+    box-sizing: border-box;
+    color:rgb(233, 48, 16);
+    outline:invert;
+    border:1px solid black;
+}
+
+form{
+    /* background-color: aqua; */
+    background: rgb(121, 205, 121);
+    width: 100%;  
+    border-radius: 3%;
+    box-shadow:inset 0 0 80px ;
+    padding:7px 7px 7px 7px;
+}
+
+fieldset{ /*fielset: borde formulario*/
+    border-style: 18px;
+}
+label{
+    font-size: 23px;
+    font-family: 'Lucida Sans';
+}
+textarea{
+    resize: both;
+    max-width: 500px;
+}
+
+input:focus, textarea:focus{ /*estilos cuando evento. ej: mause encima*/
+    border-color: red;
+    border-style: 20px;
+    cursor:pointer;/*pointer: mouse es mano*/
+    box-shadow: inset 10 10 20px rgba(0,29,255,0,6);
+    outline:0 none;
+}
+
+form button:hover { /*hover:el usuario interactua con un elementos del dispositivo. el mouse se ubica sobre el elemento*/
+    background:rgb(2, 35, 6);
+    text-decoration: underline;
+    color:rgb(246, 246, 250);
+    cursor: move;
+    size: 10px;
+    font-style: italic;
+}
+
+/* ESTILOS CCS PARA PIE DE PAGINA */
+footer{
+    font-size: 30px;
+    text-align: center;
+    color:firebrick;
+    text-transform: uppercase; /*se transforma el texto*/
+}
