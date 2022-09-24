@@ -52,4 +52,19 @@ nav ul li{
     font:bold 20px verdana ;
 }
 
+section{
+    width: 60%;
+    border: 12px rgb(2, 47, 12);
+    padding: 40px 40px;
+    border-radius: 30px;
+    margin: 40px auto;
+    background:rgb(44, 126, 68) ;
+}
+/*section{
+    width: 50%;
+    border: 1px red;
+    padding:20px 20px ;
+    border-radius: 20px;
+    margin: 10px auto;/*auto: centrado derecha e izquierda*/
+    /*background: linear-gradient(navy, rgb(0, 255, 145)); linear gradient: degradado*/
 
