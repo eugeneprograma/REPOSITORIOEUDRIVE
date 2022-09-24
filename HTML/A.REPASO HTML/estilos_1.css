@@ -21,16 +21,35 @@ header{
 header img{
     padding:20px ;
 }
-
+/* SE ESTILIZA DE LO MAS GRANDE A LO MAS PEQUEÑO
+1RO. BARRA NAVEGACION O MENU
+2DO. BARRA LISTAS
+3RO. LISTAS O ITEMS
+*/
 nav{
     background-color: rgb(58, 179, 240);
-    height: 80px;
+    height: 40px;
     border: blue;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 34px;
     margin: 5px;
-    display: flex;
+    display: flex;  /*flex*/
     border-radius: 22px;
 }
+
+nav ul{
+    padding:0 0 ;
+    margin:0 2px;
+    border: black;
+}
+
+nav ul li{
+    display: inline;
+    list-style:lower-alpha ;
+    margin:0 50px ;
+    font:bold 20px verdana ;
+}
+
+
