@@ -87,7 +87,7 @@ form button:hover { /*hover:el usuario interactua con un elementos del dispositi
     size: 10px;
 }
 
-form input{
+form input{ /*input: al ingresar datos a los input del formulario*/
     height: 20px;
     box-sizing: border-box;
     color:green;
