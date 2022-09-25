@@ -1,0 +1,29 @@
+/* ASTERISCO ES QUE APLIQUE A TODO HTML  */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    max-height: 100%;
+    /* se adapte a cualquier dispositivo */
+}
+
+body{
+    font-family:Arial;
+    font-size: 20px;
+}
+#header{
+    background-color: lightsteelblue;
+    border: 10px red;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    grid-area: header;
+    font: bold Comic;
+    flood-color: aquamarine;
+    padding: 10px;
+}
