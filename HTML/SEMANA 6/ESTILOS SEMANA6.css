@@ -1,5 +1,8 @@
 /* seccion INICIAL */
 /* ASTERISCO ES QUE APLIQUE A TODO HTML  */
+/* HAY PROPIEDADES EN CSS QUE NO SON ESTILO COMO FORMA E IGUAL SON NECESARIAS
+EJEMPLO: NOMBRAR CONTENEDORES, INICIALIZAR EN CEROS PADDING O MARGIN, ETC */
+
 *{
     box-sizing: border-box;
     margin: 0; /* Inicializa margenes*/
@@ -45,7 +48,7 @@ a{
 }
 #menu{
     grid-area: nav;/* asigna nombre a contenedor. le dice que la barra de navegacion se llama "nav"*/
-    background-color: rgb(194, 60, 91);
+    background-color: rgb(132, 74, 87);
     border:2px solid rgb(187, 28, 71);
     border-radius: 22px;
     display: flex;
@@ -67,9 +70,9 @@ a{
      /* trasition: el efecto cuando se pasa el mouse */
 }
 /* Se aplica una pseudoclase hover para expandir ancho de buscador */
-.buscarbox input:hover{
+.buscadorbox input:hover{
     width: 150px;
-    padding-left: 10px;
+    padding-left: 30px;
     outline: none; /* quitar bordes del input*/
     } 
 
@@ -79,9 +82,9 @@ a{
     background-color: rgb(202, 24, 104);
     border:20px solid rgb(236, 6, 40);
     /* se define ancho y altura contenedor para ajustar a vista a dispositivo actual*/
-    max-width:100%; 
+    max-width:100%; /*RESPONSIVE*/
     /* 100% indica que se adapte al dispositivo */
-    height: auto;
+    height: auto; /*RESPONSIVE*/
 }
 figure, figcaption{
     display: inline;
