@@ -21,7 +21,7 @@ body{
     border-radius: 20px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     grid-area: header;
     font: bold Comic;
     flood-color: aquamarine;
@@ -38,20 +38,19 @@ li{
     list-style: circle; quitar las viñetas
     margin: 1 5px;
     font: bold 20px Verdana;
-    font: bold 30px Arial ;
+    font: bold 20px Arial ;
 }
 
-
-  
 a{
     color: rgb(104, 9, 9);
     text-decoration:double; /* quitar las lineas subrayadas*/
     font:xx-small 50px; /*no hizo nada xx small*/
 } 
-/*
+/* HAY PROPIEDADES EN CSS QUE NO SON ESTILO COMO FORMA E IGUAL SON NECESARIAS
+EJEMPLO: NOMBRAR CONTENEDORES, INICIALIZAR EN CEROS PADDING O MARGIN, ETC */
 #menu{
-    grid-area: nav;/* asigna nombre a contenedor. le dice que la barra de navegacion se llama "nav"
-    background-color: rgb(194, 60, 91);
+    grid-area: nav;/* asigna nombre a contenedor. le dice que la barra de navegacion se llama "nav"*/
+    background-color: rgb(132, 74, 87);
     border:2px solid rgb(187, 28, 71);
     border-radius: 22px;
     display: flex;
@@ -61,22 +60,22 @@ a{
     padding: 10px;
     margin:5px;
 }
-/* nuevo estilo para buscador 
+
 .buscarbox input{
  height: 40px;
  width: 0px;
- padding:0px 0px;
+ padding:5px 5px;
  border-radius:40px;
  border:0px;
  padding-right: 50px;
- transition: 0.8s ease;
-     /* trasition: el efecto cuando se pasa el mouse 
+ transition: 0.8s step-end;     /* trasition: el efecto cuando se pasa el mouse*/ 
 }
-/* Se aplica una pseudoclase hover para expandir ancho de buscador 
-.buscarbox input:hover{
-    width: 150px;
+
+/* Se aplica una pseudoclase hover para expandir ancho de buscador */
+.buscador_box input:hover{
+    width: 200px;
     padding-left: 10px;
-    outline: none; /* quitar bordes del input
+    outline: none; /* quitar bordes del input*/
     } 
 
 /* seccion contenido 
