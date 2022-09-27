@@ -1,3 +1,4 @@
+<!-- REPASO BOOTSTRAP (SEMANA 7) EXITO EUGENE-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,9 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BOOTSTRAP REP1</title>
-    <!-- LINK BOOTSTRAP -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+      <!-- Bootstrap css -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+  <!-- Bootstrap plantillas -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+
 </head>
+
 <body>
 <center> <header>
     <h1 class="jumbotrom text-center">REPASO SLIDER CON BOOTSTRAP EUGENE</h1>
@@ -15,7 +20,7 @@
 </center>
 
 <div class="container">
-  <div id="miCarrusel" class="carousel slide" data-ride="carousel">
+ <div id="miCarrusel" class="carousel slide" data-ride="carousel">
     <!-- The Carousel Plugin :a component for cycling through elements, like a carousel (slideshow).-->
     <!--indicadores  -->
     <ol class="carousel-indicators">
@@ -26,30 +31,63 @@
         <li data-target="#miCarrusel" data-slide-to="3"></li>
     </ol>
 
-    <div class="carousel-inner">
-        <div class="item active">
-            <img src="./imagenes repaso/transform1.jpeg" alt="" style="width:90% ;">
-            <div class="carousel-caption">
-                <h3>FOTO 1</h3>
-                <P>De niño me los veia</P>
-            </div>
+  <div class="carousel-inner">
+      <!-- carrusel imagen 1 -->
+      <div class="item active">
+        <img src="./imagenes repaso/transform1.jpeg" alt="" style="width:90% ;">
+        <div class="carousel-caption">
+         <h3>FOTO 1</h3>
+         <P>De niño me los veia</P>
         </div>
-    </div>
+      </div>
+    
+      <!-- carrusel imagen 2 -->
+      <div class="item">
+        <img src="./imagenes repaso/transform2.jpeg" alt="" style="width:90% ;">
+          <div class="carousel-caption">
+            <H3>FOTO 1</H3>
+            <p>Transformers ... si¡¡</p>
+          </div>
+      </div>
 
-    <div class="carousel-inner">
-        <div>
-            <img src="./imagenes repaso/transform2.jpeg" alt="" style="width:90% ;">
-            <div class="carousel-caption">
-                <H3>FOTO 1</H3>
-                <p>Transformers ... si¡¡</p>
-            </div>
-        </div>
+      <!-- carrusel imagen 3 -->
+      <div class="item">
+        <img src="./imagenes repaso/transform3.jpeg" alt="" style="width:90% ;">
+          <div class="carousel-caption">
+           <H3>FOTO 3</H3>
+            <p>desepticons vs autobots</p>
+          </div>
+      </div>
+      <!-- carrusel imagen 4 -->
+      <div class="item">
+        <img src="./imagenes repaso/transform4.jpeg" alt="" style="width:90% ;">
+          <div class="carousel-caption">
+           <h3>FOTO 4</h3>
+           <p>Se transforman</p>
+          </div>
+      </div> <!-- fin de imagenes de carrusel -->
+  </div><!-- div. final "carrusel inner" -->
+  
+  
+  <!-- inicio. previous and next -->
+    <a class="left carousel-control" href="#miCarrusel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+        <span>Previous</span>
+      </a>
+      <a class="right carousel-control" href="#miCarrusel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+        <span>Next</span>
+      </a>
+  <!-- final. previos and next -->
 
-    </div>
+ </div> <!--div. final "mi carrusel" -->
+</div> <!--div. final "container"-->
 
-  </div>
+<!-- script java -->
+<script src="./REPASOBootstrap.js"></script>
 
-</div>
+<!-- scrip de bootstrap -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
 
 </body>
 </html>
