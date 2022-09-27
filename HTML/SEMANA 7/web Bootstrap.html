@@ -18,8 +18,8 @@
    </header></center>
   
 <div class="container">
-        
   <div id="miCarrusel" class="carousel slide" data-ride="carousel">
+  
     <!-- The Carousel Plugin :a component for cycling through elements, like a carousel (slideshow).-->
     <!-- Indicators -->
     <ol class="carousel-indicators">
@@ -34,40 +34,47 @@
 
     <!-- carousel es diapositiva ciclica de otros elementos (imagenes, slides) -->
     <div class="carousel-inner">
+      <!-- carrosel imagen 1 -->
       <div class="item active"><!--el 1er div tiene class="item active" que es el MISMO PRIMER ELEMENTO DE LISTA <li> -->
         <img src="../IMAGENES/imagen basket.jpeg" alt="" style="width:90%;">
           <div class="carousel-caption">
-          <h3>FOTO 1</h3>
-          <p>Diseño Web 1 es innova-acción estudia y desarrolla </p>
-        </div>
+           <h3>FOTO 1</h3>
+           <p>Diseño Web 1 es innova-acción estudia y desarrolla </p>
+          </div>
       </div>
 
       <div class="item">
         <img src="../IMAGENES/imagen corredores.jpeg" alt="" style="width:90%;">
           <div class="carousel-caption">
-          <h3>FOTO 2</h3>
-          <p>Diseño Web 2 es innova-accion estudia y desarrolla </p>
-        </div>
+           <h3>FOTO 2</h3>
+           <p>Diseño Web 2 es innova-accion estudia y desarrolla </p>
+          </div>
       </div>
     
       <div class="item">
         <img src="../IMAGENES/imagen natacion.jpeg" alt="" style="width:90%;">
           <div class="carousel-caption">
-          <h3>FOTO 3</h3>
-          <p>Diseño Web 3 es innova-accion estudia y desarrolla </p>
-        </div>
+           <h3>FOTO 3</h3>
+           <p>Diseño Web 3 es innova-accion estudia y desarrolla </p>
+          </div>
       </div>
-        <div class="item">
+
+      <div class="item">
         <img src="../IMAGENES/imagen natacion.jpeg" alt="" style="width:90%;">
             <div class="carousel-caption">
-          <h3>FOTO 4</h3>
-          <p>Diseño Web 4 es innova-accion estudia y desarrolla </p>
-        </div>
+             <h3>FOTO 4</h3>
+             <p>Diseño Web 4 es innova-accion estudia y desarrolla </p>
+            </div>
       </div>
         
     </div>
 
     <!-- Left and right controls -->
+    <!-- OJO: mirar que uno es derecha y otro es izquierda
+      data-slide="prev"(previous) con class="... left" 
+      data-slide="next"(next) con class="... right" 
+    -->
+
     <a class="left carousel-control" href="#miCarrusel" data-slide="prev">
       <span class="glyphicon glyphicon-chevron-left"></span>
       <span>Previous</span>
@@ -76,11 +83,15 @@
       <span class="glyphicon glyphicon-chevron-right"></span>
       <span>Next</span>
     </a>
+    <!-- final del left and right -->
+
+
   </div>
     
 </div>
+<!-- script java -->
 <script src="../SEMANA 7/Bootstrarp.js"></script>
-    
+<!-- scrip de bootstrap -->
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
     
 </body>
