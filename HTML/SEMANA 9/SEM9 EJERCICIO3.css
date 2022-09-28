@@ -1,18 +1,23 @@
 body {
     font-family: 'Titillium Web', sans-serif;
+    background-image: url(../IMAGENES/imagen\ de\ fondo.png);
+    color: aliceblue;
   }
   
   .navbar-brand {
     font-size: 20px;
     color: #000;
     font-weight: bold;
+    
   }
   
   #testimonial {
-    background: #f1f1f1;
+    background: #722121;
     padding: 50px 0 30px 0;
     text-align:center;
     margin-top: 40px;
+    font-size: 20px;
+    font-family: 'Bungee Spice', cursive;
   }
   
   #contact {
