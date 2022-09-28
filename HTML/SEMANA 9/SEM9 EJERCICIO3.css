@@ -1,5 +1,20 @@
+/* CUANDO SE DESCARGA TIPO DE LETRA DE LA PAGINA DAFONT
+Se descarga la letra (a veces es .zip) 
+1. Se deshabilita el link de fuente en HTML (poner en forma de comentarios)
+2. en CSS se pone::
+@font-face{
+    font-family:nombre fuente;
+    src:url(../nombre fuente.ttf) ;
+}
+3. en body en la propiedad: font-family:nombre de la letra
+*/
+@font-face{
+    font-family:Selectric Script;
+    src:url(../IMAGENES/Selectric\ Script.ttf) ;
+}
+
 body {
-    font-family: 'Titillium Web', sans-serif;
+    font-family:Selectric Script;
     background-image: url(../IMAGENES/imagen\ de\ fondo.png);
     color: aliceblue;
   }
