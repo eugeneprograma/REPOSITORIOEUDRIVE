@@ -15,7 +15,7 @@ body {
     height: 100%;
     perspective: 1000px;
     margin: auto;
-    display:ruby;
+    display:flex; /* flex para que quede en linea imagenes*/
     justify-content: center;
     align-items: center;
     max-width: 1600px;
