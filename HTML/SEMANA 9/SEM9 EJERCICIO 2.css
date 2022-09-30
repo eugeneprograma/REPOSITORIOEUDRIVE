@@ -6,7 +6,9 @@
 }
 body{
     margin-left:80px;
-    font-family: 'Krona One', sans-serif;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: coral;
+    font-size: 40px;
 }
 
 h3.subt {
@@ -22,7 +24,7 @@ h3 {
 h3,
 h4,
 h5 {
-    color: #6f6f6f;
+    color: #c21e1e;
     font-family: 'Oswald', sans-serif;
 }
 
@@ -90,7 +92,7 @@ img.showText {
 }
 
 span.rotate:hover {
-    transform: rotate(45deg);
+    transform: rotate(90deg);
 }
 
 
