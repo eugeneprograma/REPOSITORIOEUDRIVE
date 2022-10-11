@@ -43,7 +43,7 @@ li{
     font: bold 20px Verdana;
 }
 a{
-    color: white;
+    color: rgb(37, 192, 60);
     text-decoration: none; /* quitar las lineas subrayadas*/
 }
 #menu{
@@ -87,7 +87,7 @@ a{
     height: auto; /*RESPONSIVE*/
 }
 figure, figcaption{
-    display: inline;
+    display:block; /**/
     margin: 45px;
     padding: 5px 5px;   
 }
@@ -129,6 +129,10 @@ iframe{
     border:18px solid rgb(116, 20, 20);
     border-radius: 20px 20px 10px 10px;
     clear:both;
+ }
+/* PONER UNA ETIQUETA <P> CON ESTILOS */
+ p{
+ color: red;
  }
 
 /* seccion CSS GRID DISEÑO WEB RESPONSIVE*/
@@ -204,6 +208,7 @@ color:black;
 /*-----SECCION VISTA DE TABLETS------*/
 /* PARA TABLETS HAY ES DOS COLUMNAS Y FUNCIONA LA MISMA DINAMICA QUE PARA WEB
 EN TABLET SE DISPONE DOS COLUMNAS */
+/* REGLA CSSS PARA RESPONSIVE EN DISPOSITIVOS: @media   */
 @media (max-width:1024px){
     #grid-container{
         grid-template: 
