@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factura Compleja</title>
+</head>
+<body>
+    <h1>ANIVERSARIO AUTOSERVICIO LA VACANA YA!!</h1>
+<h2>PREMIO SORPRESA POR COMPRAS</h2>
+<script>
+    //Programa que permita capturar el nombre de un producto, su precio unitario y su cantidad, luego calcular total a pagar, muéstrelo por un mensaje de alerta al usuario, luego permita la captura de la forma de pago (Efectivo, Nequi o Tarjeta de crédito) y validar promoción de aniversario si paga en efectivo y por compras desde $50.0000 se le obsequia un taco de galletas Noel sino una chocolatina Jet, finalmente enviar mensaje Gracias por su compra//
+var total=0;
+var producto;
+var cantidad;
+var precio;
+const SPeso = new Intl.NumberFormat('es-CO', {
+       style: 'currency',
+       currency: 'COP',
+       minimumFractionDigits: 0
+     });
+
+// ENTRADA
+producto=prompt("Ingrese nombre producto:");
+precio=parseInt(prompt("Ingrese precio:"));
+cantidad=parseInt(prompt("Ingrese cantidad:"));
+fpago=parseInt(prompt("Ingrese forma de pago [1=Efectivo /2= Nequi/3=Tarjeta credito]"));
+//PROCESO
+total=cantidad*precio;
+//SALIDA
+alert("Su valor a pagar es ... " + SPeso.format(total));
+document.write("*******************************************************************"+"<br>");
+document.write("Producto comprado:..." + producto+ "&nbsp&nbsp" +"Precio producto..." + SPeso.format(precio)+"&nbsp&nbsp"+"Cantidad comprada..." + cantidad+"<br>"+"<br>"+"<br>");
+
+document.write("Su valor a pagado es ..." + SPeso.format(total)+"<br>");
+if (fpago==1 && total>=50000){
+    alert("Reciba su obsequio sorpresa.. Taco Galleta Noel");
+    document.write("Obsequio sorpresa... Taco Galleta Noel" +"<br>");
+}else{
+    alert("Reciba su obsequio sorpresa.. Chocolatina Jet");
+    document.write("Obsequio sorpresa... Chocolatina Jet"+"<br>");
+}
+document.write("Gracias por su compra..."+"<br>");
+document.write("********************************************************************");
+</script>
+</body>
+</html>
