@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS IF SIMPLE</title>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+<img src="./SEMANA 12/trasmi.jfif" alt="" width="100" height="100">
+    <h2>SALDO DE TARJETA TU LLAVE TM</h2>
+
+    <script>
+    //Programa que permita capturar el saldo de su tarjeta de Transmilenio para ingresar al sistema, luego validar su ingreso –recuerde que el pasaje de TM es $2.650. Enviar mensajes respectivos dependiendo la validación de sistema//
+    var saldo=0;
+    const tm=2650;
+    saldo= parseInt(prompt("Ingrese saldo de su tarjeta de Transmilenio"));
+    
+     if( saldo >= tm )
+    {
+        swal("Señor usuario","ingrese saldo","success")
+    }
+     else
+    {
+        swal("Señor usuario","recargue la tarjeta de saldo","oh yes")    
+    }
+    </script>
+     
+</body>
+</html>
