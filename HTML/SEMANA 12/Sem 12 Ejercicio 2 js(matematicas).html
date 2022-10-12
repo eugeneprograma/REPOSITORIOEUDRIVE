@@ -7,27 +7,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JS MATH</title>
     <!-- link de sitio sweetalert mensajes más elegantes-->
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    
 
 </head>
 <body>
 <center>
+
 <h2>FACTURA DE VENTA</h2>
+
 <script>
     //captura el nombre de producto y su precio unitario y cantidad, para calcular el subtotal, descuento 10%,  iva 19% y neto a pagar. Enviar mensaje de Gracias
-    document.write("hola mundo")
+    
 
-    const peso= new Intl.NumberFormat('es-CO',{
+    const Speso= new Intl.NumberFormat('es-CO',{
     style:'currency',
-    currency: 'COP'
-    minimumFractionDigits:0    
+    currency: 'COP',
+    minimumFractionDigits: 0    
     });
-//definir variables
 
+    //definir variables
+    var precio,cantidad,descuento,iva, subtotal, neto;
+    var nombreProducto;
+    nombreProducto=prompt("Ingrese nombre producto");
+    precio= parseInt(prompt("Ingrese precio unitario"));
+    cantidad=parseInt(prompt("Ingrese la cantidad"));
 
+//
+   subtotal=(cantidad)*(precio);
+   descuento=(subtotal*0.10);
+   iva=(subtotal-descuento)*0.19;//? entre parentesis?
+   neto=(subtotal-descuento+iva);
+   // impresion
+   document.write   ("......................................"+"<br>");
 
+   document.write("IMPRESIÓN DE LOS VALORES");
+   //Valor comprado
+   document.write("producto comprado es:"+nombreProducto+"&nbsp&nbsp"+"Cantidad comprada    :"+cantidad+"<br>");
+   document.write   ("......................................"+"<br>");
 
-</script>
+   document.write("subtotal"+"<br>");
+   document.write(Speso.format(subtotal)+"<br>");
+
+   document.write("descuento"+"<br>")
+   document.write(Speso.format(descuento)+"<br>");
+
+   document.write("iva"+"<br>")
+   document.write(Speso.format(iva)+"<br>");
+
+   document.write("precio final neto"+"<br>");
+   document.write(Speso.format(neto)+"<br>");
+
+   document.write("GRACIAS POR SU COMPRA"+"<br>");
+   document.write("......"+"<br>");
+
+   </script>
 </center>    
+
 </body>
 </html>
