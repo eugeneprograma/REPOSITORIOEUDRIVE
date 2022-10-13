@@ -9,8 +9,49 @@
 <body>
     <script>
         //insertar: nombre producto, precio, cantidad, tipo de pago y un beneficio por el pago
-        
 
+
+        var total=0;
+        var producto;//string
+        var cantidad, precio;//integer
+        const peso=new Intl.NumberFormat('es-CO',{
+            style: 'currency',
+            currency: 'COP',
+            minimumFractionDigits:0
+        });
+        //entrada
+        producto=prompt("ingreso nombre producto");
+        precio =parseInt(prompt("ingreso precio"));
+        cantidad =parseInt(prompt("ingreso cantidad"));
+        
+        formapago= parseInt(prompt("Ingrese numero de forma de pago. 1:Efectivo  2:Nequi  3:tarjeta credito"));
+
+        //proceso
+        total=cantidad*precio;
+        //salida
+        alert("su valor a pagar es: "+peso.format(total));
+        document.write(".........."+"<br>");
+
+        document.write("El producto comprado es : "+producto+"&nbsp&nbsp"+"La cantidad comprada es :"+cantidad+"&nbsp&nbsp"+"El precio unitario fue :"+peso.format(precio)+"<br>"+"<br>"+"<br>"+"<br>");
+
+        document.write("su valor pagado es"+peso.format(total)+"<br>")
+
+        //condicional
+        //si forma pago=1 y total >=50000 ..galletas
+        //de lo contrario ... chocolatina
+
+        if (formapago=1 && total>=50000){
+            alert("obsequio: galletas")
+            document.write("obsequio: galletas"+"<br>")
+        } else{
+            alert("obsequio: chocolatinas")
+            document.write("obsequio: chocolatinas"+"<br>")
+
+        }
+
+        //mensaje final
+        document.write("Gracias por su compra"+"<br>")
+        document.write("-------------------------------------------")
     </script>
 </body>
 </html>
