@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJERCICIO 1.FOR</title>
+</head>
+<body>
+ <h3>GENERACIÓN DE NÚMEROS PARES </h3>   
+ <script>
+    //LET te permite declarar variables limitando su alcance (scope) al bloque, declaración, o expresión donde se está usando.
+    //a diferencia de VAR la cual define una variable global o local en una función sin importar el ámbito del bloque.
+  let inicio, final;
+  let num=0;
+  var i;
+  inicio=parseInt(prompt("Número inicial rango"));
+  final=parseInt(prompt("Número final rango"));
+  for(f=inicio;f<=final;f++)
+  {
+    if (f % 2 == 0){ 
+      document.write("NÚMERO PAR..."+f+"<br>");
+      num++;
+      }
+  } 
+  document.write("cantidad de números pares generados..."+num+"<br>");
+
+  document.write("........")
+  for (i=1;i<20;i+=2)
+   {
+    document.write("Número generado.."+i+"<br>")
+   }
+</script>
+</body>
+</html>
+
+
