@@ -13,19 +13,19 @@
   var datof;
   var sw=0;
   var clave=123;
- // 
+ // TRES INTENTOS DE CONTRASEÑA
   for(f=1;f<=3;f++)
   {
     datof=parseInt(prompt("Ingrese contraseña de ingreso"));
     if (datof==clave){
-      alert("acceso permitido");
       document.write("ACCESS GRANTED");
       sw=1;
       break;
     }
   }
   if (sw==0){
-  alert("acceso bloqueado");
+    swal("HUBO UN ERROR", "Intentos terminados", "error");
+
   }
 </script>
 </body>
