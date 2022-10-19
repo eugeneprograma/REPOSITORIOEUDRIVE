@@ -1,0 +1,32 @@
+<!-- EJERCICIO JS PEDIR CONTRASEÑA -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ejemplo de JavaScript</title>
+  <meta charset="UTF-8">
+  <!-- link de sitio Sweetalert mensajes más elegantes-->
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+<h1>Validación de ingreso </h1>
+<script>
+  var datof;
+  var sw=0;
+  var clave=123;
+ // 
+  for(f=1;f<=3;f++)
+  {
+    datof=parseInt(prompt("Ingrese contraseña de ingreso"));
+    if (datof==clave){
+      alert("acceso permitido");
+      document.write("ACCESS GRANTED");
+      sw=1;
+      break;
+    }
+  }
+  if (sw==0){
+  alert("acceso bloqueado");
+  }
+</script>
+</body>
+</html>
