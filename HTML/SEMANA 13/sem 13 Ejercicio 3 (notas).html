@@ -12,27 +12,28 @@
 <script>
   var nota_STD, suma, prom;
   nomb_std=prompt("Ingrese nombre estudiante");
-  suma=0;
-  prom=0;
-  num=1;
+  suma=0;//variable suma las notas
+  prom=0;//promedio de notas
+  num=1;//contador de notas
   //Proceso
   while (num<=3)
   {
     nota_STD=parseFloat(prompt("Ingrese nota [1 a 5]:"));
-    suma+=nota_STD;//Acumulador
+    suma+=nota_STD;//Acumulador "+", equivale a: suma= suma + nota_STD
     num++;//Contador
   }
+    
     prom=suma/3;
     if (prom>=3.0){
-      document.write(" Estudiante "+ " "+nomb_std);
+      document.write("Estudiante "+ " "+nomb_std);
       document.write("<br>"+"<br>");
-      document.write("Nota final de programacion es"+"  "+ prom.toFixed(2)+"<br>"+"<br>");
-      document.write("FELICITACIONES !! -- APRUEBA MATERIA PROGRAMACION PAE");
+      document.write("Nota final de programacion es"+"  "+ prom.toFixed(2)+"<br>"+"<br>"); //prom.toFixed(2): agrega dos decimales
+      swal("FELICITACIONES !!"," -- APRUEBA MATERIA PROGRAMACION PAE","success");
     }else{
       document.write(" Estudiante "+ " "+nomb_std);
       document.write("<br>"+"<br>");
       document.write("Nota final de programacion es"+"  "+ prom.toFixed(2)+"<br>"+"<br>");
-      document.write("REPRUEBA MATERIA PROGRAMACION PAE");
+      swal("REPRUEBA MATERIA","PROGRAMACION PAE","error");
     }
 
 </script>
