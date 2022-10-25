@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>JS SI ANIDADO</title>
+</head>
+<body>
+    <h3>BOLETIN NOTAS SI ANIDADO</h3>
+    <script>
+    var nota1,nota2,nota3, prom;
+    // proceso
+    nota1=parseFloat(prompt("Ingrese nota 1 [1 a 5]"));
+    nota2=parseFloat(prompt("Ingrese nota 2 [1 a 5]"));
+    nota3=parseFloat(prompt("Ingrese nota 3 [1 a 5]"));
+    
+    prom=(nota1+nota2+nota3)/3;
+
+    //condicionales
+    if (prom<2.9){
+        document.write("REPROBADO ..."+prom.toFixed(2));
+
+    }
+    else if (prom<3.9){
+        document.write ("REGULAR ...."+prom.toFixed(2));
+
+    }
+
+    else if (prom<5){
+        document.write ("SOBRESALIENTE ...."+prom.toFixed(2));
+
+    }
+    else{
+        document.write("ERRROR EN INGRESO NOTAS ..¡")
+    }
+
+    </script>
+</body>
+</html>

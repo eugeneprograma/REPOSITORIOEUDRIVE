@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=s, initial-scale=1.0">
+    <title>JS IF ANIDADOS</title>
+</head>
+<body>
+    <script>
+        var prom=0;
+        var suma=0;
+
+        var num_std=1;
+        // ciclo para 3 estudiantes
+        while (num_std<=3)
+        nombreEstudiante=prompt("Ingrese nombre estudiante",);
+        var num=1 //controla el numero notas del estudiante
+            while (num <=3){//CICLO ANIDADO
+            nota=parseFloat(prompt("Ingrese nota programación"+num));
+            nota+=nota;//acumular notas
+            num++; //contador
+            }
+        num_std ++;
+        //
+        prom = suma/9; //promedio tres notas
+        //
+        document.write("****COLEGIO TECNOLOGICO"+"<br>"+"<br>");
+        document.write("****BOLETIN DE NOTAS****"+"<br>"+"<br>")
+        document.write ("promedio del grupo : &nbsp&nbsp"+prom.toFixed(2));
+
+
+    </script>
+</body>
+</html>
