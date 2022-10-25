@@ -43,7 +43,7 @@ li{
     font: bold 20px Verdana;
 }
 a{
-    color: rgb(37, 192, 60);
+    color: rgb(240, 243, 240);
     text-decoration: none; /* quitar las lineas subrayadas*/
 }
 #menu{
@@ -151,6 +151,8 @@ iframe{
     grid-gap:10px; 
     grid-template: 
     "header header header" 150px /*la pagina web son tres columnas, por ello esta tres veces "header" y "nav"*/
+    
+/* "marquee marquee sidebar" 10px */
     "nav nav nav" 50px
     /*main main slidebar , significa que las dos primeras columnas son "main" y la tercera columna es "sidebar", y asi se visualiza */
     "main main sidebar " 300px
