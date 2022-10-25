@@ -150,7 +150,7 @@ iframe{
     display:grid;
     grid-gap:10px; 
     grid-template: 
-    "header header header" 150px /*la pagina web son tres columnas, por ello esta tres veces "header" y "nav"*/
+    "header header header" 50px /*la pagina web son tres columnas, por ello esta tres veces "header" y "nav"*/
     
 /* "marquee marquee sidebar" 10px */
     "nav nav nav" 50px
