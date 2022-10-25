@@ -17,9 +17,9 @@ body{
 }
 /* seccion cabecera PC*/
 #header{
-    background-color: rgb(169, 51, 85);
-    border:10px red;
-    border-radius: 20px 20px 10px 10px;
+    background-color: gold;
+    border:40px red;
+    border-radius: 20px 20px 20px 20px;
     display: flex;
     flex-direction: row;/*dirección horizontal o en fila*/
     justify-content: center;/*alinea horizontalmente*/
@@ -28,7 +28,6 @@ body{
     /* GRID-AREA LE LLAMA "HEADER" */
     font: bold 20px Arial;
     flood-color: blueviolet;
-    
 }
 
 /* seccion menu */
@@ -48,8 +47,8 @@ a{
 }
 #menu{
     grid-area: nav;/* asigna nombre a contenedor. le dice que la barra de navegacion se llama "nav"*/
-    background-color: rgb(132, 74, 87);
-    border:2px solid rgb(187, 28, 71);
+    background-color: rgb(183, 171, 44);
+    border:2px solid rgb(173, 213, 26);
     border-radius: 22px;
     display: flex;
     flex-direction:row;
@@ -76,10 +75,14 @@ a{
     outline: none; /* quitar bordes del input*/
     } 
 
+blockquote{
+    font-variant-position: super;
+    color: aliceblue;
+}
 /* seccion contenido */
 #main{
     grid-area: main;/* matricula nombre al contenedor section para grid*/
-    background-color: rgb(202, 24, 104);
+    background-color: rgb(151, 160, 22);
     border:20px solid rgb(236, 6, 40);
     /* se define ancho y altura contenedor para ajustar a vista a dispositivo actual*/
     max-width:100%; /*RESPONSIVE*/
@@ -148,11 +151,11 @@ iframe{
 /*EN HTML SE ESCRIBIO <div id="grid-container"> grid container tiene el Header*/
 #grid-container{
     display:grid;
-    grid-gap:10px; 
+    grid-gap:10px;
     grid-template: 
     "header header header" 50px /*la pagina web son tres columnas, por ello esta tres veces "header" y "nav"*/
     
-/* "marquee marquee sidebar" 10px */
+    /* "marquee marquee marquee" 200px */
     "nav nav nav" 50px
     /*main main slidebar , significa que las dos primeras columnas son "main" y la tercera columna es "sidebar", y asi se visualiza */
     "main main sidebar " 300px
