@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>CAPTURA Y LECTURA ARRAY</h1>
+
+        <script>
+            var mes= new Array();
+            //captura
+            for (i=0;i<12;i++){
+                mes[i]=prompt("ingrese mes año");
+            }
+            //lectura e imprimir
+            //for (i=0;i<mes.length;i++){  //length es cuando ya se sabe el array
+            for (i=0;i<12;i++){
+                document.write(mes[i]+"<br>");//impresion
+                console.log(mes[i]);//captura o lectura
+            }
+        </script>
+    </center>
+</body>
+</html>
