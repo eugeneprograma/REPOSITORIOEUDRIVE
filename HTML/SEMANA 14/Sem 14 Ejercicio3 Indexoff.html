@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>METODO INDEX OF</title>
+</head>
+<body>
+    <center>
+        <h1>METODO INDEXOF</h1>
+        <h3>BUSQUEDA DE ELEMENTOS EN ARRAY</h3>
+        <script>
+            let students=["Alexis","Alejandra","Eugenio","Wendy","Pedro","Alfredo","Heladio"];
+            //Nombres comiencen con letra A
+            //document.write(students[i]+"<br>");
+
+            for (i=0;i<students.length;i++){
+                if (students[i].toUpperCase().indexOf("A")===0){
+                    console.log(students[i]);
+                    document.write(students[i]+"<br>");
+                }
+            } 
+            //0: SI encontro el dato en array
+            //-1: NO encontro el dato   
+
+            let INDEX=students.indexOf("Alejandra");
+            document.write("estudiante se encuentra en el indice n°");
+            document.getElementById("std").innerHTML=INDEX;
+
+            //proceso de  busqueda
+            let dator=prompt("ingrese dato a borrar");
+            let indice=datos.indexOf(dator);
+            //aplicar metodo splice para borrar
+            if (indice>-1){
+                var INDEX=dat.splice (indice,1);
+                alert("elemento eliminado ... lista nueva"+datos);
+                document.write(datos+" , ");
+                console.log(datos);
+                }
+                else{
+                    alert("no se encontro elemento");
+
+                }
+                //imprimir
+                document.write(datos+" , ");
+                console.log(datos);
+
+            </script>
+    </center>        
+  </body>           
+</html>
