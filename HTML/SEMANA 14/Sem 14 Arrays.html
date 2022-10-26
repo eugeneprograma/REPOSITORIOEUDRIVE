@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>CREACION DE ARRAYS</h1>
+        <h3>Con ciclo for</h3>
+        <script>
+            let num;
+            let datos = new Array();
+           //proceso
+           num = parseInt(prompt("Ingrese cantidad valores a ingresar la array"));
+           //ciclo for
+           for (i=0;i<num;i++){
+             //el for SIEMPRE se empieza de cero 0
+             datos[i]=prompt("ingrese datos al array"+i);
+
+           } //aqui se cierra el ciclo for 
+           document.write(datos+",");
+           console.log(datos)//proceso de captura
+
+           
+           </script>
+           
+    </center>
+</body>
+</html>
