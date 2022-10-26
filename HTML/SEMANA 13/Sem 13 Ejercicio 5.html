@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ejemplo de Factura JavaScript</title>
+  <meta charset="UTF-8">
+</head>
+<body>
+  <center>
+     <h1>FACTURA DE VENTAS WHILE. ALMACEN EUGENIO S.A.</h1>
+<script>
+  //Programa que permita capturar el nombre de un producto, su precio unitario y su cantidad, luego calcular subtotal, descuento 10%, iva 19% y neto a pagar. Enviar mensaje Gracias por su compra//
+ const SPeso = new Intl.NumberFormat('es-CO', {
+       style: 'currency',
+       currency: 'COP',
+       minimumFractionDigits: 0
+     });
+  var nombrep,opc;
+  var suma= 0;
+  var subt=0;
+  var netop=0;
+  var desc = 0;
+  var iva=0;
+  var num = 1;
+  var opc=true;
+ nomstd=prompt('Ingrese nombre del cajero/estudiante','');
+  while (opc==true)//mientras sea TRUE ingresa a las intrucciones de while
+  {
+  //
+  nombrep=prompt('Ingrese nombre del producto'+num,'');
+  precio=prompt('Ingrese precio del producto a comprar'+num,'');
+  cant=prompt('Ingrese la cantidad deseada a comprar'+num,'');
+  opc=confirm('Desea continuar facturando? --> [ACEPTAR/CANCEL]');
+  //
+  subt = parseInt(precio)*parseInt(cant);
+  suma += subt;
+  num ++;
+  }
+  //   
+  desc=suma*0.10;
+  iva=(suma-desc)*0.19;
+  netop=suma-desc+iva;
+  //
+  document.write('**********************************************************'+'<br>');
+    document.write('**************'+'ALMACEN EUGENIO S.A.:'+'*************'+'<br>'+'<br>');
+    document.write('*************'+'SU FACTURA ES LA SIGUIENTE:'+'****************'+'<br>'+'<br>');
+    document.write('PRODUCTOS COMPRADOS:  '+(num-1)+'<br>'+'<br>');
+    document.write('SUBTOTAL:'+'<br>'+'<br>');
+    document.write(SPeso.format(suma) +'<br>'+'<br>');
+    document.write('Descuento:'+'<br>'+'<br>');
+    document.write(SPeso.format(desc) +'<br>'+'<br>');
+    document.write('Iva:'+'<br>'+'<br>');
+    document.write(SPeso.format(iva) +'<br>'+'<br>');
+    document.write('Neto a pagar:'+'<br>'+'<br>');
+    document.write(SPeso.format(netop)+'<br>'+'<br>');
+    document.write('*****************'+'ATENDIDO POR: '+nomstd+'****************'+'<br>'+'<br>');
+    document.write('*********************'+'GRACIAS POR SU COMPRA:'+'*****************'+'<br>');
+</script>
+</center>
+</body>
+</html>
