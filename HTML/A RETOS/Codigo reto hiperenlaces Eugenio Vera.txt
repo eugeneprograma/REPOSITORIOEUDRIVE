@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RETO ENLACES</title>
+
+</head>
+<body>
+    <h1>RETO HIPERENLACES</h1>
+
+    <h2>APRENDER A GESTIONAR NUESTRA CONDUCTA</h2>
+    <!-- enlace asertividad  -->
+    
+    <a href="https://www.youtube.com/embed/299wzz23gRY" target="_blank"><img src="../A RETOS/La-comunicación-asertiva.png" alt="instagram" width="100" ></a>
+    
+    <!-- amistad  -->
+    <a href="https://www.youtube.com/watch?v=gyPeUBQNrx0" target="_blank"><img src="../A RETOS/amistad.jfif" alt="instagram" width="100" > </a>
+    
+
+    <!-- sonreir  -->
+    <a href="https://www.youtube.com/watch?v=2v4NE2POtyo" target="_blank"><img src="../A RETOS/sonreir.jfif" alt="instagram" width="100" > </a>
+    <br>
+
+    <b><p>Comunicación Asertiva&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><p>Relaciones de amistad&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><p>Aprender a sonreir</p></b>
+
+    
+    
+    <br><br><br><br><br><br><br><br>
+
+<!-- hacer alclaje a incio de pagina -->
+<h3>Realizado por : Eugenio Vera Gómez</h3>
+
+    
+<STYle>
+html{
+        text-align:center;
+        height:100% ;
+        color: rgb(12, 59, 75);
+       }
+p{
+    display:inline;
+    font-size: x-large;
+    color: darkred;
+}
+body{
+    background-color: rgb(72, 192, 192);
+    background-attachment:fixed ; /*attacment:vinculacion imagen y texto */
+    background-size: cover;
+
+} 
+h4{
+    display: inline-block;
+}
+
+p #realizado{
+    text-align:initial;
+}
+img{
+    width: 20%;
+    height: 200px;
+    display: inline-block;
+}
+/* img{ */
+    /* display:inline-flex; flex para que quede en linea imagenes */
+/* } */
+</STYle>
+    
+</body>
+</html>
