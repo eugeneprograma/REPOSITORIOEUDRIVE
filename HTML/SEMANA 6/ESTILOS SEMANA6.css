@@ -132,7 +132,7 @@ iframe{
  }
 /* PONER UNA ETIQUETA <P> CON ESTILOS */
  p{
- color: red;
+ color: rgb(50, 24, 108);
  }
 
 /* seccion CSS GRID DISEÑO WEB RESPONSIVE*/
@@ -160,11 +160,11 @@ iframe{
     1000px 150px 300px; 
     }
 
-#redes a {
+#redes a {   /*padre hijo... id=redes a(alclaje)*/
         padding: 0;
         margin: 0;
     }
-#redes a i:hover{
+#redes a i:hover{ /*padre hijo... id=redes a(alclaje)   i(etiqueta dentro de <a>)*/
      transform: scaleX(1.5);  
   }
 /* Estilos a todos los iconos fontawesome */
