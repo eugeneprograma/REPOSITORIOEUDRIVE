@@ -1,6 +1,11 @@
+*@font-face{
+    font-family:Selectric Script;
+    src:url(../IMAGENES/Selectric\ Script.ttf) ;
+}
+
 body{
     background-color: aqua;
-    background-image:url(../IMAGENES/imagen\ sistemas.jpeg) ;/* POR DEFECTO UNA IMAGEN SE REPITE */
+    background-image:url(../IMAGENES/cool-background.svg) ;/* POR DEFECTO UNA IMAGEN SE REPITE */
     background-position: center;
     background-repeat:repeat;
     background-attachment:fixed ; /*attacment:vinculacion imagen y texto */
