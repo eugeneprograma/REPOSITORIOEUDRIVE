@@ -21,7 +21,7 @@ body{
     border-radius: 20px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content:center;
     grid-area: header;
     font: bold Comic;
     flood-color: aquamarine;
@@ -100,7 +100,7 @@ section article{
     margin: 20px;
     } 
 
-.programa{
+.programas{
     display:flow-root;
     margin: 5px 5px;
     padding: 5px 5px;
