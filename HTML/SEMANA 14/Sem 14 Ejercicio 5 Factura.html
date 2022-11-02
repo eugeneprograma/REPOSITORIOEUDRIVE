@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ejemplo de JavaScript</title>
+  <meta charset="UTF-8">
+</head>
+<body>
+<center>
+  <h1>FACTURA DE VENTAS ALMACEN EL VACANO</h1>
+  <h3>CICLO FOR - ARRAYS</h3>
+<script>
+  //Programa que permita capturar el nombre de un producto, su precio unitario y su cantidad, luego calcular subtotal, descuento 10%, iva 19% y neto a pagar. Enviar mensaje Gracias por su compra//
+ const SPeso = new Intl.NumberFormat('es-CO', {
+       style: 'currency',
+       currency: 'COP',
+       minimumFractionDigits: 0
+     });
+//
+//ENTRADA VARIABLES
+  var suma=0;
+  var subt=0;
+  var netop=0;
+  var desc=0;
+  var iva=0;
+  var fpago=0;
+  var pago=0;
+  var num=0;
+  var cambio=0;
+  var f = new Date();
+  var nombrep=new Array();
+  var precio=new Array();
+  var cant=new Array();
+  var subt=new Array();
+ nomstd=prompt('Ingrese nombre del Cajero','');
+ num=parseInt(prompt("Ingrese cantidad de productos a comprar"));
+ var i;
+ for (var i=0 ; i<num ; i++) {
+  //
+    nombrep[i]=prompt('Ingrese nombre del producto');
+    precio[i]=prompt('Ingrese precio del producto a comprar');
+    cant[i]=prompt('Ingrese la cantidad deseada a comprar');
+    subt[i] = precio[i]*cant[i];
+    suma = suma + subt[i];
+  }
+  //PROCESO
+  fpago=parseInt(prompt("Ingrese forma de pago -->[1=Efectivo /2= Nequi/3=Tarjeta credito]"));
+    if (fpago==1){
+      desc=suma*0.10;  
+    }else{
+      desc=suma*0;
+    } 
+    iva=(suma-desc)*0.16;
+    netop=suma-desc+iva;
+    alert("Total a pagar"+'\n'+netop);
+    if (fpago==1){
+    pago=parseInt(prompt('Ingrese monto efectivo $$ a pagar'));
+    cambio=pago-netop;
+    }else{
+      pago=parseInt(prompt('Ingrese monto $$ a pagar'));
+      netop=pago;
+    }
+  //SALIDA
+    document.write('**********'+'ALMACEN EL VACANO :'+'***********'+'<br>'+'<br>');
+    document.write('**********'+'DATOS FACTURA POS:'+'*********'+'<br>'+'<br>');
+    document.write('PRODUCTOS COMPRADOS:  '+(num)+'<br>'+'<br>');
+    document.write('PRODUCTO:'+'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'+'PRECIO:'+'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'+'CANTIDAD:'+'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'+'VALOR:'+'<br>'+'<br>');
+    var i;
+    for (var i=0 ; i<num ; i++) {
+      document.write( nombrep[i] +"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+ SPeso.format(precio[i])+"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+ cant[i] +"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+SPeso.format(subt[i]) +'<br>');
+    }
+    document.write('******************************************************************'+'<br>');
+    document.write('<br>'+ 'SUBTOTAL:'+'<br>'+'<br>');
+    document.write('&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'+SPeso.format(suma) +'<br>'+'<br>');
+    document.write('Descuento:'+'<br>'+'<br>');
+    document.write('&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'+SPeso.format(desc) +'<br>'+'<br>');
+    document.write('Iva:'+'<br>'+'<br>');
+    document.write('&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'+SPeso.format(iva) +'<br>'+'<br>');
+    document.write('Neto a pagar:'+'<br>'+'<br>');
+    document.write('&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'+SPeso.format(netop)+'<br>'+'<br>');
+    document.write('Efectivo pagado:'+'<br>'+'<br>');
+    document.write('&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'+SPeso.format(pago)+'<br>'+'<br>');
+    document.write('Cambio:'+'<br>'+'<br>');
+    document.write('&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'+SPeso.format(cambio)+'<br>'+'<br>');
+    document.write("Registrado:.."+ f.getDate() + "/" + (f.getMonth() +1) + "/" + f.getFullYear()+'&nbsp;&nbsp;&nbsp;&nbsp;'+ f.getHours()+":"+f.getMinutes()+":"+f.getSeconds()+"<br>"+"<br>");
+    document.write('**************'+'ATENDIDO POR: '+nomstd+'***************'+'<br>'+'<br>');
+    document.write('*******************'+'GRACIAS POR SU COMPRA: UD.ES UN EXCELENTE CLIENTE'+'*********************'+'<br>');
+</script>
+</center>
+</body>
+</html>
