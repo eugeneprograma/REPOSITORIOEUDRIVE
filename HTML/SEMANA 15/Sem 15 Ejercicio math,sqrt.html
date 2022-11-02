@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <h1>USO FUNCIONES MATEMATICAS</h1>
+        <h3>CON SENTENCIA SWITCHS</h3>
+        <script>
+            //programa que capture dos numeros y permite seleccionar al usuario calcular raiz cuadrada o potencia
+            let n1=parseFloat(prompt("Ingrese el numero"));
+            let n2=parseFloat(prompt("Ingrese segundo numero"));
+            let oper=parseFloat(prompt("Seleccione la operacion a realizar 1. Raiz cuadrada .... 2.Potencia"));
+            switch(oper){
+                case 1:
+                let r=Math.sqrt(n1)
+                let r1=Math.sqrt(n2)
+                document.write("CALCULOS BÁSICOS"+"<br>"+"<br>"+"PRIMER NUMERO .."+n1+"&nbsp"+ "&nbsp"+"&nbsp"+"RAIZ CUADRADA:.."+r+"<br>"+"SEGUNDO NUMERO .."+n2+ "&nbsp"+ "&nbsp"+"&nbsp"+"RAIZ CUADRADA.."+r1);
+                break;
+                case 2:
+                    let p=Math.pow(n1,n2);
+                    document.write("CALCULOS BÁSICOS"+"<br>"+"<br>"+"NUMERO BASE .."+n1+"<br>"+ "EXPONENTE.."+n2+ "<br>"+"POTENCIA: ... "+n1+" ^ "+n2+":"+"&nbsp"+ "&nbsp"+"&nbsp"+p);
+                    break;
+                default:
+                    alert("error en la operacion seleccionada")
+                    break;    
+            }
+            
+        </script>
+
+</body>
+</html>
