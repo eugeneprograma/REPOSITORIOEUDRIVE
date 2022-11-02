@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NUM APOSTADO</title>
+    <!-- link css -->
+    <link rel="stylesheet" href="./css/Apostar.css">
+    <!-- link java -->
+    <script src="js/Apostar.js"></script>
+    <!-- <script src="js/funtion saludo.js"></script> -->
+    
+</head>
+<body>
+  <center><h1>APUESTAS WEBPLAY - EUGENIO</h1>
+  <h2>INGRESE NUMERO DEL 1 AL 10 A APOSTAR</h2>
+  <br><br>
+  <form>
+   <label>NUMERO APOSTADO</label>
+    <input type="text" id="apostado"><br>
+    <br><br>
+    <label>RESULTADO DE APUESTA</label>
+   <input type="text" id="resultado" disabled><br>
+   <br><br> 
+   <label>GANA / PIERDE</label>
+    <input type="text" id="salida" disabled><br>
+  </form>
+  <br><br>
+  <div id="boton">
+  <button onclick="apostar();">APOSTAR !!</button>
+  <button onclick="cancel();">BORRAR !!</button>
+  </div>
+</body>
+</center>
+</html>
