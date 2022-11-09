@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- link fontawesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+<!-- enlace css -->
+<link rel="stylesheet" href="../css sem 16/Sem 16 multiproducto.css">
+
+<!-- enlace js -->
+<script src="../java sem 16/Sem 16 multiproducto.js" ></script>
+</head>
+<body>
+
+<!-- MAIN -->
+<div class="main">
+
+<h1>TIENDA MI PC.COM</h1>
+<hr>
+
+<h2>PORTAFOLIO DE TIENDA ONLINE</h2>
+
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Todos</button>
+  <button class="btn" onclick="filterSelection('computador')"> Computadores</button>
+  <button class="btn" onclick="filterSelection('productos')"> Mercado Productos</button>
+  <button class="btn" onclick="filterSelection('cursos')"> Cursos</button>
+</div>
+<div id="toggle"><!-- CAMBIO-->
+  <input type="checkbox" class="checkbox" id="chk" />
+  <label class="label" for="chk">
+    <i class="fas fa-sun"></i>
+    <i class="fas fa-moon"></i>
+    <div class="ball"></div>
+  </label>
+</div>
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column computador">
+    <div class="content">
+      <img src="../img/compu1.png" alt="" style="width:250px;height:250px;">
+      <h4>Portátil HP</h4>
+      <p>AMD Athlon 4 GB RAM- SSD 256 GB</p>
+    </div>
+  </div>
+  <div class="column computador">
+    <div class="content">
+    <img src="../img/compu2.jpeg" alt="" style="width:250px;height:250px;">
+      <h4>Portátil HP 14"</h4>
+      <p>Intel Core i3- 4 GB RAM- DD 1TB</p>
+    </div>
+  </div>
+  <div class="column computador">
+    <div class="content">
+    <img src="../img/computador n3.png" alt="" style="width:250px;height:250px;">
+      <h4>Portátil ASUS VivoBook 14"</h4>
+      <p>Intel Core i5 - 8GB RAM - SSD 512 GB</p>
+    </div>
+  </div>
+  
+  <div class="column productos">
+    <div class="content">
+      <img src="../img/imagen banca finanzas.jpeg" alt="" style="width:250px;height:250px;">
+      <h4>Pollo Entero</h4>
+      <p>Pollo entero Pikoriko congelado.</p>
+    </div>
+  </div>
+  <div class="column productos">
+    <div class="content">
+    <img src="../img/imagen bombillo pintado.jpeg" style="width:250px;height:250px;">
+      <h4>Limones</h4>
+      <p>Limones tangelo x kilo/p>
+    </div>
+  </div>
+  <div class="column productos">
+    <div class="content">
+    <img src="../img/imagen bombillo pintado.jpeg" alt="" style="width:250px;height:250px;">
+      <h4>Arroz</h4>
+      <p>Arroz Diana Bolsa x 500gr.</p>
+    </div>
+  </div>
+
+  <div class="column cursos">
+    <div class="content">
+      <img src="../img/imagen html.jpeg" alt="" style="width:250px;height:250px;">
+      <h4>Javascript</h4>
+      <p>Curso Básico de lenguaje programación Javascript.</p>
+    </div>
+  </div>
+  <div class="column cursos">
+    <div class="content">
+    <img src="../img/imagen css.jpeg" alt="" style="width:250px;height:270px;">
+      <h4>CSS3</h4>
+      <p>Curso Básico de hoja de estilos CSS3.</p>
+    </div>
+  </div>
+  <div class="column cursos">
+    <div class="content">
+    <img src="../img/imagen html.jpeg" alt="" style="width:250px;height:250px;">
+      <h4>HTML5</h4>
+      <p>Curso básico de lenguaje páginas web HTML5.</p>
+    </div>
+  </div>
+<!-- END GRID -->
+</div>
+
+<!-- END MAIN -->
+</div>
+<script>
+//  BOTÓN TOGGLE SWITCHE
+const chk = document.getElementById('chk');
+
+chk.addEventListener('change', () => {
+  document.body.classList.toggle('dark');
+});
+</script>  
+  
+
+
+</body>
+</html>
