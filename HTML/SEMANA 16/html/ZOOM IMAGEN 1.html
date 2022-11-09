@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.img-zoom-container {
+  position: relative;
+}
+p{
+  font-weight: bold;
+  font-size: 15px;
+}
+.img-zoom-lens {
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  background-color: transparent;
+  /*Parametros de tamaño del lente:*/
+  width: 100px;
+  height: 100px;
+}
+
+.img-zoom-result {
+  border: 1px solid #d4d4d4;
+  float: right;
+  /*Parametros de tamaño del div donde se va a reflejar imagen aumentada:*/
+  width: 700px;
+  height: 500px;
+}
+/*Estilos Star rating*/
+#form {
+    width: 250px;
+    margin: 0 auto;
+    height: 100px;
+  }
+  
+  #form p {
+    position: relative;
+    left: -150%;
+  }
+
+  #form label {
+    font-size: 30px;
+  }
+  
+  input[type="radio"] {
+    display: none;
+  }
+  
+  label {
+    color: grey;
+  }
+  
+  .clasificacion {
+    direction: rtl;
+    unicode-bidi: bidi-override;
+  }
+  
+  label:hover,
+  label:hover ~ label {
+    color: orange;
+  }
+  
+  input[type="radio"]:checked ~ label {
+    color: orange;
+  }
+</style>
+<!-- PROGRAMACION JS DE ZOOM IMAGE-->
+<script>
+function imageZoom(imgID, resultID) {
+  var img, lens, result, cx, cy;
+  img = document.getElementById(imgID);
+  result = document.getElementById(resultID);
+  /*create lens:*/
+  lens = document.createElement("DIV");
+  lens.setAttribute("class", "img-zoom-lens");
+  /*insert lens:*/
+  img.parentElement.insertBefore(lens, img);
+  /*calculate the ratio between result DIV and lens:*/
+  cx = result.offsetWidth / lens.offsetWidth;
+  cy = result.offsetHeight / lens.offsetHeight;
+  /*set background properties for the result DIV:*/
+  result.style.backgroundImage = "url('" + img.src + "')";
+  result.style.backgroundSize = (img.width * cx) + "px " + (img.height * cy) + "px";
+  /*execute a function when someone moves the cursor over the image, or the lens:*/
+  lens.addEventListener("mousemove", moveLens);
+  img.addEventListener("mousemove", moveLens);
+  /*and also for touch screens:*/
+  lens.addEventListener("touchmove", moveLens);
+  img.addEventListener("touchmove", moveLens);
+  function moveLens(e) {
+    var pos, x, y;
+    /*prevent any other actions that may occur when moving over the image:*/
+    e.preventDefault();
+    /*get the cursor's x and y positions:*/
+    pos = getCursorPos(e);
+    /*calculate the position of the lens:*/
+    x = pos.x - (lens.offsetWidth / 2);
+    y = pos.y - (lens.offsetHeight / 2);
+    /*prevent the lens from being positioned outside the image:*/
+    if (x > img.width - lens.offsetWidth) {x = img.width - lens.offsetWidth;}
+    if (x < 0) {x = 0;}
+    if (y > img.height - lens.offsetHeight) {y = img.height - lens.offsetHeight;}
+    if (y < 0) {y = 0;}
+    /*set the position of the lens:*/
+    lens.style.left = x + "px";
+    lens.style.top = y + "px";
+    /*display what the lens "sees":*/
+    result.style.backgroundPosition = "-" + (x * cx) + "px -" + (y * cy) + "px";
+  }
+  function getCursorPos(e) {
+    var a, x = 0, y = 0;
+    e = e || window.event;
+    /*get the x and y positions of the image:*/
+    a = img.getBoundingClientRect();
+    /*calculate the cursor's x and y coordinates, relative to the image:*/
+    x = e.pageX - a.left;
+    y = e.pageY - a.top;
+    /*consider any page scrolling:*/
+    x = x - window.pageXOffset;
+    y = y - window.pageYOffset;
+    return {x : x, y : y};
+  }
+}
+</script>
+</head>
+<body>
+
+<h1>TIENDA MI PC.COM</h1>
+<h2>PORTAFOLIO DE TIENDA ONLINE</h2>
+<!-- CONTENEDOR PARA IMAGEN E IMAGEN AUMENTADA-->
+<div id="container">
+    <div class="img-zoom-container">
+      <img id="myimage" src="../img/compu1.png" width="400" height="340">
+
+      <div id="myresult" class="img-zoom-result"></div>
+    </div>
+  <div class="text-img">
+    <p>Computador Portátil Gamer ACER 15.6" Pulgadas 5799 - Intel Core i5 - RAM 8GB - Disco HDD 1 TB - Negro</p>
+    <p>Código: 4710886287698</p>
+    <p><del>$4.599.000</del> Antes--- $3.099.000 Hoy</p>
+  </div>
+<!-- SECCION DE RATING STARS   -->
+  <p style="text-align:center;">Valora este producto calificando estas estrellas</p>
+  <form id="form">
+    
+    <p class="clasificacion">
+      <input id="radio1" type="radio" name="estrellas" value="5"><label for="radio1">★</label>
+      <input id="radio2" type="radio" name="estrellas" value="4"><label for="radio2">★</label>
+      <input id="radio3" type="radio" name="estrellas" value="3"><label for="radio3">★</label>
+      <input id="radio4" type="radio" name="estrellas" value="2"><label for="radio4">★</label>
+      <input id="radio5" type="radio" name="estrellas" value="1"><label for="radio5">★</label>
+    </p>
+  </form>
+</div>
+<script>
+// EJECUCION DE FUNCION ZOOM IMAGEN:
+imageZoom("myimage", "myresult");
+</script>
+</body>
+</html>
