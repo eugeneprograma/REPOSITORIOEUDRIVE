@@ -1,3 +1,5 @@
+<!-- PARA IMPLEMENTAR EN EL PROYECTO -->
+<!-- TIENE HTML, CSS, JAVA ... OK -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,22 +9,132 @@
     <title>EJ. 1 TIENDA</title>
     <!-- LINK FONTAWESOME -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-
+    <!-- LINK ESTILOS -->
+    <link rel="stylesheet" href="../css sem 16/estilos sem16.css">
+    <!-- LINK JAVA -->
+    <script src="../java sem 16/java sem 16.js"></script>
 </head>
+
 <body>
     <!-- main -->
     <div class="main">
-        <h1>TIENDA MI COMPUEUGENIO.ORG</h1>
+        <h1>TIENDA LA COSTEÑITA</h1>
+        <!-- <img src="../img/ERI..png" alt=""> -->
         <hr>
-
-        <h2>PORTAFOLIO DE TIENDA ON LINE </h2>
+         <h2>PORTAFOLIO DE TIENDA ON LINE </h2>
          <div id="btnContainer">
-            <button class="btn">
-
+            <button class="btn" onclick="listView()"><i class="fa fa-bars"></i>
+                LIST
             </button>
 
-         </div>
+            <button class="btn active" onclick="gridView()"><i class="fa fa-th-large"></i>
+                GRID
+            </button>
+            <div><!-- cambio toggle switch-->
+                <input type="checkbox" class="checkbox" id="chk" />
+                <label class="label" for="chk">
+                  <i class="fas fa-sun"></i>
+                  <i class="fas fa-moon"></i>
+                  <div class="ball"></div>
+                </label>
+            
+        </div>
+
+    </div><!-- div main -->
+
+    <br>
+
+<!-- PORTAFOLIO DE PRODUCTOS -->
+<!-- primer articulo -->
+
+<div class="row">
+    <div class="column computador">
+        <a href=""><img src="../img/compu1.png" alt="" style="width: 250px;height: 250px;"></a>
+        <h4>Portátil Gamer ACER 15.6" </h4>
+          <p>Intel Core i5 - RAM 8GB - HDD 1 TB </p>
 
     </div>
+</div>
+ <!-- segundo producto -->
+  
+ <div class="column computador">
+    <div class="content">
+      <a href="./EJEMPLO  ZOOM IMAGE2.html">
+    <img src="../img/imagen diseño web empresa.jpeg" alt="" style="width:250px;height:250px;"></a>
+      <h4>Portatil HP 14"</h4>
+      <p>Intel Core i3- 4 GB RAM- DD 1TB</p>
+    </div>
+  </div>
+<!-- tercer producto -->
+  <div class="column computador">
+    <div class="content">
+    <img src="../img/computador n3.png" alt="" style="width:250px;height:250px;">
+      <h4>Portátil ASUS VivoBook 14"</h4>
+      <p>Intel Core i5 - 8GB RAM - SSD 512 GB</p>
+    </div>
+  </div>
+
+  
+  <div class="column productos">
+    <div class="content">
+      <img src="../img/imagen basket.jpeg" alt="" style="width:250px;height:250px;">
+      <h4>Clases basket</h4>
+      <p>Pollo entero Pikoriko congelado.</p>
+    </div>
+  </div>
+
+  <div class="column productos">
+    <div class="content">
+    <img src="../img/imagen bombillo pintado.jpeg" style="width:250px;height:250px;">
+      <h4>Limones</h4>
+      <p>Limones tangelo x kilo..</p>
+    </div>
+  </div>
+
+  <div class="column productos">
+    <div class="content">
+    <img src="../img/imagen diseño grafico.jpeg" alt="" style="width:250px;height:250px;">
+      <h4>Diseño grafico</h4>
+      <p>Arroz Diana Bolsa x 500gr.</p>
+    </div>
+  </div>
+
+  <div class="column cursos">
+    <div class="content">
+      <img src="../img/imagen corredores.jpeg" alt="" style="width:250px;height:250px;">
+      <h4>Corredores</h4>
+      <p>Lenguaje programación Javascript.</p>
+    </div>
+  </div>
+
+  <div class="column cursos">
+    <div class="content">
+    <img src="../img/imagen css.jpeg" alt="" style="width:250px;height:250px;">
+      <h4>CSS3</h4>
+      <p>Hoja de estilos CSS3.</p>
+    </div>
+  </div>
+
+  <div class="column cursos">
+    <div class="content">
+    <img src="../img/imagen html.jpeg" alt="" style="width:250px;height:250px;">
+      <h4>HTML5</h4>
+      <p>Lenguaje páginas web HTML5.</p>
+    </div>
+  </div>
+<!-- END GRID CONTAINER-->
+</div>
+
+<!-- END MAIN CONTAINER-->
+<!-- </div> -->
+<script>
+//  BOTÓN TOGGLE SWITCHE
+const chk = document.getElementById('chk');
+
+chk.addEventListener('change', () => {
+document.body.classList.toggle('dark');
+});
+</script>
+
 </body>
 </html>
