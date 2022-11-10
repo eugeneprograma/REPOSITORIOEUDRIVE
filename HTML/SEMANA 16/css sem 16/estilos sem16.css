@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #f1f1f1;
+    padding: 20px;
+    font-family: Arial;
+    transition: background 0.2s linear;
+  }
+  
+  /* Center website */
+  .main {
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  h1 {
+    font-size: 50px;
+    word-break: break-all;
+  }
+  
+  .row {
+    margin: 10px -16px;
+  }
+  
+  /* Agrega padding entre cada column */
+  .row,
+  .row > .column {
+    padding: 8px;
+  }
+  
+  /* Crea 3 columns iguales que flotan entre ellas */
+  .column {
+    float: left;
+    width: 33.33%;
+    display: block;
+  }
+  
+  /* Borra floats después de rows */ 
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Content */
+  .content {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    color:white;
+   
+  }
+  img,h4,p{
+  margin-left: 18px;
+  }
+  
+  /* Style a los buttons */
+  .btn {
+    border-radius: 25px;
+    outline: none;
+    padding: 12px 16px;
+    background-color: white;
+    cursor: pointer;
+  }
+  /*coloca color blanco cuando se pasa el mouse encinma del botón*/
+  .btn:hover {
+    background-color: #ddd;
+  }
+  /*coloca color gris cuando se da clic en botón activo*/
+  .btn.active {
+    background-color: #666;
+    color: white;
+  }
+  /*---------Botón toggle switche dark/ligth-----------*/
+  * {
+    box-sizing: border-box;
+  }
+  
+  #btnContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    margin: 0;
+  } 
+  
+  body.dark {
+    background: #292C35;
+    color: white;
+  }
+  .content.dark{
+    background: #292C35;
+  }
+  
+  .checkbox {
+    opacity: 0;
+    position: absolute;
+  }
+  
+  .label {
+    background-color: #111;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    position: relative;
+    height: 26px;
+    width: 50px;
+  
+  }
+  
+  .label .ball {
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    height: 22px;
+    width: 22px;
+    transform: translateX(0px);
+    transition: transform 0.2s linear;
+  }
+  
+  .checkbox:checked + .label .ball {
+    transform: translateX(24px);
+  }
+  
+  .fa-moon {
+    color: rgba(128, 128, 128, 0.888);
+  }
+  
+  .fa-sun {
+    color: white;
+  }
+  

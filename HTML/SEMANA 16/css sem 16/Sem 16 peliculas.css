@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  #datos {
+    width: 100%;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid rgb(136, 32, 32);
+    margin-bottom: 12px;
+  }
+  img{
+    width: 120px;
+    height:120px;
+  }
+  #lupa{
+    width:20px;
+    height: 20px;
+    position:absolute;
+    left:15px; 
+    top:75px;
+    }
+  #tablaDatos {
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid #ddd;
+    font-size: 18px;
+  }
+  
+  #tablaDatos th, #tablaDatos td {
+    text-align: left;
+    padding: 12px;
+  }
+  
+  #tablaDatos tr {
+    border-bottom: 1px solid #ddd;
+  }
+  
+  #tablaDatos tr.header, #tablaDatos tr:hover {
+    background-color: #f1f1f1;
+  }
