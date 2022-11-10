@@ -1,0 +1,121 @@
+*@font-face{
+    font-family:atwriter;
+    src:url(../IMAGENES/atwriter.ttf) ;
+}
+
+body{
+    background-color: aqua;
+    background-image:url(../IMAGENES/cool-background.svg) ;/* POR DEFECTO UNA IMAGEN SE REPITE */
+    background-position: center;
+    background-repeat:repeat;
+    background-attachment:fixed ; /*attacment:vinculacion imagen y texto */
+    background-size: cover;
+
+}
+header{
+    background-color: gold;
+    display: flex;
+    border: 40px brown ;
+    border-radius: 20px 20px 20px 20px;
+    flex-direction: row;
+    /* padding: 30px; */
+    justify-content: center;
+    align-items: center;
+}
+
+header img{
+    padding:20px ;
+}
+/* SE ESTILIZA DE LO MAS GRANDE A LO MAS PEQUEÑO
+1RO. BARRA NAVEGACION O MENU
+2DO. BARRA LISTAS
+3RO. LISTAS O ITEMS
+*/
+nav{
+    background-color: rgb(225, 218, 12);
+    height: 40px;
+    border: blue;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 34px;
+    margin: 5px;
+    display: flex;  /*flex*/
+    border-radius: 22px;
+}
+
+nav ul{
+    padding:0 0 ;
+    margin:0 2px;
+    border: black;
+}
+
+nav ul li{
+    display: inline;
+    list-style:lower-alpha ;
+    margin:0 50px ;
+    font:bold 20px verdana ;
+}
+
+section{
+    width: 60%;
+    border: 12px rgb(2, 47, 12);
+    padding: 40px 40px; 
+    border-radius: 30px;
+    margin: 40px auto;
+    background:rgb(196, 196, 68) ;
+}
+
+form input{ /*input: al ingresar datos a los input del formulario*/
+    height: 20px;
+    box-sizing: border-box;
+    color:rgb(32, 24, 23);
+    outline:invert;
+    border:1px solid black;
+}
+
+form{
+    /* background-color: aqua; */
+    background: rgb(227, 223, 26);
+    width: 100%;  
+    border-radius: 3%;
+    box-shadow:inset 0 0 80px ;
+    padding:7px 7px 7px 7px;
+}
+
+fieldset{ /*fielset: borde formulario*/
+    border-style: 18px;
+}
+label{
+    font-size: 23px;
+    font-family: 'Lucida Sans';
+}
+textarea{
+    resize: both;
+    max-width: 500px;
+}
+
+input:focus, textarea:focus{ /*estilos cuando evento. ej: mause encima*/
+    border-color: red;
+    border-style: 20px;
+    cursor:pointer;/*pointer: mouse es mano*/
+    box-shadow: inset 10 10 20px rgba(0,29,255,0,6);
+    outline:0 none;
+}
+
+form button:hover { /*hover:el usuario interactua con un elementos del dispositivo. el mouse se ubica sobre el elemento*/
+    background:rgb(2, 35, 6);
+    text-decoration: underline;
+    color:rgb(246, 246, 250);
+    cursor: move;
+    size: 10px;
+    font-style: italic;
+}
+
+/* ESTILOS CCS PARA PIE DE PAGINA */
+footer{
+    font-size: 30px;
+    text-align: center;
+    color:rgb(26, 20, 20);
+    text-transform: uppercase; /*se transforma el texto*/
+}
