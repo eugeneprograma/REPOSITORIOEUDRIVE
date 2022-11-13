@@ -33,6 +33,6 @@ SELECT * FROM animales WHERE estado='feliz';
 SELECT * FROM animales WHERE estado ='feliz' AND tipo='chanchito';
 
 SELECT * FROM animales WHERE estado ='feliz' AND tipo='felipe';/*este query NO
-muestra ningun resultado pues no hay registro que cumpla con estado=feliz Y tipo=felipe */
+muestra ningun resultado pues no hay registro que cumpla con estado=feliz Y tipo=felipe ok. */
 
 
