@@ -72,6 +72,24 @@ select	* from usuarios limit 3;
 -- QUERY: CUALES USUARIOS SON MAYORES A 20 AÑOS?
 select * from usuarios where edad > 20;
 
+-- query: usuarios con edad mayor a 20 y mail='chanchito@mail'
+select * from usuarios where edad > 20 and email='chanchito@mail';
+select * from usuarios;
+
+-- las siguientes instrucciones son para depurar la bd pues YO EUGENIO repeti usuarios
+delete from usuarios where id_user=4;
+delete from usuarios where id_user=5;
+select * from usuarios;
+delete from usuarios where id_user=3;
+select * from usuarios;
+-- aqui ya deje la bd sin usuarios repetidos.. ok¡¡
+
+select * from usuarios where edad>20 and email='chanchito@mail';
+
+-- query: diga los usuarios con edad mayor a 22 O que el mail sea layla@mail
+select * from usuarios where edad>22 OR email='layla@mail';
+-- RESPUESTA: layla NO es menor de 22 PERO si cumple con tener el mail, y como es un condicional con OR layla si cumple
+
 
 
 
