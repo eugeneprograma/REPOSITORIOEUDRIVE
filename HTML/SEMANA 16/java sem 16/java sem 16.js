@@ -2,6 +2,9 @@
 // Obtener los elementos con class="column"
 var elements = document.getElementsByClassName("column");
 
+var anuncio;
+
+
 // Declaracion variable for 
 var i;
 // List View
