@@ -90,6 +90,66 @@ select * from usuarios where edad>20 and email='chanchito@mail';
 select * from usuarios where edad>22 OR email='layla@mail';
 -- RESPUESTA: layla NO es menor de 22 PERO si cumple con tener el mail, y como es un condicional con OR layla si cumple
 
+-- query: QUE NO SEA IGUAL. todos los registros que NO SEAN IGUAL al mail layla@mail
+
+-- **REGLA: QUE NO SEA IGUAL SE ESCRIBE !=
+select * from usuarios where email !='layla@mail';
+
+-- REGLA: BETWEEN > VALORES ENTRE 
+select * from usuarios where edad between 5 and 35;-- consulta OK¡¡
+-- **REGLAS DE BUSQUEDA DE UN CONTENIDO ESPECIFICO EN CAMPO
+-- **REGLA: LIKE '%aaa%' > BUSCAR UNA CADENA DE TEXTO QUE CONTENGA DESDE INICIO AL FINAL "aaa" Ej. AAAlobo, bAAArco
+-- **REGLA: LIKE '%aaa' > BUSCAR TEXTO QUE TERMINE EN "aaa" y antes cualquier (%) letras
+-- **REGLA: LIKE 'aaa%' > BUSCAR TEXTO QUE INICIE EN "aaa" y despues cualquier (%) letras
+
+
+-- query: buscar todos los textos que en el campo "email" tengan texto="mail"
+select * from usuarios where email like '%mail%';
+
+-- otro query repaso: buscar todos los nombres que tengan la letra "c"
+select * from usuarios where nombre like '%c%';
+-- RESPUESTA: ChanChito, niColas, osCar. TODOS ellos contienen la letra "C"
+select * from usuarios;
+
+-- query: listar todos los nombres que terminen por "ni"
+select * from usuarios where nombre like '%ni';
+-- respuesta: NADA, NINGUN registro en nombre termina en "ni"
+
+-- query: listar todos los nombres que empiecen por "ni"
+select * from usuarios where nombre like 'ni%';
+-- respuesta: NIcolas. Hay 1 registro que empieza con "ni"
+
+-- **REGLA: ORDER BY campo ASC / DESC . > ORDENAR DATOS EN ORDEN ESPECIFICO .. ASCENDENTE O DESCENDENTE
+
+-- query: ordenar por edad de menor a mayor, ascendente
+select * from usuarios order by edad asc;
+-- respuesta: ordeno toda la tabla por EDAD de menor a mayor
+
+-- query: ordenar por edad de mayor a menor, descendente
+select * from usuarios order by edad desc;
+-- respuesta: ordeno la tabla por edades de mayor a menor
+
+-- REGLA: MAXIMO O MINIMO VALOR > select MAX/MIN(campo) as nombreDeConsulta FROM tabla
+select max(edad) as mayorEdad from usuarios;
+-- respuesta: indica la mayor edad y no mas. No salen mas campos de la tabla
+select min(edad) as elMasJoven from usuarios;
+-- respuesta: indico la menor edad
+
+-- REGLA: CONSULTAR UNAS COLUMNAS QUE QUERAMOS Y NO TODAS (*) > SELECT campo1, campo2, ..campo n FROM tabla
+select edad, nombre from usuarios;
+-- RESPUESTA: sale una tablita con los campos "edad" y "nombre" consultados
+
+-- REGLA: CAMBIAR NOMBRE DE CAMPO AL CONSULTAR > SELECT campo1, ..,campo n AS "nuevo nombre campo i" FROM tabla
+-- query: consulte edad y nombre de tabla usuarios y que aparezca en lugar de campo "nombre" por "Empleado"
+select edad, nombre as Empleado from usuarios;
+-- respuesta: OK.. salio edad y Empleado
+
+
+
+
+
+
+
 
 
 
