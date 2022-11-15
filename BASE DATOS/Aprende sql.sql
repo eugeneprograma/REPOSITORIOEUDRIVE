@@ -1,17 +1,3 @@
-create database holamundo;
-use holamundo;
-create table animales(
-id int,
-tipo varchar(255),
-estado varchar (255),
-PRIMARY KEY(id)
-);
--- INSERT INTO animales(tipo, estado)  VALUES ('chanchito','feliz');
-/*ALTER TABLE: cambiar o alterar algo en la tabla. en este caso se dira que
-campo "id" sera autoincrementarl*/
-ALTER TABLE animales MODIFY COLUMN id int auto_increment; 
-show CREATE TABLE animales; 
-
 -- **************************************************
 /*DESDE AQUI EMPIEZA EL SCRIPT PARA CREAR, USAR, DEFINIR CAMPOS,
 DEFINIR VALORES Y QUERYS PARA VISUALIZAR TABLA*/
@@ -36,5 +22,12 @@ SELECT * FROM animales WHERE estado ='feliz' AND tipo='felipe';
 /*este query NO muestra ningun resultado pues no 
 hay registro que cumpla con estado=feliz Y tipo=felipe */
 SELECT * FROM animales WHERE estado ='triste';
+-- CAMBIAR UN REGISTRO.
+-- EJERCICIO:se cambiara el campo "estado" de "felipe" de "triste" > "feliz"
+
+
+
+
+
 
 
