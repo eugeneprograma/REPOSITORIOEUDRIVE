@@ -1,0 +1,37 @@
+
+.bodyO {
+    background-color: #38393a !important;
+    color: #fff;
+    margin: 5px !important;
+    padding: 0 !important;
+    font-family: 'Josefin Sans', sans-serif !important;
+}
+
+.containerO {
+    background-color: #38393a !important;
+    padding: 20px !important;
+    border-radius: 4px !important;
+}
+.headerO{
+    color: #fff !important;
+    background-color: #484949 !important;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.Gris {
+    background-color: #484949 !important;
+}
+
+.Widget-1O,
+.Widget-2O,
+.Widget-3O,
+.Widget-4O,
+.Widget-5O,
+.Widget-6O,
+.Widget-7O,
+.Widget-8O {
+    background-color: #12203e !important;
+    color: #fff;
+    border: #484949 8px solid !important;
+}
