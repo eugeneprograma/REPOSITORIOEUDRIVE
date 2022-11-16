@@ -144,6 +144,11 @@ select edad, nombre from usuarios;
 select edad, nombre as Empleado from usuarios;
 -- respuesta: OK.. salio edad y Empleado
 
+select max(edad), nombre from usuarios group by nombre;
+
+-- Error Code: 1140. In aggregated query without GROUP BY, 
+-- expression #2 of SELECT list contains nonaggregated column 
+-- 'holamundo.usuarios.nombre'; this is incompatible with sql_mode=only_full_group_by
 
 
 
