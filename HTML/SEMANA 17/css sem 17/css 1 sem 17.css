@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Oswald:wght@500&display=swap');
+/* {
+    outline: 1px red solid;
+}*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.bodyL {
+    background-color: #bdc3c7 !important;
+    color: #000;
+    margin: 5px !important;
+    padding: 0 !important;
+    font-family: 'Josefin Sans', sans-serif !important;
+}
+
+.headerL {
+    background-color: whitesmoke !important;
+    border-radius: 4px;
+    padding-left: 20px !important;
+    padding-top: 20px !important;
+    padding: 10px;
+    color: #000 !important;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+ul {
+    padding: 0 0;
+    margin: 0 0px;
+    display: block;
+    color: #fff i !important;
+}
+
+li {
+    display: inline;
+    list-style: none;
+    margin: 0 0px;
+    font: bold 12px Verdana;
+    padding: 10px;
+}
+
+a.menu:hover {
+    color: #65868B !important;
+    text-decoration: none;
+}
+
+li a.menu:hover {
+    padding-bottom: 10px;
+    border-bottom: #2067a3 3px solid;
+}
+
+#menu {
+    background: #292929;
+    padding: 15px 15px;
+}
+
+a {
+    color: #fff !important;
+    text-decoration: none !important;
+}
+h1{
+    font-size: 30px;
+}
+h3.subt {
+    color: #292929;
+    letter-spacing: 0.2em;
+}
+
+h3 {
+    letter-spacing: 0.2em;
+}
+
+h3,
+h4,
+h5 {
+    color: #6f6f6f;
+    font-family: 'Oswald', sans-serif;
+}
+
+.row2 {
+    margin-left: 0px !important;
+}
+
+p.Descripcion {
+    text-align: justify;
+}
+
+.Heady {
+    background-color: #292929 !important;
+}
+
+.Azul {
+    background-color: #12203e !important;
+}
+
+.Blanco {
+    background-color: #fff !important;
+}
+
+.Blanco2 {
+    background-color: #fff !important;
+}
+
+.Blanco3 {
+    background-color: #fff !important;
+}
+
+.Azulito {
+    background-color: #2067a3 !important;
+}
+
+.Widget-1,
+.Widget-2,
+.Widget-3,
+.Widget-4,
+.Widget-5,
+.Widget-6,
+.Widget-7,
+.Widget-8 {
+    background-color: #12203e !important;
+    color: #fff;
+    border: #fff 8px solid;
+    /*padding: 20px !important;*/
+}
+
+.containerL {
+    background-color: #bdc3c7 !important;
+    padding: 20px !important;
+    border-radius: 4px !important;
+}
+
+Footer {
+    background-color: #2067a3;
+    color: #fff;
+}
+
+.designBy {
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+img.Logo {
+    width: 100%;
+    padding: 20px;
+}
+
+img.showText {
+    width: 230px;
+    height: 170px;
+    margin-top: 7px;
+}
+/* Parent Container */
+
+.content_img {
+    position: relative;
+    width: 280px;
+    height: 200px;
+    float: left;
+    margin-right: 0px;
+}
+/* Child Text Container */
+
+.content_img div {
+    position: absolute;
+    top: 12%;
+    left: 12%;
+    background: white;
+    color: black !important;
+    padding: 10px;
+    font-family: sans-serif;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: visibility 0s, opacity 0.5s linear;
+    transition: visibility 0s, opacity 0.5s linear;
+}
+
+.content_img span {
+    font-weight: bold;
+    font-size: 2em;
+    padding: .5em;
+    position: absolute;
+    right: 0%;
+    top: 0%;
+}
+
+span.rotate:hover {
+    transform: rotate(45deg);
+}
+/* Hover on Parent Container */
+
+.content_img:hover {
+    cursor: pointer;
+}
+
+.content_img:hover div {
+    width: 230px;
+    height: 170px;
+    color: black !important;
+    visibility: visible;
+    opacity: 0.9;
+    margin-left: -15px !important;
+    margin-top: -15px !important;
+}
+
+div.Videos {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    /*height: 260px !important;*/
+    background-color: #12203e;
+}
+
+div.Vid1,
+div.Vid2,
+div.Vid3,
+div.Vid4 {
+    display: inline-block;
+    position: relative;
+    width: 270px;
+    padding: 2px;
+    margin-top: 12px;
+    margin-left: 7px;
+}
+
+div.Videos p {
+    padding: 1em;
+    color: #fff;
+}
+/*Prod-HTML*/
+
+img.Products {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+/*StikyBar*/
+
+.icon-bar {
+    position: fixed;
+    top: 70%;
+    right: 0%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    background-color: #292929;
+    z-index: 10;
+}
+/* Style the icon bar links */
+
+.icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 16px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 20px;
+}
+/* Style the social media icons with color, if you want */
+
+.icon-bar a:hover {
+    background-color: #12203e;
+    border-bottom: #2067a3 1px solid;
+}
+/*Color Fondo Contacto*/
+
+.Gris {
+    background-color: #6f6f6f !important;
+    padding: 1em;
+}
+/*Buttons
+
+button.btn-2 {
+    background-color: #2067a3;
+    color: #fff;
+    display: inline-block;
+    width: 47%;
+    font-family: 'Josefin Sans', sans-serif;
+    text-decoration: none !important;
+}*/
+
+.btn-default {
+    color: #fff !important;
+    font-family: 'Josefin Sans', sans-serif;
+    padding-top: 20px !important;
+}
+
+.btn-default:hover {
+    color: #2067a3 !important;
+}
+
+button.btn-2 {
+    font-family: 'Josefin Sans', sans-serif;
+}
+/*---------Botón toggle switche dark/ligth-----------*/
+* {
+box-sizing: border-box;
+}
+.header{
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+}
+.checkbox {
+opacity: 0;
+position: absolute;
+}
+
+.label {
+background-color: #111;
+border-radius: 50px;
+cursor: pointer;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 5px;
+position: relative;
+height: 26px;
+width: 50px;
+
+}
+
+.label .ball {
+background-color: #fff;
+border-radius: 50%;
+position: absolute;
+top: 2px;
+left: 2px;
+height: 22px;
+width: 22px;
+transform: translateX(0px);
+transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball {
+transform: translateX(24px);
+}
+
+.fa-moon {
+color: rgba(128, 128, 128, 0.888);
+}
+
+.fa-sun {
+color: white;
+}
