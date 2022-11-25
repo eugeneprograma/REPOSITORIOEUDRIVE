@@ -4,6 +4,7 @@ addToShoppingCartButtons.forEach((addToCartButton) => {
 });
 
 const comprarButton = document.querySelector('.comprarButton');
+//EL VALOR "CONST" DECLARA UNA CONSTANTE (como crear una variable let), PERO AL SER CONSTANTE NO SE PUEDE CAMBIAR
 comprarButton.addEventListener('click', comprarButtonClicked);
 
 const shoppingCartItemsContainer = document.querySelector(
