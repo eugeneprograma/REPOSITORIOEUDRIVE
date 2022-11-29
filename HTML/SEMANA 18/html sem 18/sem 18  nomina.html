@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Proyecto Final </title>
+    <link rel="stylesheet" href=""> <!-- link de CSS -->
+</head>
+<body>
+    <br><br>
+    <h1 style="text-align:center;">LIQUIDADOR DE NOMINA</h1>
+    <form name="nomina" id="nomina">
+        <fieldset id="fieldset1">
+        <table id="table1">
+        <legend> DATOS PERSONALES</legend>
+        <th>Nombre:<td> <input type="text" name="nombre" size="40" max="20" placeholder="Digite el Nombre del empleador"><tr>
+        <th>Apellido: <td><input type="text" name="apellido" size="40" max="20" placeholder="Digite el Apellido del empleador"><tr>
+        <th>Cargo: <td><input type="text" name="cargo" size="40" max="20" placeholder="Digite el Cargo del empleador"><tr>
+        <th>Documento: <td><input type="text" name="documento" size="40" max="20" placeholder="Digite el Numero de la Cedula"><tr>
+        <th>Salario Mensual$ <td><input type="text" name="salario" id="salario" placeholder="Ingrese el salario $$"><tr>
+       <th>Dias Laborados: <td><select  id="dias" name="dias">
+       <option>1<option>2<option>3<option>4<option>5<option>6<option>7<option>8<option>9<option>10<option>11<option>12<option>13<option>14<option>15<option>16<option>17<option>18<option>19<option>20<option>21<option>22<option>23<option>24<option>25<option>26<option>26<option>27<option>28<option>29<option>30
+        </select>
+    </table>
+</fieldset>
+<fieldset>
+    <table>
+    <legend> Devengados</legend>
+        <tr><th>Basico:</th><td><input type="text" name="basico" id="basico" disabled></td></tr>
+        <tr><th>Subsidio de Transporte:</th><td><input type="text" name="subsidio" id="subsidio" disabled></td></tr>
+        <tr><th>Bonificacion:</th><td><input type="text" name="bonif" size="40" max="20" id="bonif"></td></tr>
+        <tr><th colspan="2"><h2> Horas Recargo nocturno</h2></th></tr>
+        <tr>
+        <th>No HRN:</th><td><input type="text" id="hrn" name="hed" placeholder="Digite Nro HRN"></td></tr>
+        <tr><th>Total Recargo Nocturnos:</th><td><input type="text" name="totalrec" id="totrecn" size="40" disabled><td></td>
+        <br>
+        <tr><th>Total Devengado: </th><td><input type="text" name="totaldev" id="totaldev" size="40" max="20" disabled></td><tr>
+    </table>
+   </fieldset>
+   <fieldset>
+    <table>
+        <legend> Deducidos</legend>
+        <tr><th>E.P.S:</th><td><input type="text" name="eps" id="eps" size="40" max="20" disabled></td><tr>
+        <tr><th>Fondo de Pensiones:</th><td><input type="text" name="pension" id="pension" size="40" max="20" disabled></td><tr>
+        <tr><th>Fondo de Solidaridad:</th><td><input type="text" name="fondos" id="fondos" size="40" max="20" disabled></td><tr>
+        <tr><th>Prestamos:</th><td><input type="text" name="prestamo" size="40" max="20" id="prestam"></td><tr>
+        <br>
+        <tr><th>Total Deducidos:</th><td><input type="text" name="totaldedu" id="totaldedu" size="40" max="20" disabled></td><tr>
+    </table>
+   </fieldset>
+   <fieldset>
+    <table>
+        <legend> Recibi Conforme</legend>
+        <th> Neto Pagado </th><td><input type="text" name="neto" id="neto" disabled></td><tr>
+    </table>
+   </fieldset>
+   <fieldset>
+    <table>
+    <input type="button" value="liquidar" onclick="liquidar()" value="liquidar">
+    <input type="reset" name="borrar" value="Borrar Datos">
+    </table>
+   </fieldset>
+</form>
+<script src=""></script>
+</body>
+</html>
