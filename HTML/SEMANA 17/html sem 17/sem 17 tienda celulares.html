@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <!-- vinculo css -->
+    <link rel="stylesheet" href="../css sem 17/sem 17 tienda celular.css">
+    <!-- vinculo java -->
+   <!-- VINCULO JAVA -->
+<script src="../java sem 17/sem 17 tienda celulares.js"></script>
+</head>
+<body>
+
+<h2 style="text-align:center">**** IMAGENES TIENDA CELULARES EUGENIO TECNOLOGIA ****</h2>
+<br><br><br>
+<div class="row">
+  <div class="column">
+    <img src="../img sem 17/celular 1.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+    <figcaption>Celular Huawei Y9</figcaption>
+  </div>
+  <div class="column">
+    <img src="../img sem 17/celular 2.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+    <figcaption>Celular Xioami Mi10T</figcaption>
+  </div>
+  <div class="column">
+    <img src="../img sem 17/celular 3.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+    <figcaption>Celular Huawei Y9A</figcaption>
+  </div>
+  <div class="column">
+    <img src="../img sem 17/celular 4.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+    <figcaption>Celular Motorola G20</figcaption>
+  </div>
+</div>
+<!-- Seccion de enlaces a cada imagen en Vista modal Lightbox -->
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="../img sem 17/celular 1.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="../img sem 17/celular 2.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="../img sem 17/celular 3.jpg" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="../img sem 17/celular 4.jpg" style="width:100%">
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+    <!-- Seccion de columnas de imágenes en miniatura -->
+
+    <div class="column">
+      <img class="demo cursor" src="../img sem 17/celular 1.jpg" style="width:100%" onclick="currentSlide(1)" alt="leche">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="../img sem 17/celular 2.jpg" style="width:100%" onclick="currentSlide(2)" alt="aceite">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="../img sem 17/celular 3.jpg" style="width:100%" onclick="currentSlide(3)" alt="carne">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="../img sem 17/celular 4.jpg" style="width:100%" onclick="currentSlide(4)" alt="aguacate">
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
+
