@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARTICULOS</title>
+
+    <!-- ICONO FAVICON DE NAVEGADOR -->
+    <link rel="shortcut icon" href="/2.PROYECTO JS EUGENIO/imagenes proyecto/icono web.png" type="image/x-icon">
+
+    <!-- SweetAlert -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+        <!--BOOTSTRAP-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    
+    <!-- LINK FONTAWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!-- LINK HOJAS DE ESTILOS CSS3 -->
+    <link rel="stylesheet" href="../css proyecto/ESTILOS TIENDA1.css"><!-- 1ER ESTILO CSS --> 
+    <link rel="stylesheet" href="">
+    <!-- <link rel="stylesheet" href="../css sem 17/css 2 sem 17.css">">2DO ESTILO CSS -->
+    <!-- <link rel="stylesheet" href="../css sem 17/css 3 sem 17.css">">3ER ESTILO CSS -->
+
+
+
+</head>
+<body>
+    <!-- seccion de la tienda -->
+    <div class="container containerL" id="Container">
+        <div class="main row Blanco" id="Blanco">
+            <section class="author-archive col-md-12">
+                <div class="Contenido 1">
+                    <!-- HEADER -->
+                    <div class="headerL" id="header">
+                        <img src="../imagenes proyecto/SuperT.png" alt="" height="200" width="200">
+                        <h1>SUPER T</h1>
+                        <h2>Tienda especializada en articulos de Tenis de Campo</h2>
+                        <input type="checkbox" class="checkbox" id="chk">
+                        <!-- checkbox ingresa un cuadro de seleccion -->
+                        <!-- listas para cambio contraste pagina -->
+                        <label class="label" for="chk">
+                        <i class="fad fa-volcano"></i>
+                        <i class="fad fa-sparkles"></i>
+                        <div class="ball"></div>
+                        </label>
+                    </div>
+                </div>
+                <br><br>
+
+                <!-- LISTADO DE ARTICULOS -->
+                <ol class="posts">
+                    <!-- ARTICULOS DE TENIS -->
+
+                    <!-- PRIMERO -->
+                    <li class="posts" data-category="tenis">
+                        <!-- OJO: en html del salon data-category="portatiles" -->
+                        <div class="item">
+                            <img class="item-image" src="../imagenes proyecto/raqueta1.jpg" alt="" height="400" width="400">
+                            <h2 class="item-title">
+                                <p class="Subtitilo">Raqueta de Tenis Babolat Pure Strike 18x20 3ra</p>
+                            </h2>
+                            <h2>
+                                <p class="Descripcion">La tercera generación de la raqueta Pure Strike de Babolat, esta diseñada para brindar un excepcional control, maniobravildiad, facilitando la generación de efecto en todos tus golpes</p>
+                            </h2>
+
+                            <div class="item-details"></div>
+                            <h4 class="item-price">
+                                <p class="Precio"><b>$1.500.000</b></p>
+                            </h4>
+                            <button class="item-button btn btn">
+                            <h4 class="item-button btn btn-primary addToCart">AÑADIR COMPRA</h4>
+                            <i class="fas fa-cart-plus"></i></button>
+                        </div>
+                    </li>
+
+                   <!-- SEGUNDO -->
+                   <li class="posts" data-category="tenis">
+                    <!-- OJO: en html del salon data-category="portatiles" -->
+                    <div class="item">
+                        <img class="item-image" src="../imagenes proyecto/raqueta2.jpg" alt="" height="400" width="400">
+                        <h2 class="item-title">
+                            <p class="Subtitilo">Raqueta de Tenis Wilson Clash 100UL V.2</p>
+                        </h2>
+                        <h2>
+                            <p class="Descripcion">El último  modelo de la raqueta  revolucionaria de Wilson, la raqueta Wilson Clash V.2 trae su ultima tecnología FORTYFIVE  que brinda excepcional sensación con la pelota</p>
+                        </h2>
+
+                        <div class="item-details"></div>
+                        <h4 class="item-price">
+                            <p class="Precio"><b>$1.100.000</b></p>
+                        </h4>
+                        <button class="item-button btn btn">
+                        <h4 class="item-button btn btn-primary addToCart">AÑADIR COMPRA</h4>
+                        <i class="fas fa-cart-plus"></i></button>
+                    </div>
+                </li>
+
+                   <!-- TERCERO -->
+                   <li class="posts" data-category="tenis">
+                    <!-- OJO: en html del salon data-category="portatiles" -->
+                    <div class="item">
+                        <img class="item-image" src="../imagenes proyecto/overgrip.jpg" alt="" height="400" width="400">
+                        <h2 class="item-title">
+                            <p class="Subtitilo">Tornagrip , Sobregrip Overgrip Víctor O Silva</p>
+                        </h2>
+                        <h2>
+                            <p class="Descripcion">Clores disponibles
+                             Negro, Azul, Amarillo, Naranja</p>
+                        </h2>
+
+                        <div class="item-details"></div>
+                        <h4 class="item-price">
+                            <p class="Precio"><b>$10.000</b></p>
+                        </h4>
+                        <button class="item-button btn btn">
+                        <h4 class="item-button btn btn-primary addToCart">AÑADIR COMPRA</h4>
+                        <i class="fas fa-cart-plus"></i></button>
+                    </div>
+                </li>
+
+                <!-- CUARTO -->
+                <li class="posts" data-category="tenis">
+                    <!-- OJO: en html del salon data-category="portatiles" -->
+                    <div class="item">
+                        <img class="item-image" src="../imagenes proyecto/overgrip2.jpg" alt="" height="400" width="400">
+                        <h2 class="item-title">
+                            <p class="Subtitilo">3 Overgrip Tornagrip Wilson Comfort Original Tennis Pro</p>
+                        </h2>
+                        <h2>
+                            <p class="Descripcion">El agarre de elección para muchos profesionales en el Tour, Pro Overgrip Comfort ofrece una variedad de beneficios. Su fieltro súper fino y elástico proporciona una sensación excelente durante un período prolongado.</p>
+                        </h2>
+
+                        <div class="item-details"></div>
+                        <h4 class="item-price">
+                            <p class="Precio"><b>$50.000</b></p>
+                        </h4>
+                        <button class="item-button btn btn">
+                        <h4 class="item-button btn btn-primary addToCart">AÑADIR COMPRA</h4>
+                        <i class="fas fa-cart-plus"></i></button>
+                    </div>
+                </li>
+
+
+                <!-- QUINTO -->
+                <li class="posts" data-category="tenis">
+                    <!-- OJO: en html del salon data-category="portatiles" -->
+                    <div class="item">
+                        <img class="item-image" src="../imagenes proyecto/pelotas1.jpg" alt="" height="400" width="400">
+                        <h2 class="item-title">
+                            <p class="Subtitilo">Tubo De 3 Pelotas De Tenis Wilson Triniti</p>
+                        </h2>
+                        <h2>
+                            <p class="Descripcion">La Marca Nº 1 de Tenis en el Mundo.Wilson fabrica los productos más innovadores con diseños de vanguardia que potencian las habilidades de sus usuarios</p>
+                        </h2>
+
+                        <div class="item-details"></div>
+                        <h4 class="item-price">
+                            <p class="Precio"><b>$42.000</b></p>
+                        </h4>
+                        <button class="item-button btn btn">
+                        <h4 class="item-button btn btn-primary addToCart">AÑADIR COMPRA</h4>
+                        <i class="fas fa-cart-plus"></i></button>
+                    </div>
+                </li>
+
+                <!-- SEXTO -->
+                <li class="posts" data-category="tenis">
+                    <!-- OJO: en html del salon data-category="portatiles" -->
+                    <div class="item">
+                        <img class="item-image" src="../imagenes proyecto/pelotas2.jpg" alt="" height="400" width="400">
+                        <h2 class="item-title">
+                            <p class="Subtitilo">Pelotas De Tenis Penn 6 Tubos De 3 Bolas Ref: 521019</p>
+                        </h2>
+                        <h2>
+                            <p class="Descripcion">La bola de tenis de trabajo pesado Penn Championship es la opción # 1 de los profesionales de la enseñanza USPTA. Cuenta con la tecnología exclusiva de liberación de fibras para golpes consistentes</p>
+                        </h2>
+
+                        <div class="item-details"></div>
+                        <h4 class="item-price">
+                            <p class="Precio"><b>$140.000</b></p>
+                        </h4>
+                        <button class="item-button btn btn">
+                        <h4 class="item-button btn btn-primary addToCart">AÑADIR COMPRA</h4>
+                        <i class="fas fa-cart-plus"></i></button>
+                    </div>
+                </li>
+
+
+                </ol>
+            </section>
+        </div><!-- cierre div  class="main row Blanco" -->
+
+        <!-- SECCION DE COMPRA -->
+        <div class="row Blanco2" id="Blanco2">
+            <section class="shopping-cart col-md-12">
+                <div class="container "><br><br>
+                    <h1 class="text-center">LISTA DE COMPRAS<i class="fas fa-cart-plus"></i> </h1>
+                    <hr>
+                    <div class="row ">
+                        <div class="col-6 ">
+                            <div class="shopping-cart-header ">
+                                <h6>Producto</h6>
+                            </div>
+                        </div>
+                        <div class="col-2 ">
+                            <div class="shopping-cart-header ">
+                                <h6 class="text-truncate ">Precio de Venta</h6>
+                            </div>
+                        </div>
+                        <div class="col-4 ">
+                            <div class="shopping-cart-header ">
+                                <h6>Cantidad (Q)</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ? START SHOPPING CART ITEMS -->
+                    <div class="shopping-cart-items shoppingCartItemsContainer ">
+                    </div>
+                    <!-- ? END SHOPPING CART ITEMS -->
+
+                    <!-- START TOTAL -->
+                    <div class="row ">
+                        <div class="col-12 ">
+                            <div class="shopping-cart-total d-flex align-items-center ">
+                                <p class="mb-0 ">Total</p>
+                                <p class="ml-4 mb-0 shoppingCartTotal ">0</p>
+                                <div class="toast ml-auto bg-info " role="alert " aria-live="assertive " aria-atomic="true " data-delay="2000 ">
+                                    <div class="toast-header ">
+                                        <span>✅</span>
+                                        <strong class="mr-auto ml-1 text-secondary ">Elementos <i class="fas fa-cart-plus"></i></strong>
+                                        <button type="button " class="ml-2 mb-1 close " data-dismiss="toast " aria-label="Close ">
+                                    <span aria-hidden="true ">&times;</span>
+                                </button>
+                                    </div>
+                                    <div class="toast-body text-white ">
+                                        Se aumentó correctamente la cantidad
+                                    </div>
+                                </div>
+
+                                <button class="btn btn-success ml-auto comprarButton " type="button " onclick="BotonComprar();">Compra de usurario</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+        </div><!-- div class="row Blanco2" -->
+
+    </div><!-- cierre div grande, class:container --> 
+
+
+    <footer>
+        <div class="container-fluid">
+            <div class="row Azulito">
+                <div class="col-xs-12 col-sm-8">
+                    <br><b>2023</b> <br>Desarrollado por Eugenio Technology&copy; <br> 
+                </div>
+                <div class="col-xs-12 col-sm-4">
+                    <br> Palo Alto <br>Silicon Valley - San Francisco -  <br> US Number: 8-7896754
+                    <br>
+                </div>
+                <br>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md-12 Blanco">
+                    <center>
+                        <h5 class="designBy">
+                            Powered By Eugenio Vera - All Rights Reserved  
+                        </h5>
+                    </center>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <br><br>
+
+    <!-- SCRIPTS DE JAVA-->
+    <script src="../java sem 17/java 1 sem 17.js"></script> <!-- 1ER JS -->
+    <script src="../java sem 17/java 2 sem 17.js"></script> <!-- 2DO JS -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js " integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj " crossorigin="anonymous "></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js " integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN " crossorigin="anonymous "></script>
+    
+</body>
+</html>
