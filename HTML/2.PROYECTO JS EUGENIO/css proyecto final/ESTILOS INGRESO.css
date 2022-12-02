@@ -1,0 +1,105 @@
+.container{  
+    border-radius: 5px;
+    overflow: hidden;
+    width:400px;
+    max-width: 100%;
+}
+.header{
+
+     padding:20px 40px;
+}
+.header h2{
+margin:0;
+}
+#registro{
+    border-color: white;
+}
+.form{
+    padding:30px 40px;
+}
+
+.form-control{
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+.form-control label{
+   display: inline-block;
+   margin-bottom: 5px;
+}
+.form-control input{
+    display:block;
+    font-family: inherit;
+    font: size 14px;
+    padding:20px;
+    width: 100%;
+    }
+.form-control i{
+        visibility: hidden;
+        position:absolute;
+        top:40%;
+        right: 10px;
+    }
+.form-control input:focus{
+    outline:0 none;
+}
+.form-control.success input{
+    border-color:springgreen;
+}
+.form-control.error input{
+    border-color:red;
+}
+.form-control.error textarea{
+    border-color:red;
+}
+.form-control.success textarea{
+    border-color:springgreen;
+}
+.form-control.success i.fa-check-circle{
+    color:lime;
+    visibility: visible;
+}
+.form-control.error i.fa-exclamation-circle{
+    color:red;
+    visibility: visible;
+}
+.form-control small{
+    color:red;
+    position: absolute;
+    bottom:0;
+    left:0;
+    visibility: hidden;
+}
+.form-control.error small{
+    visibility: visible;
+    text-align: center;
+}
+.form button{
+    border-radius: 4px;
+    display: block;
+    font-family: inherit;
+    padding:10px;
+    margin-top: 20px;
+
+}
+#btns-social{
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.btn-social-face{
+    background-color:blue ;
+    color: white;
+    width:50%;
+    font-size: 20px;
+    border-radius: 30px;
+    text-decoration: none;
+}
+.btn-social-google{
+    background-color: salmon;
+    color:white;
+    width:50%;
+    font-size: 20px;
+    border-radius: 30px;
+}
