@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>PRINCIPAL T</title>
+   <!-- creación y definición de un favicon -->
+   <link rel="shortcut icon" href="img/HTML5.png" type="image/x-icon">
+ <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+ <!-- CSS -->
+ <link rel="stylesheet" href="../css proyecto final/ESTILOS PRINCIPAL TENIS.css"> 
+
+</head>
+<body>
+<div id="grid-container">
+<!-- SECCION CABECERA  -->
+ <header id="header">
+     <img src="../imagenes proyecto final/SuperT.png" width="150" height="150" alt="super t">
+     <h1>  SUPER T </h1>   
+</header>
+<!----se anula esta linea de la versión anterior: <div class="openmenu"><i class="fas fa-bars"></i></div> --------->
+<!-- SECCION MENU NAVEGACIÓN -->
+<nav id="menu">
+   <!-- Seccion de icono de hamburguesa para abrir sidebar menu -->
+   <button id="openmenu" onclick="openMenu()"><i class="fas fa-bars"></i></button><!-- cambio-->
+   <ul class="mainmenu" id="mainMenu"><!-- cambio-->
+   <!-- seccion de icono cerrar para sidebar menu -->
+   <a href="javascript:void(0)" id="closemenu" onclick="closeNav()">&times;</a><!-- cambio-->
+   <!-- OJO: SE ENLAZAN CADA UNA DE LAS OPCIONES DE LISTAS A LAS PAGINAS WEB RESPECTIVAS: tienda celulares, nomina, ingreso, formulario de registro -->
+   <i class="fas fa-home"></i><li><a href="../html proyecto final/PRINCIPAL SUPER T.html">INICIO</a></li>
+   <i class="fas fa-cart-arrow-down"></i><li><a href="../html proyecto final/TIENDA T.html">TIENDA ON LINE</a></li>
+   <i class="fas fa-charging-station"></i><li><a href="../html proyecto final/REGISTRO T.html">REGISTRARSE</a></li>
+   
+   </ul>
+<!-- SECCION BUSCADOR -->
+<div class="buscarbox">
+<i class="fas fa-search"></i><input type="text" placeholder="Buscar aquí...">
+</div>
+<!-- seccion registro usuario -->
+<div id="reguser">
+   <i class="fas fa-user"></i><a href="../html proyecto final/INGRESO TENIS.html">CLIENTE PREMIUM</a>
+</div>
+</nav>
+<!-- SECCION CONTENIDO -->
+<center>  
+<section id="main">
+ <figure>
+   <img src="/IMAGENES/imagen html.jpeg" width="100" height="100" alt="html5">
+   <img src="/IMAGENES/imagen css.jpeg" width="100" height="100" alt="css3">
+   <img src="/IMAGENES/imagen java.jpeg" width="100" height="100"  alt=""> 
+   <br>
+   
+</figure>
+<!-- seccion article -->
+<article class="programa">
+<h1>SISTEMAS</h1>
+<img src="/IMAGENES/imagen sistemas.jpeg" width="100"  height="100" alt="sistemas">
+</article>
+   <article class="programa">
+      <h1>DISEÑO GRAFICO</h1>
+      <img src="/IMAGENES/imagen diseño grafico.jpeg" width="100"  height="100" alt="sistemas">
+      </article>
+      <article class="programa">
+         <h1>CONTABILIDAD</h1>
+         <img src="/IMAGENES/imagen contabilidad.jpeg" width="100"  height="100" alt="sistemas">
+      </article>
+      <article class="programa">
+         <h1>SEGURIDAD OCUPACIONAL</h1>
+         <img src="/IMAGENES/imagen seguridad ocupacional.jpeg" width="100"  height="100" alt="sistemas">
+      </article>
+      
+      <article class="programa">
+         <h1>ENFERMERIA Y SALUD ORAL</h1>
+         <img src="/IMAGENES/imagen enfermeria.jpeg" width="100"  height="100" alt="sistemas">
+      </article>
+      <article class="programa">
+         <h1>BANCA Y FINANZAS</h1>
+         <img src="/IMAGENES/imagen banca finanzas.jpeg" width="100"  height="100" alt="sistemas">
+      </article>      
+</section>
+</center>
+<!-- seccion barra lateral -->
+<aside id="sidebar">
+<h1>VIDEOS DE INTERES</h1>
+<br><br>
+<h1>APRENDE HTML</h1>
+<iframe width="250" height="265" src="https://www.youtube.com/embed/cqMfPS8jPys" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<br><br>
+<h1>APRENDE JAVASCRIPT</h1>
+<iframe width="250" height="265" src="https://www.youtube.com/embed/xnWtGNiG2lg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<br><br>
+<h1>APRENDE PHP</h1>
+<iframe width="250" height="265" src="https://www.youtube.com/embed/whpYinrcuSU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<br><br>
+</aside>
+<!-- seccion pie de pagina -->
+<footer id="footer">
+<div id="redes">
+<a href="https://www.facebook.com"><i class="fab fa-facebook-square"></i></a>
+<a href="https://www.youtube.com"><i class="fab fa-youtube-square"></i></a>
+<a href="https://www.twitter.com"><i class="fab fa-twitter-square"></i></a>
+<a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+<a href="https://web.whatsapp.com/"><i class="fab fa-whatsapp"></i></a>
+</div>
+<p><i>Derechos reservados &copy; 2021@EUGENIO VERA GÓMEZ</i></p>
+</footer>
+</div>
+<!-- ENLACE JAVA -->
+<script src="../java proyecto final/JAVA PRINCIPAL TENIS.js"></script> <!-- JS -->
+
+</body>
+</html>
