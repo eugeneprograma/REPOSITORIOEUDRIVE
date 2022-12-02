@@ -1,0 +1,210 @@
+<!-- CODIGO PARA VER LOS PRODUCTOS DE LA TIENDA TENIS EN ZOOM -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+  color-scheme:red ;
+}
+
+.img-zoom-container {
+  position: relative;
+  border-color: #990e0e;
+
+}
+p{
+  font-weight: bold;
+  font-size: 15px;
+}
+h3{
+    font-weight: bold;
+  font-size: 30px;
+  color: #990e0e;
+}
+.img-zoom-lens {
+  position: absolute;
+  border: 1px solid #9b1313;
+  background-color: transparent;
+  /*background-color:    transparent;*/
+  width: 100px;
+  height: 100px;
+}
+
+.img-zoom-result {
+  border: 1px solid #990e0e;
+  float: right;
+  border-radius: 60px;
+  border-style: double;
+  /*Parametros de tamaño del div donde se va a reflejar imagen aumentada:*/
+  width: 700px;  /*el ancho es mayor en 200px*/
+  height: 400px;
+}
+/*Estilos Star rating*/
+#form {
+    width: 250px;
+    margin: 0 auto;
+    height: 100px;
+  }
+  
+  #form p {
+    position: relative;
+    left: -150%;
+  }
+
+  #form label {
+    font-size: 50px;
+  }
+  
+  input[type="radio"] {
+    display: none;
+  }
+  
+  label {
+    color: rgb(72, 14, 14);
+    size: 10px;
+  }
+  
+  .clasificacion {
+    direction: rtl;
+    unicode-bidi: bidi-override;
+  }
+  
+  label:hover,
+  label:hover ~ label {
+    color: orange;
+    
+  }
+  
+  input[type="radio"]:checked ~ label {
+    color: orange;
+  }
+
+
+</style>
+
+<script>
+function imageZoom(imgID, resultID) {
+  var img, lens, result, cx, cy;
+  img = document.getElementById(imgID);
+  result = document.getElementById(resultID);
+  /*create lens:*/
+  lens = document.createElement("DIV");
+  lens.setAttribute("class", "img-zoom-lens");
+  /*insert lens:*/
+  img.parentElement.insertBefore(lens, img);
+  /*calculate the ratio between result DIV and lens:*/
+  cx = result.offsetWidth / lens.offsetWidth;
+  cy = result.offsetHeight / lens.offsetHeight;
+  /*set background properties for the result DIV:*/
+  result.style.backgroundImage = "url('" + img.src + "')";
+  result.style.backgroundSize = (img.width * cx) + "px " + (img.height * cy) + "px";
+  /*execute a function when someone moves the cursor over the image, or the lens:*/
+  lens.addEventListener("mousemove", moveLens);
+  img.addEventListener("mousemove", moveLens);
+  /*and also for touch screens:*/
+  lens.addEventListener("touchmove", moveLens);
+  img.addEventListener("touchmove", moveLens);
+  function moveLens(e) {
+    var pos, x, y;
+    /*prevent any other actions that may occur when moving over the image:*/
+    e.preventDefault();
+    /*get the cursor's x and y positions:*/
+    pos = getCursorPos(e);
+    /*calculate the position of the lens:*/
+    x = pos.x - (lens.offsetWidth / 2);
+    y = pos.y - (lens.offsetHeight / 2);
+    /*prevent the lens from being positioned outside the image:*/
+    if (x > img.width - lens.offsetWidth) {x = img.width - lens.offsetWidth;}
+    if (x < 0) {x = 0;}
+    if (y > img.height - lens.offsetHeight) {y = img.height - lens.offsetHeight;}
+    if (y < 0) {y = 0;}
+    
+    lens.style.left = x + "px";
+    lens.style.top = y + "px";
+    
+    result.style.backgroundPosition = "-" + (x * cx) + "px -" + (y * cy) + "px";
+  }
+  function getCursorPos(e) {
+    var a, x = 0, y = 0;
+    e = e || window.event;
+    /*get the x and y positions of the image:*/
+    a = img.getBoundingClientRect();
+    /*calculate the cursor's x and y coordinates, relative to the image:*/
+    x = e.pageX - a.left;
+    y = e.pageY - a.top;
+    /*consider any page scrolling:*/
+    x = x - window.pageXOffset;
+    y = y - window.pageYOffset;
+    return {x : x, y : y};
+  }
+}
+</script>
+<!--IMPORTANTE EU: ICONO PESTAÑA WEB -->
+<link rel="shortcut icon" href="../imagenes proyecto final/icono web.png" type="icon">
+
+<title>DETALLE PRODUCTO</title>
+</head>
+<body bgcolor=#D5F5E3>
+
+    <strong><marquee behavior="alternate" direction="right" bgcolor=#ABEBC6 height="50px" hspace scrollamount="8px">AQUI PUEDES VER LOS DETALLES DE TU PRODUCTO</marquee> </strong>    
+<style>
+    marquee{
+        border-radius: 30px;
+    }
+    
+</style>
+<h1>SUPER T</h1>
+<!-- <img src="../imagenes proyecto final/icono web.png" alt="" width="100" height="100"> -->
+
+<h2>LOS MEJORES PRODUCTOS PARA TU PRACTICA DE TENIS</h2>
+<a href="../html proyecto final/TIENDA T.html"><button type="button" class="btn btn-warning">VOLVER A TIENDA</button></a>
+
+
+<br><br>
+<hr aling="center" width="70%" color=#990e0e >
+<h3>Raqueta de Tenis Wilson Clash 100UL V.2</h3>
+<!-- CONTENEDOR PARA IMAGEN E IMAGEN AUMENTADA-->
+<div id="container">
+    <div class="img-zoom-container">
+      <img id="myimage" src="../imagenes proyecto final/raqueta2.jpg" width="400" height="340">
+
+      <div id="myresult" class="img-zoom-result"></div>
+    </div>
+  <div class="text-img">
+    
+    <p>REF: 1010898</p>
+    <!-- comentario de usuario -->
+    <b><p>Nuestros clentes opinan</p></b> 
+   <blockquote> <b><font color=#229954>Eladio:"Es magnifico el servicio al cliente, he comprado varios articulos y ofrecen una gran garantia"</font></b></blockquote>
+   
+    <p>Precio: $1.200.000</p>
+    <b><p> Pregunta por nuestro descuento a Cliente Premium</p></b>
+  </div>
+<!-- SECCION DE RATING STARS   -->
+  <p style="text-align:center;">Llego el momento de calificar nuestro producto</p>
+  <form id="form">
+    
+    <p class="clasificacion">
+      <input id="radio1" type="radio" name="estrellas" value="5"><label for="radio1">★</label>
+      <input id="radio2" type="radio" name="estrellas" value="4"><label for="radio2">★</label>
+      <input id="radio3" type="radio" name="estrellas" value="3"><label for="radio3">★</label>
+      <input id="radio4" type="radio" name="estrellas" value="2"><label for="radio4">★</label>
+      
+
+
+    </p>
+    <style>
+        p.clasificacion{
+            color: aqua;
+        }
+    </style>
+  </form>
+</div>
+<script>
+// EJECUCION DE FUNCION ZOOM IMAGEN:
+imageZoom("myimage", "myresult");
+</script>
+</body>
+</html>
