@@ -1,0 +1,60 @@
+h1
+{
+    text-align:center;
+    color: greenyellow;
+    font-size: 40px;
+}
+form{
+    margin:auto;
+    width: 800px;
+    height: 100%;
+}
+body
+{
+    background-color: rgb(108, 107, 189);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    }
+
+table
+{
+    border-color: greenyellow;
+    border-style: solid;
+    margin:inherit;
+    width: inherit;
+    position: absolute;
+    top: 200px;
+}
+table caption
+{
+    text-align: center;
+    font-size: 25px;
+    border-radius: 10px;
+    border-color: greenyellow;
+    border-style: solid;
+    background-color: goldenrod;
+}
+table th
+{
+    border-color: greenyellow;
+    border-style: solid;
+    background-color: goldenrod;
+    text-align: center;
+    font-size: 20px;
+}
+
+table td
+{
+    border-color: greenyellow;
+    border-style: solid;
+    text-align: center;
+}
+p
+{
+    font-weight: bolder;
+    font-size: 25px;
+}
+img{
+    width: 100px;
+    height: 100px;
+}

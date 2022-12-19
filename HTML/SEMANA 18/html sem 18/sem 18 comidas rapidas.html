@@ -1,0 +1,91 @@
+<!DOCTYPE Html>
+<head>
+
+    <title>FORMULARIO FACTURA CHECKED </title>
+    <!-- link de CSS -->
+    
+    <link rel="stylesheet" href="../css sem 18/sem 18 comidas.css">    
+    
+    <!-- link de sitio SweetAlert -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+
+</head>
+<body>
+
+  <!---Programa que permita seleccionar al usuario varios lenguajes de programacion-->
+  <center><h1>FACTURA DE VENTAS COMIDAS RAPIDAS </h1>
+  <form action="pedido.php" method="post" >
+     <!-- Seccion cabecera de encabezado de factura -->
+      <table><caption>FACTURA DE VENTA</caption>
+      <tr><th>Nombre</th><td><input type="text" size="20" ></td><th>TIPO DOCUMENTO </th><th><select id="tp"><option>CC </option><option>CE</option><option>NIT</option></select></th><th>No.DOCUMENTO</th><td><input type="text" size="25"></td></tr>
+      <tr><th>DIRECCION</th><td><input type="text" id="dir" size="20"></td><th>TELEFONO</th><td><input type="text" id="tel" size="20"></td><th>EMPLEADO</th><td><input type="text" id="emp" size="25"></td></tr>
+     <!-- Seccion cabecera de detalle de factura -->
+      <tr><th>REFERENCIA</th>
+      <th colspan="2">DESCRIPCION</th><th>CANTIDAD</th><th>VALOR UNITARIO</th><th>SUBTOTAL</th></tr>
+      <tr>
+        <th><select id="prod1" onchange="mostrar();">
+            <option>Seleccionar:</option>
+            <option value="25000">Combo Hamburgueza</option>
+            <option value="20000">Combo Perro Caliente</option>
+            <option value="35000"> Combo Pizza</option>
+            </select></th>
+            <th colspan="2"><input type="text" id="desc01" size="40"></th>
+            <th><input type="number" id="cant01" size="10" ></th>
+            <th><input type="number" id="vau01" size="15" disabled></th>
+            <th><input type="text" id="vat01" size="15"disabled></th></tr>
+      <tr>
+        <th><select id="prod2" onchange="mostrar();">
+            <option>Seleccionar:</option>
+            <option value="25000">Combo Hamburgueza</option>
+            <option value="20000">Combo Perro Caliente</option>
+            <option value="35000"> Combo Pizza</option>
+            </select></th>
+            <th colspan="2">
+            <input type="text" id="desc02" size="40"></th>
+            <th><input type="number" id="cant02" size="10"></th>
+            <th><input type="text" id="vau02" size="15" disabled></th>
+            <th><input type="text" id="vat02" size="15" disabled></th></tr>  
+    <tr>
+    <th><select id="prod3"onchange="mostrar();">
+            <option>Seleccionar:</option>
+            <option value="25000">Combo Hamburgueza</option>
+            <option value="20000">Combo Perro Caliente</option>
+            <option value="35000"> Combo Pizza</option>
+            </select></th>
+            <th colspan="2"><input type="text" id="desc03" size="40"></th>
+            <th><input type="number" id="cant03" size="10"></th>
+            <th><input type="text" id="vau03" size="15" disabled></th>
+            <th><input type="text" id="vat03" size="15" disabled></th>
+        </tr> 
+        <tr><th colspan="6">ADICIONALES</th></tr>
+        <tr><th colspan="2" rowspan="2"><img src="../imagenes sem 18/Cerveza.jpg" alt="">
+            <input type="radio" name="adic" id="radio4">CERVEZA _$3.000</th>
+            <th colspan="2" rowspan="2"><img src="../imagenes sem 18/helado.jpg" alt="">
+            <input type="radio" name="adic" id="radio5">HELADO_$2.500</th>
+            <th colspan="2" rowspan="2"><img src="../imagenes sem 18/jugohit.png" alt="">
+            <input type="radio" name="adic" id="radio6">JUGO HIT_$2.300</th>
+        </tr> 
+     <!--Seccion liquidación de factura  -->
+     <tr></tr>
+     <tr><th colspan="4">TOTAL ADICIONALES</th>
+        <th colspan="2"><input type="number" id="adic0" disabled></th></tr>
+      <tr><th colspan="2"> FORMA DE PAGO</th>
+      <th colspan="2"><input type="radio" name="fp" id="radio1">Efectivo <br> 
+      <input type="radio" name="fp" id="radio2">Cheque <br> 
+      <input type="radio" name="fp" id="radio3">Tarjeta</th>
+      <th>SUBTOTAL</th><td><input type="text" id="subt" size="25"></td></tr>
+      <tr>
+      <th colspan="4" rowspan="3">OBSERVACIONES: REVISE SU PEDIDO ENTREGADO y GRACIAS POR ATENDERTE!!</th>
+      <th>IVA</th><td><input type="text" id="iva" size="25"></td></tr>
+      <tr><th>DESCUENTO</th><td><input type="text" id="desc" size="25"></td></tr>  
+      <tr><th>NETO</th><td><input type="text" id="neto" size="25"></td></tr>  
+      <tr><th colspan="2"><input type="button" value="CALCULAR PAGO" onclick="mostrar();"></th>
+      <th colspan="2"><input type="reset" value="BORRAR"></th>
+      <th colspan="2"><input type="button" value="ENVIAR" onclick="enviar();"></th>
+    </tr>
+  </form>
+  <!-- VINCULO DE JAVA -->
+<script src="../java sem 18/sem 18 comidas.js"></script>
+</center>
+</body>

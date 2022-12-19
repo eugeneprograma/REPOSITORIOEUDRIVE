@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link de CSS -->
+
+    <link rel="stylesheet" href="../css proyecto final/ESTILOS INGRESO.css"> 
+    
+    <!-- link de sitio sweetalert mensajes mas elegantes-->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <title>Login</title>
+
+</head>
+<body>
+    <h1>BIENVENIDO CLIENTE SUPER T</h1>
+    <div class="container">
+        <div class="header">
+            <center>
+            <img src="../imagenes proyecto final/SuperT.png" height="100"> <br><br>
+            <h3>INICIO SESION</h3></center>
+        </div>
+        <form id="form" class="form" action="">
+        
+            <div class="w-100 form-control">
+                <label for="email">EMAIL</label>
+                <input type="text" placeholder="Ingrese cuenta@servidor.com" id="email">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <br>
+                <small>mensaje de error</small>
+            </div>
+            <div class="form-control">
+                <label for="password">CONTRASEÑA</label>
+                <input type="password" placeholder="Password" id="password">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <br>
+                <small>mensaje de error</small>
+            </div>
+            <center>
+            <div class="form-control" id="registro">
+                <label><center>
+                    QUIERES SER PARTE DE LOS CLIENTES PREMIUM SUPER T
+                </label>
+                <br>
+                <a class="btn btn-link" href="../html proyecto final/REGISTRO T.html" role="button">IR A FORMULARIO REGISTRO </a>
+            </div>
+         <div>
+             <hr>
+        
+            <button id="login" class="w-100 btn btn-lg btn-primary " type="submit" onclick="return validainputs()">Login</button>
+            <center><a class="mt-2 w-100 btn btn-lg btn-primary" href="../Index.html" role="button">Volver al inicio</a></center>
+        </center>   
+        </form>
+    </div>
+    <!-- ENLACE JAVA -->
+    <script src="../java proyecto final/JAVA INGRESO.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous"></script>
+</body>
+</html>
