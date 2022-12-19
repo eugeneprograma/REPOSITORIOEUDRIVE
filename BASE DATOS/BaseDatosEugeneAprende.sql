@@ -26,6 +26,22 @@ select * from animales where nombre_animal="perro" and estado="en proteccion";
 
 select * from animales where estado="tonto";
 
+-- CAMBIAR UN REGISTRO. Ejercicio: se cambia 'perro' por 'gato'
+update animales set nombre_animal="gato" where id_animal=1;
+select * from animales;
+update animales set estado="en casa" where id_animal=3;
+select * from animales;
+select * from animales where estado="en casa";
+-- BORRAR REGISTRO
+delete from animales where estado="en casa";-- ERROR. porque no se indico el ID
+
+delete from animales where id_animal=2;-- OK QUERY DE BORRADO
+select * from animales;
+
+
+
+
+
 
 
 
