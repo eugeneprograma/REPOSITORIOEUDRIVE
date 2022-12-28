@@ -51,8 +51,9 @@ insert into habitad (zona,pais,temperatura) values ('templada','peru',300);
 insert into habitad (zona,pais, temperatura) values ('fria','groenlandia',-20);
 insert into habitad (zona,pais,temperatura) values ('templado','ecuador',34);
 insert into habitad (zona,pais) values ('fria','peru');
-insert into hatitad (zona, pais, temperatura) values ('caliente','africa',90);
+insert into habitad (zona, pais, temperatura) values ('caliente','africa',90);
 
+select * from habitad;
 
 
 
