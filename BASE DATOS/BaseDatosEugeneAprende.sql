@@ -38,6 +38,27 @@ delete from animales where estado="en casa";-- ERROR. porque no se indico el ID
 delete from animales where id_animal=2;-- OK QUERY DE BORRADO
 select * from animales;
 
+create table habitad(
+id_habitad int not null auto_increment,
+zona varchar(100),
+pais varchar(80),
+temperatura int,
+primary key (id_habitad)
+);
+
+-- VALORES DE TABLA HABITAD
+insert into habitad (zona,pais,temperatura) values ('templada','peru',300);
+insert into habitad (zona,pais, temperatura) values ('fria','groenlandia',-20);
+insert into habitad (zona,pais,temperatura) values ('templado','ecuador',34);
+insert into habitad (zona,pais) values ('fria','peru');
+insert into hatitad (zona, pais, temperatura) values ('caliente','africa',90);
+
+
+
+
+
+
+
 
 
 
