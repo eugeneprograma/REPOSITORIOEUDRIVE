@@ -69,6 +69,10 @@ select * from habitad where zona='fria' and temperatura<1; -- ok bien
 -- mostrar tabla 'habitad'
 select * from habitad;
 -- q: cambiar todos aquellos registros repetidos
+update habitad set pais='canada' where id_habitad=3;
+update habitad set zona='templado' where id_habitad=4;
+-- mostrar nueva tabla de 'habitad'
+select * from habitad;
 
 
 
