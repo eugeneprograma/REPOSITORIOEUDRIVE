@@ -54,6 +54,22 @@ insert into habitad (zona,pais) values ('fria','peru');
 insert into habitad (zona, pais, temperatura) values ('caliente','africa',90);
 
 select * from habitad;
+-- query de un campo
+select * from habitad where zona='templada';
+
+-- ver toda tabla
+select	* from habitad;
+-- query zona:fria id:1
+select * from habitad where id_habitad=1;
+-- query zona=fria
+select * from  habitad where zona='fria';
+-- QUERY: zona:fria y temperatura < 0
+select * from habitad where zona='fria' and temperatura<1; -- ok bien
+
+-- mostrar tabla 'habitad'
+select * from habitad;
+-- q: cambiar todos aquellos registros repetidos
+
 
 
 
