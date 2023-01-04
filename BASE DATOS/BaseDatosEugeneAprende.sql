@@ -106,7 +106,13 @@ select * from animal;
 update animal set nombre_animal="manta raya" where id_animal=1;
 select * from animal;
 select * from animal limit 4;
-
+select * from habitad limit 4;
+-- seleccion cumpliendo condiciones al tiempo (Y)
+select * from habitad where zona='fria' and temperatura > -30;
+select * from habitad where zona="fria" and temperatura > 0;
+-- select OR, cumple alguna condicion
+select * from habitad;
+select * from habitad where zona="caliente" or temperatura > 50;
 
 
 
