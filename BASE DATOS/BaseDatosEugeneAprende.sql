@@ -113,6 +113,9 @@ select * from habitad where zona="fria" and temperatura > 0;
 -- select OR, cumple alguna condicion
 select * from habitad;
 select * from habitad where zona="caliente" or temperatura > 50;
+select * from animal;
+
+
 
 
 
