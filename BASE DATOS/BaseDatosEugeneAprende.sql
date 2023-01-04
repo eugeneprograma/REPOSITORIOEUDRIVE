@@ -105,6 +105,7 @@ delete from animal where id_animal=6;
 select * from animal;
 update animal set nombre_animal="manta raya" where id_animal=1;
 select * from animal;
+select * from animal limit 4;
 
 
 
