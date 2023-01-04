@@ -73,6 +73,23 @@ update habitad set pais='canada' where id_habitad=3;
 update habitad set zona='templado' where id_habitad=4;
 -- mostrar nueva tabla de 'habitad'
 select * from habitad;
+-- BORRAR REGISTRO
+DELETE from habitad where id_habitad=5;
+select * from habitad;
+delete from habitad where id_habitad=7;
+delete from habitad where id_habitad=4;
+select * from habitad;
+insert into habitad (temperatura) VALUES (89);
+select * from habitad;
+delete	from habitad where id_habitad=8;
+delete from habitad where id_habitad=9;
+select * from habitad;
+delete	from habitad where id_habitad=8;
+select * from habitad;
+-- update habitad set zona='templado' where id_habitad=4;
+update habitad set temperatura=77 where	id_habitad=3;
+select * from habitad;
+select * from habitad where zona='fria';
 
 
 
