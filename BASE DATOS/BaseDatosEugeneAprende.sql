@@ -114,6 +114,38 @@ select * from habitad where zona="fria" and temperatura > 0;
 select * from habitad;
 select * from habitad where zona="caliente" or temperatura > 50;
 select * from animal;
+-- Q: QUE NO SEA IGUAL ... > !=
+select * from animal where estado!='en proteccion'; -- CONSULTA OK ...
+select * from habitad;
+select * from habitad where zona != 'caliente';
+-- Q: SELECCION ENTRE VALORES .. BETWEEN
+select * from habitad;
+-- select * habitad where temperatura between 
+select * from habitad where temperatura between 1 and 50;
+
+select * from habitad where temperatura between 3 and 100;
+-- q: consulta personalizada de varchar
+select * from habitad where zona like "%a%";
+select * from habitad where zona like '%a';
+select * from habitad where pais like '%a';
+select * from animal;
+select * from animal where nombre_animal like '%e%';
+select * from animal where nombre_animal like '%j%';
+-- orden ascendente  o descendente
+select * from animal order by id_animal desc;
+select * from habitad;
+select * from habitad order by temperatura asc;
+select * from habitad order by pais asc;
+
+
+
+
+
+
+
+
+
+
 
 
 
