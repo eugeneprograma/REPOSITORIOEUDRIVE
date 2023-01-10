@@ -150,6 +150,7 @@ select max(edad), nombre from usuarios group by nombre;
 -- expression #2 of SELECT list contains nonaggregated column 
 -- 'holamundo.usuarios.nombre'; this is incompatible with sql_mode=only_full_group_by
 
+select * from animales;
 
 
 
