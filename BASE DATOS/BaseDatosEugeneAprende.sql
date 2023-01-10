@@ -140,9 +140,35 @@ select * from habitad order by pais asc;
 select * from habitad;
 select * from habitad where zona='%e';
 select * from habitad;
-select * from habitad where ='r';
+select * from habitad where id_habitad=2;
+select * from habitad where pais like "r";
+select * from habitad where pais like "%r";
+select * from habitad where pais like 'a%';
+select * from habitad; 
 
+select * from animal;
+select * from animal where estado like "%e%";
+select * from animal where estado like '%pr%';
+select * from animal where nombre_animal like "%a";
 
+select * from habitad;
+
+select * from habitad order by temperatura desc;
+select * from habitad order by zona asc;
+select * from habitad where zona !='fria';
+
+select * from habitad where zona !='templado'
+select * from habitad where temperatura > 0;
+-- select * from habitad where temperatura < 50;
+select * from habitad where temperatura < 50;
+select * from habitad where temperatura > 0;
+select * from habitad where temperatura > 0;
+
+select * from habitad where temperatura between -2 and 40;
+select * from habitad;
+insert into habitad (zona,pais,temperatura) values ('caliente','continental',-3);
+select * from habitad;
+select * from habitad where temperatura between -10 and 50;
 
 
 
