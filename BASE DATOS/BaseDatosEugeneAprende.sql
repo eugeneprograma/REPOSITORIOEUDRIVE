@@ -137,6 +137,13 @@ select * from habitad;
 select * from habitad order by temperatura asc;
 select * from habitad order by pais asc;
 
+select * from habitad;
+select * from habitad where zona='%e';
+select * from habitad;
+select * from habitad where ='r';
+
+
+
 
 
 
