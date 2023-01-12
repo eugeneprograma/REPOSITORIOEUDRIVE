@@ -152,7 +152,14 @@ select max(edad), nombre from usuarios group by nombre;
 
 select * from animales;
 
+select * from usuarios;
+-- insert into usuarios (nombre,edad,email) values ('chanchito',40,'chanchito@mail');
 
+insert into usuarios(nombre,edad,email) values ('juan',20,'juan@mail');
+
+insert into usuarios (nombre,edad,email) values ('dianita',38,'diana@gmail');
+
+select * from usuarios;
 
 
 
