@@ -50,7 +50,24 @@ print (type(segundo_decimal)) #resultado: <class 'float'>
 #EJERCICIO VALIDAR EL MAYOR DE DOS NUMEROS CON BOLEANO
 ESMAYOR=True
 primero=50
-segundo=30
+segundo=80
+print ("el primer numero es: ",primero)
+print (type(primero))
+print ("el segundo numero es :",segundo)
+print (type(segundo))
+if primero > segundo:
+    print ("el primer número es mayor")
+    print (ESMAYOR)
+else:
+        print("el segundo numero es mayor")
+        ESMAYOR=False
+        print (ESMAYOR)
+        
+#CONCATENAR
+palabra1="mi cuento favorito"
+palabra2="heladero"
+print (palabra1+" es el de "+palabra2)
+
 
 
 
