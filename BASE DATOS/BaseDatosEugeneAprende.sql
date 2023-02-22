@@ -170,6 +170,22 @@ insert into habitad (zona,pais,temperatura) values ('caliente','continental',-3)
 select * from habitad;
 select * from habitad where temperatura between -10 and 50;
 
+-- seleccionar el minimo o maximo
+select * from habitad;
+select min(temperatura) as MinimaTemperatura from habitad;
+select * from habitad;
+
+select * from animal;
+select max(id_animal) as MaximoIDAnimal from animal;
+select * from habitad;
+select id_habitad,pais from habitad;
+
+-- select max(edad), nombre from usuarios group by nombre;
+select min(id_habitad) , pais from habitad;
+
+select max (id_habitad) , pais from habitad group by pais;
+
+
 
 
 
