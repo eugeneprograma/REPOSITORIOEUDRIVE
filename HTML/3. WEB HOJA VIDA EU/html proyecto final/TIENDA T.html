@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <!-- link de sitio SweetAlert -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+        <!-- link BOOTSTRAP 4.5.2 -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    
+    <!-- LINK FONTAWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!-- LINK HOJAS DE ESTILOS CSS3 -->
+    <link rel="stylesheet" href="../css proyecto final/ESTILOS TIENDA1.css"><!-- 1ER CSS3 --> 
+    <link rel="stylesheet" href="../css proyecto final/ESTILOS TIENDA2.css">"><!-- 2DO CSS3 -->
+    <link rel="stylesheet" href="../css proyecto final/ESTILOS TIENDA3.css">"><!-- 3ER CSS3 -->
+    
+    <!--IMPORTANTE EU: ICONO PESTAÑA WEB -->
+    <link rel="shortcut icon" href="../imagenes proyecto final/icono web.png" type="icon">
+
+    <title>TIENDA T</title>
+
+</head>
+<body class="bodyL" id="body">
+<!-- START SECTION STORE -->
+    <div class="container containerL" id="Container">
+        <div class="main row Blanco" id="Blanco">
+            <section class="author-archive col-md-12">
+                <div class="Contenido1"><br>
+                <!-- seccion cabecera -->
+                  <div class="headerL" id="header">
+                    <img src="../imagenes proyecto final/SuperT.png" alt="" style="height: 100px; width: 150px;">
+                    <h1>SUPER T </h1> <br>
+                    <h2>Tienda especializada en articulos de Tenis de Campo</h2>
+                    <!-- seccion toggle switch-->
+                    <input type="checkbox" class="checkbox" id="chk" />
+                    <label class="label" for="chk">
+                    <i class="fas fa-sun"></i>
+                    <i class="fas fa-moon"></i>
+                    <div class="ball"></div>
+                    </label>
+                 </div>
+                    
+                    <hr aling="center" color=#990e0e >
+                    <h1>Haz click en cada imagen para ver en ZOOM mas detalle y comentarios de clientes</h1>
+                    <hr aling="center" color=#990e0e >
+                    
+                    <!-- VOLVER PAGINA PRINCIPAL -->
+                    <a href="../html proyecto final/TIENDA T.html"><button type="button" class="btn btn-warning">IR PAGINA INICIO</button></a>
+                    <br><br>
+
+                    <!-- Seccion contenedor de imágenes y textos -->
+                    <ol class="posts">
+                        <!--Portátiles-->
+
+                        <!-- VENTA 1 -->
+                        <li class="post" data-category="Portatiles">
+                            <div class="item">
+                                <!-- ANCLAJE A ZOOM . href="HOJA HTML" src="misma imagen" -->
+                                <a href="../html proyecto final/ZOOM 1.html"><img src="../imagenes proyecto final/raqueta1.jpg" alt="" style="width: 250px;height: 250px;"></a>
+
+                                <!-- <img class="item-image" src="../imagenes proyecto final/raqueta1.jpg" width="400" height="400"><br> -->
+
+                                <h2 class="item-title">
+                                    <p class="Subtitilo">Raqueta de Tenis Babolat Pure Strike 18x20 3ra</p>
+                                </h2>
+                                <h2>
+                                    <p class="Descripcion">La tercera generación de la raqueta Pure Strike de Babolat, esta diseñada para brindar un excepcional control, maniobravildiad, facilitando la generación de efecto en todos tus golpes</p>
+                                </h2>
+                                
+                                <div class="item-details"></div>
+                                <h4 class="item-price">
+                                    <p class="Precio"><b>$1.500.000</b></p>
+                                </h4>
+                                <button class="item-button btn btn-primary addToCart">QUIERO COMPRAR <i class="fas fa-cart-plus"></i></button>
+                            </div>
+                        </li>
+
+                        <!-- VENTA 2 -->
+                        <li class="post" data-category="Portatiles">
+                            <div class="item">
+                                
+                                <!-- ANCLAJE A ZOOM . href="HOJA HTML" src="misma imagen" -->
+                                <a href="../html proyecto final/ZOOM 2.html"><img src="../imagenes proyecto final/raqueta2.jpg" alt="" style="width: 250px;height: 250px;"></a>
+
+                                <!-- <img class="item-image" src="../imagenes proyecto final/raqueta2.jpg"><br> -->
+                                <h2 class="item-title">
+                                    <p class="Subtitilo">Raqueta de Tenis Wilson Clash 100UL V.2</p>
+                                </h2>
+                                <h2>
+                                    <p class="Descripcion">El último  modelo de la raqueta  revolucionaria de Wilson, la raqueta Wilson Clash V.2 trae su ultima tecnología FORTYFIVE  que brinda excepcional sensación con la pelota</p>
+                                </h2>
+                                <div class="item-details">
+                                    <h4 class="item-price">
+                                        <p class="Precio"><b>$1.200.000</b></p>
+                                    </h4>
+                                    <button class="item-button btn btn-primary addToCart">QUIERO COMPRAR<i class="fas fa-cart-plus"></i></button>
+                                </div>
+                            </div>
+                        </li>
+
+                        <!-- VENTA 3 -->
+                        <li class="post" data-category="Portatiles">
+                            <div class="item">
+
+                                <!-- ANCLAJE A ZOOM . href="HOJA HTML" src="misma imagen" -->
+                                <a href="../html proyecto final/ZOOM 3.html"><img src="../imagenes proyecto final/overgrip.jpg" alt="" style="width: 250px;height: 250px;"></a>
+
+
+                                <!-- <img class="item-image" src="../imagenes proyecto final/overgrip.jpg"><br> -->
+                                <h2 class="item-title">
+                                    <p class="Subtitilo">Tornagrip , Sobregrip Overgrip Víctor O Silva</p>
+                                </h2>
+                                <h2>
+                                    <p class="Descripcion">Clores disponibles
+                                        Negro, Azul, Amarillo, Naranja</p>
+                                </h2>
+                                <div class="item-details">
+                                    <h4 class="item-price">
+                                        <p class="Precio"><b>$10.000</b></p>
+                                    </h4>
+                                    <button class="item-button btn btn-primary addToCart">QUIERO COMPRAR<i class="fas fa-cart-plus"></i></button>
+                                </div>
+                            </div>
+                        </li>
+
+                        <!-- VENTA 4 -->
+                        <li class="post" data-category="Portatiles">
+                            <div class="item">
+
+                                <!-- ANCLAJE A ZOOM . href="HOJA HTML" src="misma imagen" -->
+                                <a href="../html proyecto final/ZOOM 4.html"><img src="../imagenes proyecto final/overgrip2.jpg" alt="" style="width: 250px;height: 250px;"></a>
+
+                                <!-- <img class="item-image" src="../imagenes proyecto final/overgrip2.jpg"><br> -->
+                                <h2 class="item-title">
+                                    <p class="Subtitilo">3 Overgrip Tornagrip Wilson Comfort Original Tennis Pro</p>
+                                </h2>
+                                <h2>
+                                    <p class="Descripcion">El agarre de elección para muchos profesionales en el Tour, Pro Overgrip Comfort ofrece una variedad de beneficios. Su fieltro súper fino y elástico proporciona una sensación excelente durante un período prolongado</p>
+                                </h2>
+                                <div class="item-details">
+                                    <h4 class="item-price">
+                                        <p class="Precio"><b>$18.000</b></p>
+                                    </h4>
+                                    <button class="item-button btn btn-primary addToCart">QUIERO COMPRAR<i class="fas fa-cart-plus"></i></button>
+                                </div>
+                            </div>
+                        </li>
+                        <!--VENTA 5-->
+
+                        <li class="post" data-category="Celulares">
+                            <div class="item">
+
+                                <!-- ANCLAJE A ZOOM . href="HOJA HTML" src="misma imagen" -->
+                                <a href="../html proyecto final/ZOOM 5.html"><img src="../imagenes proyecto final/pelotas1.jpg" alt="" style="width: 250px;height: 250px;"></a>
+
+                                <!-- <img class="item-image " src="../imagenes proyecto final/pelotas1.jpg"><br> -->
+                                <h2 class="item-title">
+                                    <p class="Subtitilo">Tubo De 3 Pelotas De Tenis Wilson Triniti</p>
+                                </h2>
+                                <h2>
+                                    <p class="Descripcion">La Marca Nº 1 de Tenis en el Mundo.Wilson fabrica los productos más innovadores con diseños de vanguardia que potencian las habilidades de sus usuarios</p>
+                                </h2>
+                                <div class="item-details ">
+                                    <h4 class="item-price ">
+                                        <p class="Precio"><b>$55.000</b></p>
+                                    </h4>
+                                    <button class="item-button btn btn-primary addToCart ">QUIERO COMPRAR<i class="fas fa-cart-plus"></i></button>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- VENTA 6 -->
+                        <li class="post" data-category="Celulares">
+                            <div class="item">
+                                <!-- ANCLAJE A ZOOM . href="HOJA HTML" src="misma imagen" -->
+                                <a href="../html proyecto final/ZOOM 6.html"><img src="../imagenes proyecto final/pelotas2.jpg" alt="" style="width: 250px;height: 250px;"></a>
+
+                                <!-- <img class="item-image " src="../imagenes proyecto final/pelotas2.jpg"><br> -->
+                                <h2 class="item-title">
+                                    <p class="Subtitilo">Pelotas De Tenis Penn 6 Tubos De 3 Bolas Ref: 521019</p>
+                                </h2>
+                                <h2>
+                                    <p class="Descripcion">La bola de tenis de trabajo pesado Penn Championship es la opción # 1 de los profesionales de la enseñanza USPTA. Cuenta con la tecnología exclusiva de liberación de fibras para golpes consistentes</p>
+                                </h2>
+                                <div class="item-details ">
+                                    <h4 class="item-price ">
+                                        <p class="Precio"><b>$40.000</b></p>
+                                    </h4>
+                                    <button class="item-button btn btn-primary addToCart ">QUIERO COMPRAR<i class="fas fa-cart-plus"></i></button>
+                                </div>
+                            </div>
+                        </li>
+
+                        
+                       
+                       
+                </div>
+            </section>
+        </div>
+
+        <!-- END SECTION STORE -->
+        <!-- START SECTION SHOPPING CART -->
+        <div class="row Blanco2" id="Blanco2">
+            <section class="shopping-cart col-md-12">
+                <div class="container "><br><br>
+                    <h1 class="text-center">CARRITO DE COMPRAS<i class="fas fa-cart-plus"></i> </h1>
+                    <hr>
+                    <div class="row ">
+                        <div class="col-6 ">
+                            <div class="shopping-cart-header ">
+                                <h6>Producto</h6>
+                            </div>
+                        </div>
+                        <div class="col-2 ">
+                            <div class="shopping-cart-header ">
+                                <h6 class="text-truncate ">Precio</h6>
+                            </div>
+                        </div>
+                        <div class="col-4 ">
+                            <div class="shopping-cart-header ">
+                                <h6>Cantidad</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ? START SHOPPING CART ITEMS -->
+                    <div class="shopping-cart-items shoppingCartItemsContainer ">
+                    </div>
+                    <!-- ? END SHOPPING CART ITEMS -->
+
+                    <!-- START TOTAL -->
+                    <div class="row ">
+                        <div class="col-12 ">
+                            <div class="shopping-cart-total d-flex align-items-center ">
+                                <p class="mb-0 ">Total</p>
+                                <p class="ml-4 mb-0 shoppingCartTotal ">0</p>
+                                <div class="toast ml-auto bg-info " role="alert " aria-live="assertive " aria-atomic="true " data-delay="2000 ">
+                                    <div class="toast-header ">
+                                        <span>✅</span>
+                                        <strong class="mr-auto ml-1 text-secondary ">Elementos en el carrito <i class="fas fa-cart-plus"></i></strong>
+                                        <button type="button " class="ml-2 mb-1 close " data-dismiss="toast " aria-label="Close ">
+                                    <span aria-hidden="true ">&times;</span>
+                                </button>
+                                    </div>
+                                    <div class="toast-body text-white ">
+                                        Se aumentó correctamente la cantidad
+                                    </div>
+                                </div>
+
+                                <button class="btn btn-success ml-auto comprarButton " type="button " onclick="BotonComprar();">Compra de usurario</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container-fluid">
+            <div class="row Azulito">
+                <div class="col-xs-12 col-sm-8">
+                    <br><b>2021</b> <br>Todos los derechos reservados para estudiante. &copy; <br> 
+                </div>
+                <div class="col-xs-12 col-sm-4">
+                    <br> Direccion empresa <br>Bogotá D.C. - Colombia <br>Teléfono 57 (1) Phone-mobil
+                    <br>
+                </div>
+                <br>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md-12 Blanco">
+                    <center>
+                        <h5 class="designBy">
+                            Diseñado por: Estudiante 
+                        </h5>
+                    </center>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <br><br>
+
+    <!-- VINCULOS JS DEL PROYECTO FINAL-->
+
+    <script src="../java proyecto final/JAVA TIENDA T.js"></script><!-- 1ER JS -->
+    <script src="../java proyecto final/JAVA 2 TIENDA T.js"></script><!-- 2DO JS -->
+    
+    <!-- SCRIPT DE APOYO -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js " integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js " integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN " crossorigin="anonymous "></script>
+</body>
+</html>
