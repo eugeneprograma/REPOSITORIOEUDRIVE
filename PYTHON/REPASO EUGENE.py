@@ -68,7 +68,10 @@ palabra1="mi cuento favorito"
 palabra2="heladero"
 print (palabra1+" es el de "+palabra2)
 
-
+uno="yo estudie en "
+dos="javeriana"
+combinacion= uno+" en la universidad "+dos
+print (combinacion)
 
 
 
