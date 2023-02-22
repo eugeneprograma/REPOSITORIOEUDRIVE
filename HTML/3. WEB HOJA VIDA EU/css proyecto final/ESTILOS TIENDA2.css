@@ -1,0 +1,233 @@
+/* RESET RULES––––––––––––––––––––––––––––––––––– */
+
+:root {
+    --black: #3a3a3a;
+    --white: #fff;
+    --blue: #12203e;
+}
+
+.author-archive {
+    padding: 0em;
+    width: 100%;
+}
+
+.container1 {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+h1.Title-Prod {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #292929;
+    letter-spacing: 0.2em;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+}
+
+p.Subtitilo {
+    color: #292929;
+    font-size: 18px;
+}
+
+p.Descripcion {
+    color: #6f6f6f;
+    font-size: 14px;
+}
+
+p.Precio {
+    color: #6f6f6f;
+    font-size: 18px;
+}
+
+h1.Title-Prod a {
+    transition: all 0.1s;
+}
+
+h1.Title-Prod a:hover {
+    background: var(--blue);
+    color: var(--white);
+}
+
+h1.text-center {
+    font-family: 'Josefin Sans', sans-serif !important;
+    font-size: 25px !important;
+    color: #292929 !important;
+}
+
+h6 {
+    font-family: 'Josefin Sans', sans-serif !important;
+    font-size: 18px !important;
+    color: #292929 !important;
+}
+
+p.mb-0 {
+    font-family: 'Josefin Sans', sans-serif !important;
+    font-size: 18px !important;
+    color: #292929 !important;
+}
+
+input[type="radio"] {
+    position: absolute;
+    left: -9999px;
+}
+
+/* FILTERS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.filters {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.filters * {
+    display: inline-block;
+}
+
+.filters label {
+    padding: 0.5rem 1rem;
+    margin-bottom: 0.25rem;
+    border-radius: 2rem;
+    min-width: 50px;
+    line-height: normal;
+    cursor: pointer;
+    transition: all 0.1s;
+    font-size: 18px;
+}
+
+.filters label:hover {
+    background: var(--blue);
+    color: var(--white);
+    font-size: 18px;
+}
+
+/* FILTERED ELEMENTS (POSTS)
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.post img {
+    width: 250px;
+    height: 180px;
+}
+
+.posts li.post {
+    width: 260px;
+}
+
+.posts {
+    display: grid;
+    grid-gap: 1.5rem;
+    grid-template-columns: repeat(4, 1fr);
+    /*display: inline-block;*/
+}
+
+.posts .post {
+    background: #fafafa;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.posts .post-title {
+    font-size: 1.3rem;
+}
+
+.posts .post-title:hover {
+    text-decoration: underline;
+}
+
+.posts figcaption {
+    padding: 1rem;
+}
+
+.posts .post-categories {
+    margin-bottom: 0.75rem;
+    font-size: 0.75rem;
+}
+
+.posts .post-categories * {
+    display: inline-block;
+}
+
+.posts .post-categories li {
+    margin-bottom: 0.2rem;
+}
+
+.posts .post-categories a {
+    padding: 0.2rem 0.5rem;
+    border-radius: 1rem;
+    border: 1px solid;
+    line-height: normal;
+    transition: all 0.1s;
+}
+
+.posts .post-categories a:hover {
+    background: var(--blue);
+    color: var(--white);
+}
+
+/* FILTERING RULES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+[value="All"]:checked~.filters [for="All"],
+[value="Habitacion"]:checked~.filters [for="Habitacion"],
+[value="Salas"]:checked~.filters [for="Salas"],
+[value="Comedor"]:checked~.filters [for="Comedor"],
+[value="Servicios"]:checked~.filters [for="Servicios"] {
+    background: var(--blue);
+    color: var(--white);
+}
+
+[value="All"]:checked~.posts [data-category] {
+    display: block;
+}
+
+[value="Habitacion"]:checked~.posts .post:not([data-category~="Habitacion"]),
+[value="Salas"]:checked~.posts .post:not([data-category~="Salas"]),
+[value="Comedor"]:checked~.posts .post:not([data-category~="Comedor"]),
+[value="Servicios"]:checked~.posts .post:not([data-category~="Servicios"]) {
+    display: none;
+    visibility: Hidden;
+}
+
+/* ? SHOPPING CART */
+
+.shopping-cart-items {
+    padding: 20px 0px;
+}
+
+.shopping-cart-header {
+    border-bottom: 1px solid #ccc;
+}
+
+.shopping-cart-image {
+    max-width: 80px;
+}
+
+.shopping-cart-quantity-input {
+    max-width: 45px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #eee;
+    padding: 5px;
+}
+
+.shopping-cart-total {
+    min-height: 96px;
+}
+
+button.btn-danger {
+    color: #fff;
+    background-color: #12203e !important;
+    border-color: #12203e !important;
+}
+
+button.btn-primary {
+    color: #fff;
+    background-color: #12203e !important;
+    border-color: #12203e !important;
+    font-size: 12px !important;
+}
+
+button.btn-success {
+    color: #fff;
+    background-color: #12203e !important;
+    border-color: #12203e !important;
+}
