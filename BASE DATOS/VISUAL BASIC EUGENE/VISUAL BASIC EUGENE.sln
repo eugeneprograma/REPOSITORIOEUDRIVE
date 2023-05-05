@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33516.290
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "VISUAL BASIC EUGENE", "VISUAL BASIC EUGENE\VISUAL BASIC EUGENE.vbproj", "{DC7F4211-AAE4-4BA4-B1D4-D2D398A7BDEA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DC7F4211-AAE4-4BA4-B1D4-D2D398A7BDEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC7F4211-AAE4-4BA4-B1D4-D2D398A7BDEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC7F4211-AAE4-4BA4-B1D4-D2D398A7BDEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC7F4211-AAE4-4BA4-B1D4-D2D398A7BDEA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FE5D5B43-5905-4E20-9625-F979DE06EBCD}
+	EndGlobalSection
+EndGlobal
