@@ -73,6 +73,39 @@ dos="javeriana"
 combinacion= uno+" en la universidad "+dos
 print (combinacion)
 
+mivariable=True
+num1=int(input("ingrese el primer numeero : "))
+print(num1)
+num2=int(input("ingrese el segundo numero : "))
+print(num2)
+mivariable = num1 > num2
+if mivariable == True:
+    print ("el numero 1 es mayor")
+    print (num1)
+else:
+    print("el número dos es mayor")
+    print(num2)
+
+
+condicion=False
+if condicion == True:
+    print("se cumple condicion")
+elif condicion == False:
+    print("no se cumple condicion")
+else:
+    print ("valor de condicion no acepatado")    
+    
+    
+    
+
+
+    
+
+
+
+
+
+
 
 
 
